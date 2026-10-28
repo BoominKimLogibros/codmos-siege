@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "92078d41d94b1a7e21397c0bca30fc5b759f37e4961e80deb8d5392a325d3db0",
+  "sourceId": "52081da08bde93ae825e4e531268cd4dd0f33a0bbb05d7f2bba70e96d9c9aba4",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "die",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 245,
+  "frameHeight": 256,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -140.67388380224418,
+    "y": -39.20069053843628,
+    "width": 250.41276016034394,
+    "height": 262.4451610952734,
+    "scale": 0.9449593163196882,
+    "origin": {
+      "x": 136.9310970618039,
+      "y": 214.95694226953958
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 5,
+      "rows": 5,
+      "name": "spine_52081da08b_default_die.png",
+      "sha256": "e5f54aa73e41759995536d6d63e2c41613a93063422809c118f4dfde74bdaad5",
+      "bytes": 676683,
+      "url": "/file/e5f54aa73e41759995536d6d63e2c41613a93063422809c118f4dfde74bdaad5",
+      "local": "die-0.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "team": "white",
+  "palette": "pearl-ivory skin / silver cloth"
+}

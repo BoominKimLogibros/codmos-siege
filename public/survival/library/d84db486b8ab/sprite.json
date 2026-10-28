@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "79d3867b6a56c0badf26d26abdc3332e575852c20303b32bf90b1eb732052d21",
+  "sourceId": "15dd01be077dee1cb9c1f9ba130df4777d7403ea0fb4c7b6b7043c7abc3e03b6",
+  "sourceEngine": "spine",
+  "skin": "armed01",
+  "motion": "idle",
+  "fps": 30,
+  "frameCount": 40,
+  "frameWidth": 256,
+  "frameHeight": 219,
+  "duration": 1.333299994468689,
+  "bounds": {
+    "x": -263.7981765903304,
+    "y": -16.70810452684149,
+    "width": 542.192836741058,
+    "height": 460.9818632350245,
+    "scale": 0.4574018378602086,
+    "origin": {
+      "x": 124.66177079658898,
+      "y": 207.21163374618575
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 6,
+      "rows": 7,
+      "name": "spine_15dd01be07_armed01_idle.png",
+      "sha256": "d84db486b8abfd5d49c99e2eebb18ca30dd2d31ffb16b8dc696dee73eceee954",
+      "bytes": 1331990,
+      "url": "/file/d84db486b8abfd5d49c99e2eebb18ca30dd2d31ffb16b8dc696dee73eceee954",
+      "local": "spine_15dd01be07_armed01_idle.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true
+}

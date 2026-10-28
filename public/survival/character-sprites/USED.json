@@ -1,0 +1,30 @@
+{
+  "sourceArchive": "codmos-53-characters-sprites-20261027.zip",
+  "characters": {
+    "naruto": "naruto",
+    "int": "basic",
+    "kim": "kim",
+    "nova": "codmos_nova",
+    "lucy": "codmos_lucy",
+    "jet": "codmos_jet",
+    "bora": "codmos_bora",
+    "dokkaebi": "dokkaebi",
+    "gumiho": "gumiho",
+    "young-forty": "young-forty",
+    "danso": "danso"
+  },
+  "directions": [
+    "front",
+    "back",
+    "side_left",
+    "side_right"
+  ],
+  "motions": [
+    "idle",
+    "move",
+    "HP_Down",
+    "failure",
+    "success",
+    "run"
+  ]
+}

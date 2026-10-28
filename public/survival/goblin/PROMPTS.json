@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit",
+  "source": "idle-0.png",
+  "transparent_background": true,
+  "blue": {
+    "prompt": "Use case: precise-object-edit. Asset type: transparent 2D game team-selection goblin icon and color reference. Input image is the original goblin animation sheet, use the first goblin as the edit target. Output ONLY ONE full-body goblin in the same left-facing neutral pose and exact flat angular cartoon illustration style, centered on a genuinely transparent background with a little clear margin. Recolor the green skin to unmistakable bright azure and light cyan blue with deep cobalt shadows. Recolor purple shorts to navy blue and pale blue accents. Preserve original goblin identity, nose, eyes, teeth, club, anatomy, silhouette, proportions. Keep the club warm brown/orange and eye whites/teeth white. Do not redesign the character, no new armor, no text, no shadows outside character, no background. BLUE TEAM should be identifiable from the actual body color at very small game size.",
+    "output": "blue/team-reference.png"
+  },
+  "white": {
+    "prompt": "Use case: precise-object-edit. Asset type: transparent 2D game team-selection goblin icon and color reference. Input image is the original goblin animation sheet, use the first goblin as the edit target. Output ONLY ONE full-body goblin in the same left-facing neutral pose and exact flat angular cartoon illustration style, centered on a genuinely transparent background with a little clear margin. Recolor all green skin to unmistakable pearl white / ivory with cool silver-grey shadows and charcoal outlines so it remains distinct on green grass. Recolor purple shorts to pale silver and dark grey. Preserve original goblin identity, nose, eyes, teeth, club, anatomy, silhouette, proportions. Keep the club warm brown/orange. Do not redesign the character, no new armor, no text, no shadows outside character, no background. WHITE TEAM should be identifiable from the actual body color at very small game size.",
+    "output": "white/team-reference.png"
+  }
+}

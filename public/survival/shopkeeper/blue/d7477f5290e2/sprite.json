@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "a264a43df158303202b70d5e679b1586c560baaaaf43fbb26dad57a510791924",
+  "sourceId": "1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "hello",
+  "fps": 30,
+  "frameCount": 40,
+  "frameWidth": 232,
+  "frameHeight": 256,
+  "duration": 1.333299994468689,
+  "bounds": {
+    "x": -174.5682833305512,
+    "y": -2.681658673963028,
+    "width": 350.45237367572065,
+    "height": 389.446702194312,
+    "scale": 0.6368008731430005,
+    "origin": {
+      "x": 115.1652352479697,
+      "y": 250.2923174149488
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 7,
+      "rows": 6,
+      "name": "spine_1bb99aaaca_default_hello.png",
+      "sha256": "d7477f5290e28b3fb790a536d21d980d830323adae23883229d55665f8fd740e",
+      "bytes": 1041124,
+      "url": "spine_1bb99aaaca_default_hello.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true
+}

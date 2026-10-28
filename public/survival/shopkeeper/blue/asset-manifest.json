@@ -1,0 +1,114 @@
+[
+  {
+    "file": "0345a2b943d9/spine_1bb99aaaca_default_calculate.png",
+    "sha256": "0345a2b943d9452ec3ea69f664381e120090596632e974bc609432a1632c867c",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/calculate"
+    ]
+  },
+  {
+    "file": "1fcad7864383/spine_1bb99aaaca_default_idle.png",
+    "sha256": "1fcad786438323a3fe08aa5df72fda88b45eea2b1a1d509aac2f971b05bfff98",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/idle"
+    ]
+  },
+  {
+    "file": "2c8e68ee702b/spine_1bb99aaaca_default_juice_grapes.png",
+    "sha256": "2c8e68ee702b3aae7c2f5bfed9fc15cd2e74349556844863057a703d3028442d",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/juice_grapes"
+    ]
+  },
+  {
+    "file": "2ccd8e395bec/spine_1bb99aaaca_default_error.png",
+    "sha256": "2ccd8e395bec0e9f9fc5458c7afcf7ad6e2ae15548562b89147149bd6e45f554",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/error"
+    ]
+  },
+  {
+    "file": "415d8022c93b/spine_1bb99aaaca_default_juice_orange.png",
+    "sha256": "415d8022c93be33dcaa3e55bc421c279d5fe7d22e28cca61a5fa6449f6675bee",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/juice_orange"
+    ]
+  },
+  {
+    "file": "5ae32dac0079/spine_1bb99aaaca_default_juice_strawberry.png",
+    "sha256": "5ae32dac0079c7609839f6a9fafc3dbab4d74aa35dc99afd45b4426c24b6f477",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/juice_strawberry"
+    ]
+  },
+  {
+    "file": "612a2b220242/spine_1bb99aaaca_default_juice_banana.png",
+    "sha256": "612a2b2202429568c4f0e416088d04465346e877f75b430b3f042a78b99a4f50",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/juice_banana"
+    ]
+  },
+  {
+    "file": "61b1734777bf/spine_1bb99aaaca_default_juice_mango.png",
+    "sha256": "61b1734777bf064a73258ce2d31c247fffeaf6825e352de0834998f0e0181419",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/juice_mango"
+    ]
+  },
+  {
+    "file": "85c32b8b5831/spine_1bb99aaaca_default_juice_apple.png",
+    "sha256": "85c32b8b58310f1f4153e3bd3ee8ec7bfacd4ac21cfbd95cfa9155ef969fd177",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/juice_apple"
+    ]
+  },
+  {
+    "file": "962112ccec9d/spine_1bb99aaaca_default_hate.png",
+    "sha256": "962112ccec9d3af8e16f879710323f69aa6985fb1f309608220dd7faad7e4c47",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/hate"
+    ]
+  },
+  {
+    "file": "be17678a78c8/spine_1bb99aaaca_default_failure.png",
+    "sha256": "be17678a78c8b9440fedad0bebfeec720e59b7a10aa3b1347f2e89f49a0472b2",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/failure"
+    ]
+  },
+  {
+    "file": "d7477f5290e2/spine_1bb99aaaca_default_hello.png",
+    "sha256": "d7477f5290e28b3fb790a536d21d980d830323adae23883229d55665f8fd740e",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/hello"
+    ]
+  },
+  {
+    "file": "e80c5730f000/spine_1bb99aaaca_default_input.png",
+    "sha256": "e80c5730f00097c3f0bf98496d0ff6e699b8b7997affd54e8edeafbb3b047fcd",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/input"
+    ]
+  },
+  {
+    "file": "f60d7976754a/spine_1bb99aaaca_default_juice_pineapple.png",
+    "sha256": "f60d7976754a7be2a39facd4fc6b3f2da9156bb0b40a283399c38e9623375480",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2/default/juice_pineapple"
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+{
+  "id": "9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9",
+  "name": "spine_acef8de87e_default_idle.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 376308,
+  "width": 1280,
+  "height": 1160,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "shared",
+      "source": "공통 리소스",
+      "name": "공통 리소스"
+    }
+  ],
+  "occurrences": 1,
+  "preview": {
+    "type": "spritesheet",
+    "status": "ready"
+  },
+  "generatedLabels": [
+    "default",
+    "idle",
+    "대기",
+    "스프라이트 시트",
+    "Spine",
+    "갑옷",
+    "얼음",
+    "초록색 몬스터",
+    "칼"
+  ],
+  "spriteSheet": {
+    "schemaVersion": 1,
+    "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+    "jobKey": "16faf33e2368c468719333bd8cfdc17dc662974506f26e1a129d40f9ab506a73",
+    "sourceId": "acef8de87e1f2fe72202365bc0c517f690041bd8ab24a55f592a2b2a3c1df8b5",
+    "sourceEngine": "spine",
+    "skin": "default",
+    "motion": "idle",
+    "fps": 30,
+    "frameCount": 21,
+    "frameWidth": 256,
+    "frameHeight": 232,
+    "duration": 0.666700005531311,
+    "bounds": {
+      "x": -343.3508414386863,
+      "y": -19.03571214210949,
+      "width": 495.57484751316656,
+      "height": 445.7583179307538,
+      "scale": 0.5004289488146613,
+      "origin": {
+        "x": 175.82270065579124,
+        "y": 217.54434505026435
+      }
+    },
+    "pages": [
+      {
+        "startFrame": 0,
+        "columns": 5,
+        "rows": 5,
+        "name": "spine_acef8de87e_default_idle.png",
+        "sha256": "9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9",
+        "bytes": 376308,
+        "url": "/file/9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9"
+      }
+    ],
+    "order": "row-major",
+    "loop": true
+  },
+  "locations": [
+    {
+      "path": "generated/sprites/acef8de87e1f2fe72202365bc0c517f690041bd8ab24a55f592a2b2a3c1df8b5/default/idle",
+      "source": "스프라이트 변환",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [
+    "스파인"
+  ],
+  "publicLabels": [
+    {
+      "key": "default",
+      "text": "default",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "idle",
+      "text": "idle",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "대기",
+      "text": "대기",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "스프라이트 시트",
+      "text": "스프라이트 시트",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "spine",
+      "text": "Spine",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "갑옷",
+      "text": "갑옷",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "얼음",
+      "text": "얼음",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "초록색 몬스터",
+      "text": "초록색 몬스터",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "칼",
+      "text": "칼",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    }
+  ],
+  "assetGroups": []
+}

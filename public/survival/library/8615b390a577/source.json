@@ -1,0 +1,30 @@
+{
+  "id": "8615b390a57710861021ebd5b1cf10cd6710dd82f15faaee5e07253a40142173",
+  "name": "rock_small.svg",
+  "kind": "image",
+  "ext": "svg",
+  "bytes": 625,
+  "width": null,
+  "height": null,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "flutter-math/p624",
+      "source": "수학 · P624 · 수 퍼즐",
+      "name": "수학 · P624 · 수 퍼즐"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "@flutter-math/assets/images/p624/rock_small.svg",
+      "source": "수학 · P624 · 수 퍼즐",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [],
+  "publicLabels": [],
+  "assetGroups": []
+}

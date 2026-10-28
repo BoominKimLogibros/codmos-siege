@@ -1,0 +1,30 @@
+{
+  "id": "e8b359bea380899cd5c829189ecf976021bd83b7115b5164d01810a6536ca62b",
+  "name": "crystal_green.svg",
+  "kind": "image",
+  "ext": "svg",
+  "bytes": 6900,
+  "width": null,
+  "height": null,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "flutter-math/p1144",
+      "source": "수학 · P1144 · 소수 사이의 관계 1",
+      "name": "수학 · P1144 · 소수 사이의 관계 1"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "@flutter-math/assets/images/p1144/crystal_green.svg",
+      "source": "수학 · P1144 · 소수 사이의 관계 1",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [],
+  "publicLabels": [],
+  "assetGroups": []
+}

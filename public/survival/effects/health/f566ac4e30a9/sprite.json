@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "14e8e526fd15ef8fe5b1476b9db0a36616c2b431b605584213ae7a994091700d",
+  "sourceId": "a97fb9ee788fd0bce4950f66bfd5a93daa7cc0a1a235dcface913b6d66447d9a",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "HP Down",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 256,
+  "frameHeight": 235,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -278.78959174273973,
+    "y": -8.927036243332935,
+    "width": 552.5600030411579,
+    "height": 503.5799995850384,
+    "scale": 0.44882003517277297,
+    "origin": {
+      "x": 129.12635437177946,
+      "y": 226.01016040534066
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 5,
+      "rows": 5,
+      "name": "spine_a97fb9ee78_default_HP_Down.png",
+      "sha256": "f566ac4e30a9eeab8f466268dcf2a70146ea0a68c42b7b8599b09b148145910c",
+      "bytes": 188979,
+      "url": "spine_a97fb9ee78_default_HP_Down.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true
+}

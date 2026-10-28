@@ -1,0 +1,26 @@
+{
+  "source": "codmos-assets-11.zip",
+  "files": [
+    "0345a2b943d9/spine_1bb99aaaca_default_calculate.png",
+    "1fcad7864383/spine_1bb99aaaca_default_idle.png",
+    "2c8e68ee702b/spine_1bb99aaaca_default_juice_grapes.png",
+    "2ccd8e395bec/spine_1bb99aaaca_default_error.png",
+    "5ae32dac0079/spine_1bb99aaaca_default_juice_strawberry.png",
+    "962112ccec9d/spine_1bb99aaaca_default_hate.png",
+    "be17678a78c8/spine_1bb99aaaca_default_failure.png",
+    "d7477f5290e2/spine_1bb99aaaca_default_hello.png",
+    "e80c5730f000/spine_1bb99aaaca_default_input.png",
+    "0345a2b943d9/sprite.json",
+    "1fcad7864383/sprite.json",
+    "2c8e68ee702b/sprite.json",
+    "2c8e68ee702b/spine_1bb99aaaca_default_juice_grapes-page2.png",
+    "2ccd8e395bec/sprite.json",
+    "5ae32dac0079/sprite.json",
+    "5ae32dac0079/spine_1bb99aaaca_default_juice_strawberry-page2.png",
+    "962112ccec9d/sprite.json",
+    "be17678a78c8/sprite.json",
+    "d7477f5290e2/sprite.json",
+    "e80c5730f000/sprite.json",
+    "asset-manifest.json"
+  ]
+}

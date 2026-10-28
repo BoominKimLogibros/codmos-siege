@@ -1,0 +1,113 @@
+{
+  "method": "Per-pixel skin and cloth palette substitution; original frame cells, origins, dimensions and alpha preserved.",
+  "variants": [
+    {
+      "team": "blue",
+      "motion": "idle",
+      "index": 0,
+      "width": 1280,
+      "height": 1160,
+      "changedPixels": 210596,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "idle",
+      "index": 0,
+      "width": 1280,
+      "height": 1160,
+      "changedPixels": 210596,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "attack",
+      "index": 0,
+      "width": 1687,
+      "height": 1536,
+      "changedPixels": 334081,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "attack",
+      "index": 0,
+      "width": 1687,
+      "height": 1536,
+      "changedPixels": 334081,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "stun",
+      "index": 0,
+      "width": 1280,
+      "height": 1165,
+      "changedPixels": 224196,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "stun",
+      "index": 0,
+      "width": 1280,
+      "height": 1165,
+      "changedPixels": 224196,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "die",
+      "index": 0,
+      "width": 1280,
+      "height": 1180,
+      "changedPixels": 146821,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "die",
+      "index": 0,
+      "width": 1280,
+      "height": 1180,
+      "changedPixels": 146821,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "spawn",
+      "index": 0,
+      "width": 1280,
+      "height": 1165,
+      "changedPixels": 112252,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "spawn",
+      "index": 0,
+      "width": 1280,
+      "height": 1165,
+      "changedPixels": 112252,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "explosion",
+      "index": 0,
+      "width": 1215,
+      "height": 1024,
+      "changedPixels": 131464,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "explosion",
+      "index": 0,
+      "width": 1215,
+      "height": 1024,
+      "changedPixels": 131464,
+      "alphaUnchanged": true
+    }
+  ]
+}

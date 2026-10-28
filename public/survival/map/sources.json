@@ -1,0 +1,699 @@
+[
+  {
+    "id": "planet__path_beige",
+    "file": "images/planet/planet__path_beige.png",
+    "name": "베이지색 길 타일",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "길",
+      "베이지색",
+      "주황색"
+    ],
+    "group": "planet",
+    "group_name": "행성",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/d630d481-8ae1-41c5-8e42-c328dea91b5a.png",
+      "original_name": "path_beige",
+      "original_file": "png/planet/path_beige.png",
+      "frame": {
+        "x": 0,
+        "y": 200,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "80340d4fffc3e43fdcc32e1ba435de29fe9819855321c8fd4b230fad8f682db3",
+    "duplicate_of": null,
+    "local": "planet__path_beige.png"
+  },
+  {
+    "id": "planet__path_bluegray",
+    "file": "images/planet/planet__path_bluegray.png",
+    "name": "청회색 길 타일",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "길",
+      "청회색"
+    ],
+    "group": "planet",
+    "group_name": "행성",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/d630d481-8ae1-41c5-8e42-c328dea91b5a.png",
+      "original_name": "path_bluegray",
+      "original_file": "png/planet/path_bluegray.png",
+      "frame": {
+        "x": 800,
+        "y": 0,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "eb0c9e8a3843ea580e79a18b67f083d5a12bb3c3833fe1fd139bc6f0e6b55698",
+    "duplicate_of": null,
+    "local": "planet__path_bluegray.png"
+  },
+  {
+    "id": "multi_objects__ground_dark_green_002",
+    "file": "images/multi_objects/multi_objects__ground_dark_green_002.png",
+    "name": "진초록색 바닥 타일",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "바닥",
+      "진초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_002",
+      "original_file": "png/multi_objects/tile_002.png",
+      "frame": {
+        "x": 400,
+        "y": 0,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "3118300e42c8f96c4ac19cb2514343d80b2d569a0acb2196619629a2fa87458c",
+    "duplicate_of": null,
+    "local": "multi_objects__ground_dark_green_002.png"
+  },
+  {
+    "id": "multi_objects__ground_olive_003",
+    "file": "images/multi_objects/multi_objects__ground_olive_003.png",
+    "name": "진초록색 바닥 타일",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "바닥",
+      "진초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_003",
+      "original_file": "png/multi_objects/tile_003.png",
+      "frame": {
+        "x": 600,
+        "y": 0,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "16a8af33bea97f904b0333b5a31b3b6af1a685ab2dde8797959aa5e422c0fb70",
+    "duplicate_of": null,
+    "local": "multi_objects__ground_olive_003.png"
+  },
+  {
+    "id": "multi_objects__water_green_corner_top_left_006",
+    "file": "images/multi_objects/multi_objects__water_green_corner_top_left_006.png",
+    "name": "초록색 물 지형 corner_top_left",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_006",
+      "original_file": "png/multi_objects/tile_006.png",
+      "frame": {
+        "x": 0,
+        "y": 200,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "3e276d71749d1beafaacdbf853a0017a3c39d7641c6b3fa691774234c75446fe",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_corner_top_left_006.png"
+  },
+  {
+    "id": "multi_objects__water_green_edge_top_007",
+    "file": "images/multi_objects/multi_objects__water_green_edge_top_007.png",
+    "name": "초록색 물 지형 edge_top",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_007",
+      "original_file": "png/multi_objects/tile_007.png",
+      "frame": {
+        "x": 200,
+        "y": 200,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "c859592623c6ae8086bfccc4614f5d7eecbb8b0209834cccef04cdab24d0d382",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_edge_top_007.png"
+  },
+  {
+    "id": "multi_objects__water_green_corner_top_right_008",
+    "file": "images/multi_objects/multi_objects__water_green_corner_top_right_008.png",
+    "name": "초록색 물 지형 corner_top_right",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_008",
+      "original_file": "png/multi_objects/tile_008.png",
+      "frame": {
+        "x": 400,
+        "y": 200,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "46cfe1299740c42e280bf886e54cb9e2c01070dcfd6dcf3fb5b9639ec8c69d5a",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_corner_top_right_008.png"
+  },
+  {
+    "id": "multi_objects__water_green_edge_left_012",
+    "file": "images/multi_objects/multi_objects__water_green_edge_left_012.png",
+    "name": "초록색 물 지형 edge_left",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_012",
+      "original_file": "png/multi_objects/tile_012.png",
+      "frame": {
+        "x": 0,
+        "y": 400,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "900d9cf09bd1b86cd7141406e4c5449c3f8c14f1bb9097da9a01c910e16f42f7",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_edge_left_012.png"
+  },
+  {
+    "id": "multi_objects__water_green_center_013",
+    "file": "images/multi_objects/multi_objects__water_green_center_013.png",
+    "name": "초록색 물 지형 center",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_013",
+      "original_file": "png/multi_objects/tile_013.png",
+      "frame": {
+        "x": 200,
+        "y": 400,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "b0ed13f2497c19d3049ba2253ed5d956d9403f0c27551e1b60c14ea41aa3ccf8",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_center_013.png"
+  },
+  {
+    "id": "multi_objects__water_green_edge_right_014",
+    "file": "images/multi_objects/multi_objects__water_green_edge_right_014.png",
+    "name": "초록색 물 지형 edge_right",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_014",
+      "original_file": "png/multi_objects/tile_014.png",
+      "frame": {
+        "x": 400,
+        "y": 400,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "116d0c0cdc8703b6d9d2e7ef24f078e31551eec14bee477ec3d7261f4f03c862",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_edge_right_014.png"
+  },
+  {
+    "id": "multi_objects__water_green_corner_bottom_left_018",
+    "file": "images/multi_objects/multi_objects__water_green_corner_bottom_left_018.png",
+    "name": "초록색 물 지형 corner_bottom_left",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_018",
+      "original_file": "png/multi_objects/tile_018.png",
+      "frame": {
+        "x": 0,
+        "y": 600,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "935405ccb6df87abf02b129e048a33ce18c33c388d2e7c4f7a5e91e3eb325ed1",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_corner_bottom_left_018.png"
+  },
+  {
+    "id": "multi_objects__water_green_edge_bottom_019",
+    "file": "images/multi_objects/multi_objects__water_green_edge_bottom_019.png",
+    "name": "초록색 물 지형 edge_bottom",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_019",
+      "original_file": "png/multi_objects/tile_019.png",
+      "frame": {
+        "x": 200,
+        "y": 600,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "5935f4039c6bcfe919cbba8043128e904d87ad67d1121dad12ab8d44773044b8",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_edge_bottom_019.png"
+  },
+  {
+    "id": "multi_objects__water_green_corner_bottom_right_020",
+    "file": "images/multi_objects/multi_objects__water_green_corner_bottom_right_020.png",
+    "name": "초록색 물 지형 corner_bottom_right",
+    "category": "타일",
+    "tags": [
+      "타일",
+      "물",
+      "물가",
+      "지형",
+      "초록색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "tile",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_020",
+      "original_file": "png/multi_objects/tile_020.png",
+      "frame": {
+        "x": 400,
+        "y": 600,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "7123121a1ac8f0533c5596959741dc01b452264c9572222035233686fd98993b",
+    "duplicate_of": null,
+    "local": "multi_objects__water_green_corner_bottom_right_020.png"
+  },
+  {
+    "id": "multi_objects__rock_cluster_86_086",
+    "file": "images/multi_objects/multi_objects__rock_cluster_86_086.png",
+    "name": "바위 무리 86",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "바위",
+      "돌",
+      "회색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "object",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_086_obstacle",
+      "original_file": "png/multi_objects/tile_086_obstacle.png",
+      "frame": {
+        "x": 400,
+        "y": 2800,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "79730f26e889a57a14be72398d5b63a0fdd22b2058ced0e927049446786e9865",
+    "duplicate_of": null,
+    "local": "multi_objects__rock_cluster_86_086.png"
+  },
+  {
+    "id": "multi_objects__rock_cluster_87_087",
+    "file": "images/multi_objects/multi_objects__rock_cluster_87_087.png",
+    "name": "바위 무리 87",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "바위",
+      "돌",
+      "회색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "object",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_087_obstacle",
+      "original_file": "png/multi_objects/tile_087_obstacle.png",
+      "frame": {
+        "x": 600,
+        "y": 2800,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "6a2e3e0141b7339f4f451f06dc060ba55dcdc33991c876b50d5c196477d53a09",
+    "duplicate_of": null,
+    "local": "multi_objects__rock_cluster_87_087.png"
+  },
+  {
+    "id": "multi_objects__rock_cluster_94_094",
+    "file": "images/multi_objects/multi_objects__rock_cluster_94_094.png",
+    "name": "바위 무리 94",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "바위",
+      "돌",
+      "회색"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "object",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_094_obstacle",
+      "original_file": "png/multi_objects/tile_094_obstacle.png",
+      "frame": {
+        "x": 800,
+        "y": 3000,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "3ba4913ff8d328148d945f81e4739458310c337de979d9cebe887a348a6a226a",
+    "duplicate_of": null,
+    "local": "multi_objects__rock_cluster_94_094.png"
+  },
+  {
+    "id": "multi_objects__broadleaf_tree_complete",
+    "file": "images/multi_objects/multi_objects__broadleaf_tree_complete.png",
+    "name": "활엽수 완성형",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "나무",
+      "활엽수",
+      "초록색",
+      "완성형"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "assembled",
+    "width": 200,
+    "height": 400,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "frame": {
+        "x": 1000,
+        "y": 2400,
+        "w": 200,
+        "h": 400
+      },
+      "operation": "위아래로 연결된 두 원본 타일을 좌표대로 결합"
+    },
+    "pixel_sha256": "ea51ca977b3eb437e8224365652f5110b0294bfcb6d23c0d79bf915357bf5539",
+    "duplicate_of": null,
+    "component_ids": [
+      "multi_objects__broadleaf_tree_upper_077",
+      "multi_objects__broadleaf_tree_lower_083"
+    ],
+    "local": "multi_objects__broadleaf_tree_complete.png"
+  },
+  {
+    "id": "multi_objects__palm_tree_03_complete",
+    "file": "images/multi_objects/multi_objects__palm_tree_03_complete.png",
+    "name": "야자수 3 완성형",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "나무",
+      "야자수",
+      "초록색",
+      "갈색",
+      "완성형"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "assembled",
+    "width": 200,
+    "height": 400,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "frame": {
+        "x": 400,
+        "y": 2200,
+        "w": 200,
+        "h": 400
+      },
+      "operation": "위아래로 연결된 두 원본 타일을 좌표대로 결합"
+    },
+    "pixel_sha256": "64db31973b94e59a1b43d596d0138dafc77604459e217449f80fc8e558132020",
+    "duplicate_of": null,
+    "component_ids": [
+      "multi_objects__palm_tree_03_upper_068",
+      "multi_objects__palm_tree_03_lower_074"
+    ],
+    "local": "multi_objects__palm_tree_03_complete.png"
+  },
+  {
+    "id": "multi_objects__grass_single_078",
+    "file": "images/multi_objects/multi_objects__grass_single_078.png",
+    "name": "풀 한 포기",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "식물",
+      "초록색",
+      "풀"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "object",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_078_obstacle",
+      "original_file": "png/multi_objects/tile_078_obstacle.png",
+      "frame": {
+        "x": 0,
+        "y": 2600,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "abc797f7a6ac801b4760f3dae54ab7a775821f8efb45bd5f2e944976f26af840",
+    "duplicate_of": null,
+    "local": "multi_objects__grass_single_078.png"
+  },
+  {
+    "id": "multi_objects__grass_double_079",
+    "file": "images/multi_objects/multi_objects__grass_double_079.png",
+    "name": "풀 두 포기",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "식물",
+      "초록색",
+      "풀"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "object",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_079_obstacle",
+      "original_file": "png/multi_objects/tile_079_obstacle.png",
+      "frame": {
+        "x": 200,
+        "y": 2600,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "b482ba2270a3297955bcee19c8487b1df8aaccdce0d3f24442bbfa65ae386af9",
+    "duplicate_of": null,
+    "local": "multi_objects__grass_double_079.png"
+  },
+  {
+    "id": "multi_objects__grass_cluster_080",
+    "file": "images/multi_objects/multi_objects__grass_cluster_080.png",
+    "name": "풀 무리",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "식물",
+      "초록색",
+      "풀"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "object",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_080_obstacle",
+      "original_file": "png/multi_objects/tile_080_obstacle.png",
+      "frame": {
+        "x": 400,
+        "y": 2600,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "800590b1b23eba6b0cc479b3dbeb5932115cef7eb3b2cd4899d61e206cbe0333",
+    "duplicate_of": null,
+    "local": "multi_objects__grass_cluster_080.png"
+  },
+  {
+    "id": "multi_objects__lily_pads_082",
+    "file": "images/multi_objects/multi_objects__lily_pads_082.png",
+    "name": "연잎",
+    "category": "오브젝트",
+    "tags": [
+      "오브젝트",
+      "식물",
+      "초록색",
+      "연잎"
+    ],
+    "group": "multi_objects",
+    "group_name": "멀티 오브젝트",
+    "role": "object",
+    "width": 200,
+    "height": 200,
+    "source": {
+      "url": "https://cdn.codmos.io/default/public/47d4352f-8891-497c-be3b-08939aad8545.png",
+      "original_name": "tile_082_obstacle",
+      "original_file": "png/multi_objects/tile_082_obstacle.png",
+      "frame": {
+        "x": 800,
+        "y": 2600,
+        "w": 200,
+        "h": 200
+      }
+    },
+    "pixel_sha256": "76fa62fe00211a92d27ea4a379a91bb41694ee4cbc0f87e164402512a76af2ec",
+    "duplicate_of": null,
+    "local": "multi_objects__lily_pads_082.png"
+  }
+]

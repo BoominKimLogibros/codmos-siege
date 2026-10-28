@@ -1,0 +1,189 @@
+{
+  "id": "e5ca946181e66f7bf3fce77aacb48ef4f9cd85e80eeff33ea9b21813268cf26d",
+  "name": "spine_80fc9024a8_default_idle.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 782863,
+  "width": 1110,
+  "height": 1280,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "shared",
+      "source": "공통 리소스",
+      "name": "공통 리소스"
+    }
+  ],
+  "occurrences": 2,
+  "preview": {
+    "type": "spritesheet",
+    "status": "ready"
+  },
+  "generatedLabels": [
+    "default",
+    "idle",
+    "대기",
+    "스프라이트 시트",
+    "Spine",
+    "기마병",
+    "몬스터",
+    "창",
+    "초록색 말",
+    "파란색",
+    "unarmed"
+  ],
+  "spriteSheet": {
+    "schemaVersion": 1,
+    "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+    "jobKey": "80f6631571d60da54bc5a699936c6140497c510e1c18a5ad56554cee26984c27",
+    "sourceId": "80fc9024a85d7f37719e1310b29256d16afdfc17e2c096f9b2c0fd67fe0466c7",
+    "sourceEngine": "spine",
+    "skin": "default",
+    "motion": "idle",
+    "fps": 30,
+    "frameCount": 21,
+    "frameWidth": 222,
+    "frameHeight": 256,
+    "duration": 0.666700005531311,
+    "bounds": {
+      "x": -141.58860387451182,
+      "y": -19.839996337890597,
+      "width": 286.7662556023173,
+      "height": 332.5789681239521,
+      "scale": 0.7456875622621165,
+      "origin": {
+        "x": 109.58086086728119,
+        "y": 237.20556149550902
+      }
+    },
+    "pages": [
+      {
+        "startFrame": 0,
+        "columns": 5,
+        "rows": 5,
+        "name": "spine_80fc9024a8_default_idle.png",
+        "sha256": "e5ca946181e66f7bf3fce77aacb48ef4f9cd85e80eeff33ea9b21813268cf26d",
+        "bytes": 782863,
+        "url": "/file/e5ca946181e66f7bf3fce77aacb48ef4f9cd85e80eeff33ea9b21813268cf26d"
+      }
+    ],
+    "order": "row-major",
+    "loop": true
+  },
+  "locations": [
+    {
+      "path": "generated/sprites/80fc9024a85d7f37719e1310b29256d16afdfc17e2c096f9b2c0fd67fe0466c7/default/idle",
+      "source": "스프라이트 변환",
+      "original_url": ""
+    },
+    {
+      "path": "generated/sprites/80fc9024a85d7f37719e1310b29256d16afdfc17e2c096f9b2c0fd67fe0466c7/unarmed/idle",
+      "source": "스프라이트 변환",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "duplicateAliases": [
+    {
+      "id": "f21b1ffbe0714fbe220d9fc41b084df0b96a3ea214824c1e2a638facb7a0936a",
+      "name": "spine_80fc9024a8_unarmed_idle.png",
+      "sourceId": "80fc9024a85d7f37719e1310b29256d16afdfc17e2c096f9b2c0fd67fe0466c7",
+      "skin": "unarmed",
+      "motion": "idle"
+    }
+  ],
+  "tags": [
+    "스파인"
+  ],
+  "publicLabels": [
+    {
+      "key": "default",
+      "text": "default",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "idle",
+      "text": "idle",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "대기",
+      "text": "대기",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "스프라이트 시트",
+      "text": "스프라이트 시트",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "spine",
+      "text": "Spine",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "기마병",
+      "text": "기마병",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "몬스터",
+      "text": "몬스터",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "창",
+      "text": "창",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "초록색 말",
+      "text": "초록색 말",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "파란색",
+      "text": "파란색",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "unarmed",
+      "text": "unarmed",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    }
+  ],
+  "assetGroups": []
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "1f4db4fec77cc6497b6c5d79147573d8b8d3e621d3e49952cbb50a76c67752c2",
+  "sourceId": "acef8de87e1f2fe72202365bc0c517f690041bd8ab24a55f592a2b2a3c1df8b5",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "explosion",
+  "fps": 30,
+  "frameCount": 16,
+  "frameWidth": 243,
+  "frameHeight": 256,
+  "duration": 0.53329998254776,
+  "bounds": {
+    "x": -385.99192813423724,
+    "y": -73.70966252577982,
+    "width": 608.107831403166,
+    "height": 643.830039954395,
+    "scale": 0.3851948256679151,
+    "origin": {
+      "x": 152.6820934668899,
+      "y": 223.6074193933414
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 5,
+      "rows": 4,
+      "name": "spine_acef8de87e_default_explosion.png",
+      "sha256": "673a597c8f18048fc38a1c3b2e8f381abe03ee1d40a0cc03c45b9829da3fada5",
+      "bytes": 299474,
+      "url": "spine_acef8de87e_default_explosion.png",
+      "local": "explosion-0.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "sourceMotion": "explosion",
+  "team": "white",
+  "palette": "pearl-ivory skin / silver cloth"
+}

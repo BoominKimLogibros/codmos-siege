@@ -1,0 +1,130 @@
+{
+  "id": "93d599798b33f1520d7565228b85b4cd2705d85ad3fb1061c0003f60c7d8692d",
+  "name": "lottie_coin_get_anim_animation.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 39904,
+  "width": 420,
+  "height": 472,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "shared",
+      "source": "공통 리소스",
+      "name": "공통 리소스"
+    }
+  ],
+  "occurrences": 1,
+  "preview": {
+    "type": "spritesheet",
+    "status": "ready"
+  },
+  "generatedLabels": [
+    "animation",
+    "스프라이트 시트",
+    "Lottie",
+    "금화",
+    "노란색",
+    "동전",
+    "코인 애니메이션"
+  ],
+  "spriteSheet": {
+    "schemaVersion": 1,
+    "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+    "jobKey": "07a1e7a37e1f4a9114c1ef42550e17354f5f0be773e218634d46ee2d9e995f2f",
+    "sourceId": "0f0d1609457da2fdce64e0e2b900c6fef5f3765ad7ed20f9f07be250dc146916",
+    "sourceEngine": "lottie",
+    "skin": "",
+    "motion": "animation",
+    "fps": 30,
+    "frameCount": 48,
+    "frameWidth": 30,
+    "frameHeight": 118,
+    "duration": 1.6,
+    "bounds": null,
+    "pages": [
+      {
+        "startFrame": 0,
+        "columns": 14,
+        "rows": 4,
+        "name": "lottie_coin_get_anim_animation.png",
+        "sha256": "93d599798b33f1520d7565228b85b4cd2705d85ad3fb1061c0003f60c7d8692d",
+        "bytes": 39904,
+        "url": "/file/93d599798b33f1520d7565228b85b4cd2705d85ad3fb1061c0003f60c7d8692d"
+      }
+    ],
+    "order": "row-major",
+    "loop": true
+  },
+  "locations": [
+    {
+      "path": "generated/sprites/0f0d1609457da2fdce64e0e2b900c6fef5f3765ad7ed20f9f07be250dc146916//animation",
+      "source": "스프라이트 변환",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [
+    "코인",
+    "로티"
+  ],
+  "publicLabels": [
+    {
+      "key": "animation",
+      "text": "animation",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "스프라이트 시트",
+      "text": "스프라이트 시트",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "lottie",
+      "text": "Lottie",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "금화",
+      "text": "금화",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "노란색",
+      "text": "노란색",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "동전",
+      "text": "동전",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "코인 애니메이션",
+      "text": "코인 애니메이션",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    }
+  ],
+  "assetGroups": []
+}

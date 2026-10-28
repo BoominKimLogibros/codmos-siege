@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "c6b99143c30118383294d517f384df7f14f31842c2be2563de59616efbd82f4c",
+  "sourceId": "52081da08bde93ae825e4e531268cd4dd0f33a0bbb05d7f2bba70e96d9c9aba4",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "attack",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 232,
+  "frameHeight": 223,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -140.67388380224418,
+    "y": -20.960690767318113,
+    "width": 223.68457270095044,
+    "height": 214.0000070744165,
+    "scale": 1,
+    "origin": {
+      "x": 144.67388380224418,
+      "y": 197.03931630709837
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 5,
+      "rows": 5,
+      "name": "spine_52081da08b_default_attack.png",
+      "sha256": "1fc18a499953d60dfe86a04880c288d4e3943871110c71104e195f132f305240",
+      "bytes": 592223,
+      "url": "/file/1fc18a499953d60dfe86a04880c288d4e3943871110c71104e195f132f305240",
+      "local": "attack-0.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "team": "blue",
+  "palette": "azure-cyan skin / navy cloth"
+}

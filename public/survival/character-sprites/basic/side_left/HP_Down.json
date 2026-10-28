@@ -1,0 +1,439 @@
+{
+  "frames": {
+    "HP Down_000": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_001": {
+      "frame": {
+        "x": 224,
+        "y": 1,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_002": {
+      "frame": {
+        "x": 447,
+        "y": 1,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_003": {
+      "frame": {
+        "x": 670,
+        "y": 1,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_004": {
+      "frame": {
+        "x": 893,
+        "y": 1,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_005": {
+      "frame": {
+        "x": 1116,
+        "y": 1,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_006": {
+      "frame": {
+        "x": 1339,
+        "y": 1,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_007": {
+      "frame": {
+        "x": 1562,
+        "y": 1,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_008": {
+      "frame": {
+        "x": 1,
+        "y": 289,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_009": {
+      "frame": {
+        "x": 224,
+        "y": 289,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_010": {
+      "frame": {
+        "x": 447,
+        "y": 289,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_011": {
+      "frame": {
+        "x": 670,
+        "y": 289,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_012": {
+      "frame": {
+        "x": 893,
+        "y": 289,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_013": {
+      "frame": {
+        "x": 1116,
+        "y": 289,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_014": {
+      "frame": {
+        "x": 1339,
+        "y": 289,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    },
+    "HP Down_015": {
+      "frame": {
+        "x": 1562,
+        "y": 289,
+        "w": 221,
+        "h": 286
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 221,
+        "h": 286
+      },
+      "sourceSize": {
+        "w": 221,
+        "h": 286
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5067873303167421,
+        "y": 0.951048951048951
+      }
+    }
+  },
+  "meta": {
+    "app": "Codmos Spine sprite exporter",
+    "version": "1.0",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1784,
+      "h": 576
+    },
+    "scale": "0.4",
+    "fps": 24,
+    "durationMs": 667,
+    "frameCount": 16,
+    "animation": "HP Down",
+    "direction": "side_left",
+    "mirrored": true,
+    "anchor": {
+      "x": 112,
+      "y": 272
+    },
+    "loop": false,
+    "frameTags": [
+      {
+        "name": "HP Down",
+        "from": 0,
+        "to": 15,
+        "direction": "forward"
+      }
+    ],
+    "image": "HP_Down.png",
+    "character": {
+      "id": 1,
+      "name": "\uc778\ud2b8",
+      "skin": "basic"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "6e4ab4bbb85bd381beaa268cca70320b6db0ae3aca126ab4488d75b578a6b0f3",
+  "sourceId": "80fc9024a85d7f37719e1310b29256d16afdfc17e2c096f9b2c0fd67fe0466c7",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "stun",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 214,
+  "frameHeight": 256,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -135.00001808019107,
+    "y": -19.839996337890597,
+    "width": 275.32920203715264,
+    "height": 332.3662734792223,
+    "scale": 0.7461647579458859,
+    "origin": {
+      "x": 104.73225581349598,
+      "y": 237.1960939348906
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 6,
+      "rows": 4,
+      "name": "spine_80fc9024a8_default_stun.png",
+      "sha256": "4e5fd265e25aeb6741e0135081205c3ef874a6e934aea7f417328fd4ae44b3bd",
+      "bytes": 862717,
+      "url": "spine_80fc9024a8_default_stun.png",
+      "local": "stun-0.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "sourceMotion": "stun",
+  "team": "blue",
+  "palette": "azure-cyan skin / navy cloth"
+}

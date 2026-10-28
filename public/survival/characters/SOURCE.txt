@@ -1,0 +1,2 @@
+Source: 나루토 에셋 샘플 만들기 / 01a17780-f290-7982-95ff-7e79b50cd73a
+Copied from outputs/trio-sample on 2026-10-27. Original atlas pages, Spine skeleton meshes and animation preserved. Includes latest neck-fit fixes and hand-bound danso flute.

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "88b28e930955a4ac93ba7b97318c1d31aaaf411a8fe7abd2331d5687a532283d",
+  "sourceId": "4d7226a71061994d22d6c839dcaeb7b62b8cdf268c7b1a7e8a9a50d229803e9e",
+  "sourceEngine": "lottie",
+  "skin": "",
+  "motion": "animation",
+  "fps": 30,
+  "frameCount": 15,
+  "frameWidth": 98,
+  "frameHeight": 105,
+  "duration": 0.4671337814403852,
+  "bounds": null,
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 5,
+      "rows": 3,
+      "name": "lottie_fruit_effect_green_animation.png",
+      "sha256": "fac180131d966d38b8a4814f765dd47f86b8f810d49ada7bdf09a8be9421638d",
+      "bytes": 13106,
+      "url": "/file/fac180131d966d38b8a4814f765dd47f86b8f810d49ada7bdf09a8be9421638d",
+      "local": "lottie_fruit_effect_green_animation.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true
+}

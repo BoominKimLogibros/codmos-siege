@@ -1,0 +1,451 @@
+{
+  "characters": [
+    {
+      "id": 107,
+      "skin": "br_lorenzo",
+      "name": "br_lorenzo",
+      "key": "original",
+      "folder": "br_lorenzo"
+    },
+    {
+      "id": 106,
+      "skin": "br_isabele",
+      "name": "br_isabele",
+      "key": "original",
+      "folder": "br_isabele"
+    },
+    {
+      "id": 105,
+      "skin": "br_flora",
+      "name": "br_flora",
+      "key": "original",
+      "folder": "br_flora"
+    },
+    {
+      "id": 104,
+      "skin": "br_bira",
+      "name": "br_bira",
+      "key": "original",
+      "folder": "br_bira"
+    },
+    {
+      "id": 103,
+      "skin": "santa",
+      "name": "santa",
+      "key": "original",
+      "folder": "santa"
+    },
+    {
+      "id": 102,
+      "skin": "codmos_teo",
+      "name": "codmos_teo",
+      "key": "original",
+      "folder": "codmos_teo"
+    },
+    {
+      "id": 101,
+      "skin": "codmos_remy",
+      "name": "codmos_remy",
+      "key": "original",
+      "folder": "codmos_remy"
+    },
+    {
+      "id": 100,
+      "skin": "codmos_poby",
+      "name": "codmos_poby",
+      "key": "original",
+      "folder": "codmos_poby"
+    },
+    {
+      "id": 99,
+      "skin": "codmos_nova",
+      "name": "codmos_nova",
+      "key": "original",
+      "folder": "codmos_nova"
+    },
+    {
+      "id": 98,
+      "skin": "codmos_lucy",
+      "name": "codmos_lucy",
+      "key": "original",
+      "folder": "codmos_lucy"
+    },
+    {
+      "id": 97,
+      "skin": "codmos_jet",
+      "name": "codmos_jet",
+      "key": "original",
+      "folder": "codmos_jet"
+    },
+    {
+      "id": 96,
+      "skin": "codmos_bora",
+      "name": "codmos_bora",
+      "key": "original",
+      "folder": "codmos_bora"
+    },
+    {
+      "id": 95,
+      "skin": "wizard",
+      "name": "wizard",
+      "key": "original",
+      "folder": "wizard"
+    },
+    {
+      "id": 73,
+      "skin": "miner",
+      "name": "miner",
+      "key": "original",
+      "folder": "miner"
+    },
+    {
+      "id": 72,
+      "skin": "ecofarm",
+      "name": "ecofarm",
+      "key": "original",
+      "folder": "ecofarm"
+    },
+    {
+      "id": 71,
+      "skin": "cloudbounce",
+      "name": "cloudbounce",
+      "key": "original",
+      "folder": "cloudbounce"
+    },
+    {
+      "id": 52,
+      "skin": "snackking",
+      "name": "snackking",
+      "key": "original",
+      "folder": "snackking"
+    },
+    {
+      "id": 51,
+      "skin": "rose",
+      "name": "rose",
+      "key": "original",
+      "folder": "rose"
+    },
+    {
+      "id": 50,
+      "skin": "monitorhead",
+      "name": "monitorhead",
+      "key": "original",
+      "folder": "monitorhead"
+    },
+    {
+      "id": 49,
+      "skin": "flapint",
+      "name": "flapint",
+      "key": "original",
+      "folder": "flapint"
+    },
+    {
+      "id": 48,
+      "skin": "delicious",
+      "name": "delicious",
+      "key": "original",
+      "folder": "delicious"
+    },
+    {
+      "id": 37,
+      "skin": "alien",
+      "name": "alien",
+      "key": "original",
+      "folder": "alien"
+    },
+    {
+      "id": 30,
+      "skin": "armstrong",
+      "name": "armstrong",
+      "key": "original",
+      "folder": "armstrong"
+    },
+    {
+      "id": 31,
+      "skin": "baker",
+      "name": "baker",
+      "key": "original",
+      "folder": "baker"
+    },
+    {
+      "id": 32,
+      "skin": "barista",
+      "name": "barista",
+      "key": "original",
+      "folder": "barista"
+    },
+    {
+      "id": 36,
+      "skin": "bear",
+      "name": "bear",
+      "key": "original",
+      "folder": "bear"
+    },
+    {
+      "id": 29,
+      "skin": "bookmon",
+      "name": "bookmon",
+      "key": "original",
+      "folder": "bookmon"
+    },
+    {
+      "id": 26,
+      "skin": "cloud",
+      "name": "cloud",
+      "key": "original",
+      "folder": "cloud"
+    },
+    {
+      "id": 43,
+      "skin": "dino",
+      "name": "dino",
+      "key": "original",
+      "folder": "dino"
+    },
+    {
+      "id": 39,
+      "skin": "dragon",
+      "name": "dragon",
+      "key": "original",
+      "folder": "dragon"
+    },
+    {
+      "id": 38,
+      "skin": "fairy",
+      "name": "fairy",
+      "key": "original",
+      "folder": "fairy"
+    },
+    {
+      "id": 44,
+      "skin": "hero",
+      "name": "hero",
+      "key": "original",
+      "folder": "hero"
+    },
+    {
+      "id": 24,
+      "skin": "marble",
+      "name": "marble",
+      "key": "original",
+      "folder": "marble"
+    },
+    {
+      "id": 27,
+      "skin": "pattern",
+      "name": "pattern",
+      "key": "original",
+      "folder": "pattern"
+    },
+    {
+      "id": 22,
+      "skin": "pharos",
+      "name": "pharos",
+      "key": "original",
+      "folder": "pharos"
+    },
+    {
+      "id": 45,
+      "skin": "pierrot",
+      "name": "pierrot",
+      "key": "original",
+      "folder": "pierrot"
+    },
+    {
+      "id": 23,
+      "skin": "plant",
+      "name": "plant",
+      "key": "original",
+      "folder": "plant"
+    },
+    {
+      "id": 33,
+      "skin": "runner",
+      "name": "runner",
+      "key": "original",
+      "folder": "runner"
+    },
+    {
+      "id": 28,
+      "skin": "sherlock",
+      "name": "sherlock",
+      "key": "original",
+      "folder": "sherlock"
+    },
+    {
+      "id": 34,
+      "skin": "soldier",
+      "name": "soldier",
+      "key": "original",
+      "folder": "soldier"
+    },
+    {
+      "id": 25,
+      "skin": "volta",
+      "name": "volta",
+      "key": "original",
+      "folder": "volta"
+    },
+    {
+      "id": 35,
+      "skin": "wildland",
+      "name": "wildland",
+      "key": "original",
+      "folder": "wildland"
+    },
+    {
+      "id": 2,
+      "skin": "pink",
+      "name": "pink",
+      "key": "original",
+      "folder": "pink"
+    },
+    {
+      "id": 3,
+      "skin": "yellow",
+      "name": "yellow",
+      "key": "original",
+      "folder": "yellow"
+    },
+    {
+      "id": 4,
+      "skin": "purple",
+      "name": "purple",
+      "key": "original",
+      "folder": "purple"
+    },
+    {
+      "id": 5,
+      "skin": "black",
+      "name": "black",
+      "key": "original",
+      "folder": "black"
+    },
+    {
+      "id": 1,
+      "skin": "basic",
+      "name": "인트",
+      "key": "original",
+      "folder": "basic"
+    },
+    {
+      "id": "naruto",
+      "key": "naruto",
+      "skin": "codmos_jet",
+      "folder": "naruto",
+      "name": "나루토"
+    },
+    {
+      "id": "kim",
+      "key": "kim",
+      "skin": "codmos_jet",
+      "folder": "kim",
+      "name": "김정은"
+    },
+    {
+      "id": "dokkaebi",
+      "key": "dokkaebi",
+      "skin": "codmos_jet",
+      "folder": "dokkaebi",
+      "name": "도깨비"
+    },
+    {
+      "id": "gumiho",
+      "key": "gumiho",
+      "skin": "codmos_jet",
+      "folder": "gumiho",
+      "name": "구미호"
+    },
+    {
+      "id": "young-forty",
+      "key": "young-forty",
+      "skin": "codmos_jet",
+      "folder": "young-forty",
+      "name": "영포티"
+    },
+    {
+      "id": "danso",
+      "key": "danso",
+      "skin": "codmos_jet",
+      "folder": "danso",
+      "name": "단소살인마"
+    }
+  ],
+  "fps": 24,
+  "scale": 0.4,
+  "exports": 1590,
+  "views": [
+    {
+      "view": "front",
+      "skins": 53,
+      "directions": [
+        "front"
+      ],
+      "animations": [
+        "bad",
+        "dance",
+        "dance2",
+        "failure",
+        "good",
+        "HP Down",
+        "HP Up",
+        "idle",
+        "miss",
+        "move",
+        "perfect",
+        "success"
+      ]
+    },
+    {
+      "view": "side",
+      "skins": 53,
+      "directions": [
+        "side_right",
+        "side_left"
+      ],
+      "animations": [
+        "HP Down",
+        "HP Up",
+        "idle",
+        "move",
+        "run"
+      ]
+    },
+    {
+      "view": "back",
+      "skins": 53,
+      "directions": [
+        "back"
+      ],
+      "animations": [
+        "HP Down",
+        "HP Up",
+        "idle",
+        "move"
+      ]
+    },
+    {
+      "view": "jump",
+      "skins": 53,
+      "directions": [
+        "jump_right",
+        "jump_left"
+      ],
+      "animations": [
+        "jump"
+      ]
+    },
+    {
+      "view": "slide",
+      "skins": 53,
+      "directions": [
+        "slide_right",
+        "slide_left"
+      ],
+      "animations": [
+        "slide"
+      ]
+    }
+  ]
+}

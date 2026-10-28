@@ -1,0 +1,91 @@
+{
+  "casterBundle": "codmos-assets-7/",
+  "cavalryBundle": "codmos-assets-8.zip",
+  "casterIdle": "Existing local idle clip of source acef8de87e (same skeleton/skin)",
+  "files": [
+    {
+      "kind": "caster",
+      "motion": "explosion",
+      "sourceMotion": "explosion",
+      "file": "caster/explosion-0.png",
+      "sha256": "673a597c8f18048fc38a1c3b2e8f381abe03ee1d40a0cc03c45b9829da3fada5"
+    },
+    {
+      "kind": "caster",
+      "motion": "attack",
+      "sourceMotion": "magic",
+      "file": "caster/attack-0.png",
+      "sha256": "807b638d1ae59ee9711427d5d6f5461375d692d96c6a00b03817d1719131b892"
+    },
+    {
+      "kind": "caster",
+      "motion": "spawn",
+      "sourceMotion": "spawn",
+      "file": "caster/spawn-0.png",
+      "sha256": "7b2e07904c28f5c67ab25a3313787be4b9aa21aad74b7afb8837b8afd56818ba"
+    },
+    {
+      "kind": "caster",
+      "motion": "stun",
+      "sourceMotion": "stun",
+      "file": "caster/stun-0.png",
+      "sha256": "ecc71795ab888f054bd19366dbfc9db815b1991d3a8ae1d434472e8676c2bc6e"
+    },
+    {
+      "kind": "caster",
+      "motion": "die",
+      "sourceMotion": "die",
+      "file": "caster/die-0.png",
+      "sha256": "2f1aefce164f0e9fc308c7c94bb25a634aee506ad902bcbb56744eb0dc707726"
+    },
+    {
+      "kind": "caster",
+      "motion": "idle",
+      "sourceMotion": "idle",
+      "file": "caster/idle-0.png",
+      "sha256": "9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9"
+    },
+    {
+      "kind": "cavalry",
+      "motion": "attacked",
+      "sourceMotion": "attacked",
+      "file": "cavalry/attacked-0.png",
+      "sha256": "16169ca8a00a0dbe621c4e4a824c4e9aeb9f661bdc01b0c675e25ffa0ffc5907"
+    },
+    {
+      "kind": "cavalry",
+      "motion": "stun",
+      "sourceMotion": "stun",
+      "file": "cavalry/stun-0.png",
+      "sha256": "4e5fd265e25aeb6741e0135081205c3ef874a6e934aea7f417328fd4ae44b3bd"
+    },
+    {
+      "kind": "cavalry",
+      "motion": "spawn",
+      "sourceMotion": "spawn",
+      "file": "cavalry/spawn-0.png",
+      "sha256": "6c36f5a0c30f4a673b8519cf3526a8991383bf0616e90503c821da7c35680bfd"
+    },
+    {
+      "kind": "cavalry",
+      "motion": "die",
+      "sourceMotion": "die",
+      "file": "cavalry/die-0.png",
+      "sha256": "b43901e44dd44badbd53ad64e811ae26ddcc0f4957a441f78dd5d8df730f3224"
+    },
+    {
+      "kind": "cavalry",
+      "motion": "attack",
+      "sourceMotion": "attack",
+      "file": "cavalry/attack-0.png",
+      "sha256": "de502ae9637c87db70e6d01ecedf8c9cca10803efe7fb1b02b0c6be6bee135f3"
+    },
+    {
+      "kind": "cavalry",
+      "motion": "idle",
+      "sourceMotion": "idle",
+      "file": "cavalry/idle-0.png",
+      "sha256": "e5ca946181e66f7bf3fce77aacb48ef4f9cd85e80eeff33ea9b21813268cf26d"
+    }
+  ]
+}

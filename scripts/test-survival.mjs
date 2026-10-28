@@ -1,0 +1,27 @@
+import {mitigate} from '../src/survival/stats.js';
+import assert from 'node:assert/strict';
+import {Survival,HEROES} from '../src/survival/engine.js';
+import {KITS,KEYS} from '../src/survival/kits.js';
+const step=(g,seconds)=>{for(let i=0;i<Math.ceil(seconds/.05);i++)g.update(.05);};
+assert.equal(HEROES.length,11);assert.equal(new Set(HEROES.map(h=>KITS[h.id].passive.name)).size,11);assert.equal(new Set(HEROES.flatMap(h=>KEYS.map(k=>KITS[h.id][k].name))).size,44);
+for(const team of ['blue','white']){const g=new Survival(()=>.5);g.start('naruto',team);assert.equal(g.structures.length,12);assert(g.structures.filter(s=>s.team==='blue').every(s=>s.x<0));assert(g.structures.filter(s=>s.team==='white').every(s=>s.x>0));assert.equal(g.structures.filter(s=>s.team===team&&['tower','guard'].includes(s.type)).length,4);const enemy=team==='blue'?'white':'blue',nexus=g.structures.find(s=>s.team===enemy&&s.type==='nexus');g.hit(nexus,1e9,g.player);assert.equal(nexus.hp,nexus.maxHp);for(const stage of [0,1,2,3,4]){for(const s of g.structures.filter(s=>s.team===enemy&&s.stage===stage)){assert(g.isOpen(s));g.hit(s,1e9,g.player);}}assert.equal(g.state,'victory');assert.equal(g.winner,team);}
+{const g=new Survival();g.start();for(const s of g.structures.filter(s=>s.team==='blue').sort((a,b)=>a.stage-b.stage))g.hit(s,1e9,g.bot);assert.equal(g.state,'gameover');}
+{const g=new Survival();g.start();g.update(.05);assert.equal(g.wave,1);assert.equal(g.units.filter(u=>u.kind==='minion'&&u.team==='blue').length,6);const m=g.units.find(u=>u.kind==='minion'&&u.team==='blue'),x=m.x;step(g,2);assert(m.x>x);g.setOrder('hold',{x:m.x,z:m.z});assert.equal(g.order,'hold');g.setOrder('rally',{x:-90,z:6});assert.equal(g.rally.z,6);const t=g.time;g.pause();step(g,1);assert.equal(g.time,t);g.pause();}
+{const g=new Survival();g.start();for(const s of g.structures.filter(s=>s.team==='white'&&s.stage<3).sort((a,b)=>a.stage-b.stage))g.hit(s,1e9,g.player);g.waveSpawn();assert(g.units.some(u=>u.team==='blue'&&u.type==='super'));const inhibitor=g.structures.find(s=>s.team==='white'&&s.type==='inhibitor');inhibitor.respawn=.02;g.update(.05);assert.equal(inhibitor.hp,inhibitor.maxHp);assert(!g.isOpen(g.structures.find(s=>s.team==='white'&&s.type==='nexus')));}
+{const g=new Survival();g.start();const tower=g.structures.find(s=>s.team==='white'&&s.stage===0);g.waveSpawn();const m=g.units.find(u=>u.team==='blue'&&u.kind==='minion');m.x=tower.x-4;m.z=0;g.player.x=tower.x-3;g.player.z=0;g.update(.05);assert.equal(tower.targetId,m.id);assert(g.shots.some(s=>s.tower));}
+{const g=new Survival();g.start('gumiho');g.hit(g.player,1e9,g.bot);assert.equal(g.player.hp,0);g.player.xp=g.player.required-1;g.gainXp('blue',1);assert.equal(g.player.hp,0,'XP must not revive a dead champion');g.player.respawn=.1;step(g,.2);assert(g.player.hp>0);assert(g.player.x<-100);}
+for(const hero of HEROES)for(const key of KEYS){const g=new Survival(()=>.5);g.start(hero.id);g.player.skillRanks[key]=1;g.player.x=0;g.bot.x=6;g.bot.z=0;g.bot.hp=10000;g.bot.maxHp=10000;g.bot.stun=100;g.waveClock=100;g.player.hp=g.player.maxHp*.6;assert(g.cast(key,g.player,g.bot),hero.id+key);assert(!g.cast(key,g.player,g.bot),'cooldown enforced');assert.equal(g.player.cooldowns[key],KITS[hero.id][key].cooldown);step(g,.25);assert(g.player.cooldowns[key]<KITS[hero.id][key].cooldown);for(const u of g.units)assert(Number.isFinite(u.hp)&&Number.isFinite(u.x)&&Number.isFinite(u.z));}
+// Confirm distinct passive mechanics, beyond skill definitions.
+function setup(id){const g=new Survival();g.start(id);g.player.x=0;g.bot.x=2;g.bot.z=0;g.bot.hp=g.bot.maxHp=10000;g.bot.stun=100;g.waveClock=100;return g;}
+{const g=setup('naruto');for(let i=0;i<3;i++)g.basic(g.player,g.bot);assert(g.shots[2].damage>g.shots[0].damage);}
+{const g=setup('int');g.player.hp-=100;step(g,1);assert(g.player.shield>0&&g.player.hp>g.player.maxHp-100);}
+{const g=setup('lucy');for(let i=0;i<4;i++)g.basic(g.player,g.bot);assert(g.shots[3].damage===g.shots[0].damage*2);assert(g.shots[3].options.slow>0);}
+{const g=setup('jet');g.player.charge=5;g.basic(g.player,g.bot);assert(g.shots[0].damage>g.player.damage*2);assert.equal(g.player.charge,0);}
+{const g=setup('bora');g.player.range=2;g.basic(g.player,g.bot);const first=g.bot.poisonDmg;g.basic(g.player,g.bot);assert(g.bot.poisonDmg>first);assert.equal(g.bot.poisonStacks,2);}
+{const g=setup('dokkaebi');g.bot.stun=0;for(let i=0;i<4;i++)g.basic(g.player,g.bot);assert(g.bot.stun>0);}
+{const g=setup('gumiho');g.player.hp-=100;const hp=g.player.hp;g.hit(g.bot,100,g.player);assert(g.player.hp>hp);}
+{const g=setup('danso');const hp=g.bot.hp;for(let i=0;i<3;i++)g.hit(g.bot,10,g.player,{skill:true});assert(g.bot.hp<hp-30);}
+{const g=setup('nova');const hp=g.bot.hp;g.player.range=2;for(let i=0;i<3;i++)g.basic(g.player,g.bot);assert(g.bot.hp<hp-g.player.damage*3);}
+{const g=setup('young-forty');g.waveSpawn();const ally=g.units.find(u=>u.team==='blue'&&u.kind==='minion');ally.x=0;ally.z=0;const hp=g.player.hp;g.hit(g.player,100,g.bot);assert(Math.abs(hp-g.player.hp-mitigate(100,g.player,g.bot)*.7)<1e-8);}
+{const g=setup('kim');g.waveSpawn();const m=g.units.find(u=>u.team==='blue'&&u.type==='melee');m.x=0;m.z=0;const hp=g.bot.hp;g.basic(m,g.bot);assert(Math.abs(hp-g.bot.hp-mitigate(m.damage*1.3*.6,g.bot,m))<1e-6);}
+console.log('PASS 2 teams, 12 structures/protection/victory/defeat, waves/advance/orders, inhibitors/super minions, tower targeting, respawn, 44 skills/cooldowns and 11 passives');

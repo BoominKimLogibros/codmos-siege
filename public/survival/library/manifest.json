@@ -1,0 +1,454 @@
+{
+  "source": "https://codmos-creator-studio.bm33728090.chatgpt.site/#assets",
+  "downloadedAt": "2026-10-27",
+  "items": [
+    {
+      "name": "monster-green.png",
+      "id": "4adb8f1e11b0a3da8c3ef2540eff3ab6e62f69b0a5f85d32ed176d1f8140658a",
+      "kind": "image",
+      "url": "/survival/library/4adb8f1e11b0/monster-green.png",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/4adb8f1e11b0a3da8c3ef2540eff3ab6e62f69b0a5f85d32ed176d1f8140658a",
+      "files": [
+        {
+          "path": "monster-green.png",
+          "sha256": "4adb8f1e11b0a3da8c3ef2540eff3ab6e62f69b0a5f85d32ed176d1f8140658a"
+        }
+      ],
+      "width": 279,
+      "height": 298
+    },
+    {
+      "name": "monster-mint.png",
+      "id": "759c20f0e742e95db5c516148c22f1325b41337ba01b9c82bb084d845822259d",
+      "kind": "image",
+      "url": "/survival/library/759c20f0e742/monster-mint.png",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/759c20f0e742e95db5c516148c22f1325b41337ba01b9c82bb084d845822259d",
+      "files": [
+        {
+          "path": "monster-mint.png",
+          "sha256": "759c20f0e742e95db5c516148c22f1325b41337ba01b9c82bb084d845822259d"
+        }
+      ],
+      "width": 306,
+      "height": 282
+    },
+    {
+      "name": "monster-orange.png",
+      "id": "d86fdb79646834fd3983482548c475565e78c98a24d4f238c2a741a3faf12fa6",
+      "kind": "image",
+      "url": "/survival/library/d86fdb796468/monster-orange.png",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/d86fdb79646834fd3983482548c475565e78c98a24d4f238c2a741a3faf12fa6",
+      "files": [
+        {
+          "path": "monster-orange.png",
+          "sha256": "d86fdb79646834fd3983482548c475565e78c98a24d4f238c2a741a3faf12fa6"
+        }
+      ],
+      "width": 284,
+      "height": 292
+    },
+    {
+      "name": "monster-pink.png",
+      "id": "0bebf9cd7a805bda9de473c428c5e7299b85772ed878bc9e46e1b7a1272ac896",
+      "kind": "image",
+      "url": "/survival/library/0bebf9cd7a80/monster-pink.png",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/0bebf9cd7a805bda9de473c428c5e7299b85772ed878bc9e46e1b7a1272ac896",
+      "files": [
+        {
+          "path": "monster-pink.png",
+          "sha256": "0bebf9cd7a805bda9de473c428c5e7299b85772ed878bc9e46e1b7a1272ac896"
+        }
+      ],
+      "width": 299,
+      "height": 259
+    },
+    {
+      "name": "monster-defeated.wav",
+      "id": "959f79b4cd697b056426a884c8af9dbd637a8ee721b1aba6875166d66995cb15",
+      "kind": "audio",
+      "url": "/survival/library/959f79b4cd69/monster-defeated.wav",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/959f79b4cd697b056426a884c8af9dbd637a8ee721b1aba6875166d66995cb15",
+      "files": [
+        {
+          "path": "monster-defeated.wav",
+          "sha256": "959f79b4cd697b056426a884c8af9dbd637a8ee721b1aba6875166d66995cb15"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "tree_canopy_dark.svg",
+      "id": "8c91a623885c5a279c95f8c8880f351667dbdbcf60f09276e73dcd0ffa81d99b",
+      "kind": "image",
+      "url": "/survival/library/8c91a623885c/tree_canopy_dark.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/8c91a623885c5a279c95f8c8880f351667dbdbcf60f09276e73dcd0ffa81d99b",
+      "files": [
+        {
+          "path": "tree_canopy_dark.svg",
+          "sha256": "8c91a623885c5a279c95f8c8880f351667dbdbcf60f09276e73dcd0ffa81d99b"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "tree_canopy_light.svg",
+      "id": "63b3f112cfb6009cd7a3ae99287f9bdfa7c70f393aa63e09e73a4363b357631a",
+      "kind": "image",
+      "url": "/survival/library/63b3f112cfb6/tree_canopy_light.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/63b3f112cfb6009cd7a3ae99287f9bdfa7c70f393aa63e09e73a4363b357631a",
+      "files": [
+        {
+          "path": "tree_canopy_light.svg",
+          "sha256": "63b3f112cfb6009cd7a3ae99287f9bdfa7c70f393aa63e09e73a4363b357631a"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "tree_trunk.svg",
+      "id": "b640fc1854287c620002c8fd420232099dd3a502e783098b3b0e9276ab2112e5",
+      "kind": "image",
+      "url": "/survival/library/b640fc185428/tree_trunk.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/b640fc1854287c620002c8fd420232099dd3a502e783098b3b0e9276ab2112e5",
+      "files": [
+        {
+          "path": "tree_trunk.svg",
+          "sha256": "b640fc1854287c620002c8fd420232099dd3a502e783098b3b0e9276ab2112e5"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "rock_large.svg",
+      "id": "2977dd856b72ed6a90d3cc4341708725bbf874e24a777636896f3bd5e8fad41d",
+      "kind": "image",
+      "url": "/survival/library/2977dd856b72/rock_large.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/2977dd856b72ed6a90d3cc4341708725bbf874e24a777636896f3bd5e8fad41d",
+      "files": [
+        {
+          "path": "rock_large.svg",
+          "sha256": "2977dd856b72ed6a90d3cc4341708725bbf874e24a777636896f3bd5e8fad41d"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "rock_small.svg",
+      "id": "8615b390a57710861021ebd5b1cf10cd6710dd82f15faaee5e07253a40142173",
+      "kind": "image",
+      "url": "/survival/library/8615b390a577/rock_small.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/8615b390a57710861021ebd5b1cf10cd6710dd82f15faaee5e07253a40142173",
+      "files": [
+        {
+          "path": "rock_small.svg",
+          "sha256": "8615b390a57710861021ebd5b1cf10cd6710dd82f15faaee5e07253a40142173"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "crystal_blue.svg",
+      "id": "5408e6e1c2d6d13e6adb524564a5906a45af1ff05c345b344e9ac07a0336a103",
+      "kind": "image",
+      "url": "/survival/library/5408e6e1c2d6/crystal_blue.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/5408e6e1c2d6d13e6adb524564a5906a45af1ff05c345b344e9ac07a0336a103",
+      "files": [
+        {
+          "path": "crystal_blue.svg",
+          "sha256": "5408e6e1c2d6d13e6adb524564a5906a45af1ff05c345b344e9ac07a0336a103"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "crystal_green.svg",
+      "id": "e8b359bea380899cd5c829189ecf976021bd83b7115b5164d01810a6536ca62b",
+      "kind": "image",
+      "url": "/survival/library/e8b359bea380/crystal_green.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/e8b359bea380899cd5c829189ecf976021bd83b7115b5164d01810a6536ca62b",
+      "files": [
+        {
+          "path": "crystal_green.svg",
+          "sha256": "e8b359bea380899cd5c829189ecf976021bd83b7115b5164d01810a6536ca62b"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "crystal_purple.svg",
+      "id": "7a22ae7a77d0955f93e4753fdda9b7d7769de9b5e33abd3a62364762c7808d1c",
+      "kind": "image",
+      "url": "/survival/library/7a22ae7a77d0/crystal_purple.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/7a22ae7a77d0955f93e4753fdda9b7d7769de9b5e33abd3a62364762c7808d1c",
+      "files": [
+        {
+          "path": "crystal_purple.svg",
+          "sha256": "7a22ae7a77d0955f93e4753fdda9b7d7769de9b5e33abd3a62364762c7808d1c"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "crystal_teal.svg",
+      "id": "5c97dba8f7fe4ec1e8f323afc34aacf2b321f0bce73010bb5f07e52297a3ace2",
+      "kind": "image",
+      "url": "/survival/library/5c97dba8f7fe/crystal_teal.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/5c97dba8f7fe4ec1e8f323afc34aacf2b321f0bce73010bb5f07e52297a3ace2",
+      "files": [
+        {
+          "path": "crystal_teal.svg",
+          "sha256": "5c97dba8f7fe4ec1e8f323afc34aacf2b321f0bce73010bb5f07e52297a3ace2"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "chest_1.svg",
+      "id": "13278be9f5abde5900700d13f4265ef7175b2ed40f6e0f6c9db267753c9a40c2",
+      "kind": "image",
+      "url": "/survival/library/13278be9f5ab/chest_1.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/13278be9f5abde5900700d13f4265ef7175b2ed40f6e0f6c9db267753c9a40c2",
+      "files": [
+        {
+          "path": "chest_1.svg",
+          "sha256": "13278be9f5abde5900700d13f4265ef7175b2ed40f6e0f6c9db267753c9a40c2"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "chest_3.svg",
+      "id": "87d503ff9324cb612aab8ee8b80754ca0a663fc4e3346745305839d1e2b08f04",
+      "kind": "image",
+      "url": "/survival/library/87d503ff9324/chest_3.svg",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/87d503ff9324cb612aab8ee8b80754ca0a663fc4e3346745305839d1e2b08f04",
+      "files": [
+        {
+          "path": "chest_3.svg",
+          "sha256": "87d503ff9324cb612aab8ee8b80754ca0a663fc4e3346745305839d1e2b08f04"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "name": "building_forest.png",
+      "id": "2660d8351496d45dd963c97289a4fa19a9e2a15b27e4a167d0fb93aa895e872a",
+      "kind": "image",
+      "url": "/survival/library/2660d8351496/building_forest.png",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/2660d8351496d45dd963c97289a4fa19a9e2a15b27e4a167d0fb93aa895e872a",
+      "files": [
+        {
+          "path": "building_forest.png",
+          "sha256": "2660d8351496d45dd963c97289a4fa19a9e2a15b27e4a167d0fb93aa895e872a"
+        }
+      ],
+      "width": 248,
+      "height": 258
+    },
+    {
+      "name": "building_crystal.png",
+      "id": "452f67edffa374cecdc244ed9d3faa2f3bda85f44450847f26dc9857ac8964df",
+      "kind": "image",
+      "url": "/survival/library/452f67edffa3/building_crystal.png",
+      "sheetUrl": null,
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/452f67edffa374cecdc244ed9d3faa2f3bda85f44450847f26dc9857ac8964df",
+      "files": [
+        {
+          "path": "building_crystal.png",
+          "sha256": "452f67edffa374cecdc244ed9d3faa2f3bda85f44450847f26dc9857ac8964df"
+        }
+      ],
+      "width": 283,
+      "height": 206
+    },
+    {
+      "name": "spine_15dd01be07_armed01_idle.png",
+      "id": "d84db486b8abfd5d49c99e2eebb18ca30dd2d31ffb16b8dc696dee73eceee954",
+      "kind": "image",
+      "url": "/survival/library/d84db486b8ab/spine_15dd01be07_armed01_idle.png",
+      "sheetUrl": "/survival/library/d84db486b8ab/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/d84db486b8abfd5d49c99e2eebb18ca30dd2d31ffb16b8dc696dee73eceee954",
+      "files": [
+        {
+          "path": "spine_15dd01be07_armed01_idle.png",
+          "sha256": "d84db486b8abfd5d49c99e2eebb18ca30dd2d31ffb16b8dc696dee73eceee954"
+        }
+      ],
+      "width": 1536,
+      "height": 1533
+    },
+    {
+      "name": "spine_15dd01be07_armed02_idle.png",
+      "id": "1c82f698092e0a94eec9919f0d41078d3cb690ff96fe98a65c29869c8c5ce95c",
+      "kind": "image",
+      "url": "/survival/library/1c82f698092e/spine_15dd01be07_armed02_idle.png",
+      "sheetUrl": "/survival/library/1c82f698092e/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/1c82f698092e0a94eec9919f0d41078d3cb690ff96fe98a65c29869c8c5ce95c",
+      "files": [
+        {
+          "path": "spine_15dd01be07_armed02_idle.png",
+          "sha256": "1c82f698092e0a94eec9919f0d41078d3cb690ff96fe98a65c29869c8c5ce95c"
+        }
+      ],
+      "width": 1536,
+      "height": 1533
+    },
+    {
+      "name": "spine_80fc9024a8_default_idle.png",
+      "id": "e5ca946181e66f7bf3fce77aacb48ef4f9cd85e80eeff33ea9b21813268cf26d",
+      "kind": "image",
+      "url": "/survival/library/e5ca946181e6/spine_80fc9024a8_default_idle.png",
+      "sheetUrl": "/survival/library/e5ca946181e6/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/e5ca946181e66f7bf3fce77aacb48ef4f9cd85e80eeff33ea9b21813268cf26d",
+      "files": [
+        {
+          "path": "spine_80fc9024a8_default_idle.png",
+          "sha256": "e5ca946181e66f7bf3fce77aacb48ef4f9cd85e80eeff33ea9b21813268cf26d"
+        }
+      ],
+      "width": 1110,
+      "height": 1280
+    },
+    {
+      "name": "spine_52081da08b_default_idle.png",
+      "id": "e62493bd0c5b1feec3f23babcd54f0d9e5aac9f8d07ceef0231d9d0994560705",
+      "kind": "image",
+      "url": "/survival/library/e62493bd0c5b/spine_52081da08b_default_idle.png",
+      "sheetUrl": "/survival/library/e62493bd0c5b/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/e62493bd0c5b1feec3f23babcd54f0d9e5aac9f8d07ceef0231d9d0994560705",
+      "files": [
+        {
+          "path": "spine_52081da08b_default_idle.png",
+          "sha256": "e62493bd0c5b1feec3f23babcd54f0d9e5aac9f8d07ceef0231d9d0994560705"
+        }
+      ],
+      "width": 1190,
+      "height": 1115
+    },
+    {
+      "name": "spine_acef8de87e_default_idle.png",
+      "id": "9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9",
+      "kind": "image",
+      "url": "/survival/library/9e86637b6931/spine_acef8de87e_default_idle.png",
+      "sheetUrl": "/survival/library/9e86637b6931/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9",
+      "files": [
+        {
+          "path": "spine_acef8de87e_default_idle.png",
+          "sha256": "9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9"
+        }
+      ],
+      "width": 1280,
+      "height": 1160
+    },
+    {
+      "name": "spine_e5f5d6e488_default_idle.png",
+      "id": "3866b82196e44772146e09aa0810be0a2e06605ed8c73076d151e9c6a94c3173",
+      "kind": "image",
+      "url": "/survival/library/3866b82196e4/spine_e5f5d6e488_default_idle.png",
+      "sheetUrl": "/survival/library/3866b82196e4/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/3866b82196e44772146e09aa0810be0a2e06605ed8c73076d151e9c6a94c3173",
+      "files": [
+        {
+          "path": "spine_e5f5d6e488_default_idle.png",
+          "sha256": "3866b82196e44772146e09aa0810be0a2e06605ed8c73076d151e9c6a94c3173"
+        }
+      ],
+      "width": 1542,
+      "height": 1255
+    },
+    {
+      "name": "spine_e5f5d6e488_default_attack.png",
+      "id": "6945915d5a7a768ab9dd4337e961a6b472a10c7a259af63d345590a1cd2f383d",
+      "kind": "image",
+      "url": "/survival/library/6945915d5a7a/spine_e5f5d6e488_default_attack.png",
+      "sheetUrl": "/survival/library/6945915d5a7a/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/6945915d5a7a768ab9dd4337e961a6b472a10c7a259af63d345590a1cd2f383d",
+      "files": [
+        {
+          "path": "spine_e5f5d6e488_default_attack.png",
+          "sha256": "6945915d5a7a768ab9dd4337e961a6b472a10c7a259af63d345590a1cd2f383d"
+        }
+      ],
+      "width": 1024,
+      "height": 908
+    },
+    {
+      "name": "spine_e5f5d6e488_default_die.png",
+      "id": "52e4fe4617a5647806457aefee57d634ff19ad27a6c5298f9ee291a089e97075",
+      "kind": "image",
+      "url": "/survival/library/52e4fe4617a5/spine_e5f5d6e488_default_die.png",
+      "sheetUrl": "/survival/library/52e4fe4617a5/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/52e4fe4617a5647806457aefee57d634ff19ad27a6c5298f9ee291a089e97075",
+      "files": [
+        {
+          "path": "spine_e5f5d6e488_default_die.png",
+          "sha256": "52e4fe4617a5647806457aefee57d634ff19ad27a6c5298f9ee291a089e97075"
+        }
+      ],
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "name": "lottie_fruit_effect_green_animation.png",
+      "id": "fac180131d966d38b8a4814f765dd47f86b8f810d49ada7bdf09a8be9421638d",
+      "kind": "image",
+      "url": "/survival/library/fac180131d96/lottie_fruit_effect_green_animation.png",
+      "sheetUrl": "/survival/library/fac180131d96/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/fac180131d966d38b8a4814f765dd47f86b8f810d49ada7bdf09a8be9421638d",
+      "files": [
+        {
+          "path": "lottie_fruit_effect_green_animation.png",
+          "sha256": "fac180131d966d38b8a4814f765dd47f86b8f810d49ada7bdf09a8be9421638d"
+        }
+      ],
+      "width": 490,
+      "height": 315
+    },
+    {
+      "name": "lottie_coin_get_anim_animation.png",
+      "id": "93d599798b33f1520d7565228b85b4cd2705d85ad3fb1061c0003f60c7d8692d",
+      "kind": "image",
+      "url": "/survival/library/93d599798b33/lottie_coin_get_anim_animation.png",
+      "sheetUrl": "/survival/library/93d599798b33/sprite.json",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/93d599798b33f1520d7565228b85b4cd2705d85ad3fb1061c0003f60c7d8692d",
+      "files": [
+        {
+          "path": "lottie_coin_get_anim_animation.png",
+          "sha256": "93d599798b33f1520d7565228b85b4cd2705d85ad3fb1061c0003f60c7d8692d"
+        }
+      ],
+      "width": 420,
+      "height": 472
+    }
+  ]
+}

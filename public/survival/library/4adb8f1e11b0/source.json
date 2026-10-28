@@ -1,0 +1,65 @@
+{
+  "id": "4adb8f1e11b0a3da8c3ef2540eff3ab6e62f69b0a5f85d32ed176d1f8140658a",
+  "name": "monster-green.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 16711,
+  "width": 279,
+  "height": 298,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "hand-recognition",
+      "source": "hand-recognition",
+      "name": "AI체험 손인식 #AI20"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "cms/hand-recognition/assets/mission5/monster-green.png",
+      "source": "hand-recognition",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [
+    "몬스터"
+  ],
+  "publicLabels": [
+    {
+      "key": "더듬이",
+      "text": "더듬이",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740536395,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "송곳니",
+      "text": "송곳니",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740536395,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "외눈박이",
+      "text": "외눈박이",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740536395,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "초록색 몬스터",
+      "text": "초록색 몬스터",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740536395,
+      "authorNickname": "1픽이즈리얼"
+    }
+  ],
+  "assetGroups": []
+}

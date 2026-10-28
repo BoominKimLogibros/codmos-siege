@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "f5b6a4b53ef715cc00a79b9bd3fe8cb1f1ee4a2290eb96ecf47efd21ba228917",
+  "sourceId": "a97fb9ee788fd0bce4950f66bfd5a93daa7cc0a1a235dcface913b6d66447d9a",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "HP Up",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 256,
+  "frameHeight": 243,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -278.78959318981003,
+    "y": 82.5329628411397,
+    "width": 552.559897311541,
+    "height": 522.6166228430354,
+    "scale": 0.44882012105227775,
+    "origin": {
+      "x": 129.1263789635658,
+      "y": 275.6033103015072
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 5,
+      "rows": 5,
+      "name": "spine_a97fb9ee78_default_HP_Up.png",
+      "sha256": "743ce30946004a8dcf92c4f776b7c76d0d6880d5042b5ef10a571731467b3166",
+      "bytes": 203986,
+      "url": "spine_a97fb9ee78_default_HP_Up.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true
+}

@@ -1,0 +1,30 @@
+{
+  "id": "b640fc1854287c620002c8fd420232099dd3a502e783098b3b0e9276ab2112e5",
+  "name": "tree_trunk.svg",
+  "kind": "image",
+  "ext": "svg",
+  "bytes": 5177,
+  "width": null,
+  "height": null,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "flutter-math/p654",
+      "source": "수학 · P654 · 사다리타기",
+      "name": "수학 · P654 · 사다리타기"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "@flutter-math/assets/images/p654/tree_trunk.svg",
+      "source": "수학 · P654 · 사다리타기",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [],
+  "publicLabels": [],
+  "assetGroups": []
+}

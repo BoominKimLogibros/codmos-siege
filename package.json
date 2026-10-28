@@ -1,0 +1,23 @@
+{
+  "name": "codmos-siege",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5197",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node scripts/test-survival-items.mjs && node scripts/test-survival-naruto.mjs && node scripts/test-survival-combat-movement.mjs && node scripts/test-survival-stats.mjs && node scripts/test-survival-casting.mjs && node scripts/test-survival-progression.mjs && node scripts/test-survival-basic-gestures.mjs && node scripts/test-survival-skill-gestures.mjs && node scripts/test-survival-minions.mjs && node scripts/test-survival-terrain.mjs && node scripts/test-survival-vision.mjs && node scripts/test-survival-consumables-recap.mjs && node scripts/test-survival-health-effects.mjs && node scripts/test-survival-cast-effects.mjs && node scripts/test-survival-blue-shopkeeper.mjs",
+    "test:browser": "node scripts/check-survival-shop-browser.mjs && node scripts/check-survival-naruto-browser.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "7.3.6",
+    "@playwright/test": "1.55.1"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  }
+}

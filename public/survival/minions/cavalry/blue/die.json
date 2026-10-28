@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "4b76f78bf2147cffc2ff3715af565a84f2718e4f729194fbeba1b43048fe967e",
+  "sourceId": "80fc9024a85d7f37719e1310b29256d16afdfc17e2c096f9b2c0fd67fe0466c7",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "die",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 236,
+  "frameHeight": 256,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -135.00001862146465,
+    "y": -40.249996185302706,
+    "width": 342.3312143324408,
+    "height": 373.73562592023757,
+    "scale": 0.6635706708167233,
+    "origin": {
+      "x": 93.58205291691543,
+      "y": 225.29128303094814
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 5,
+      "rows": 5,
+      "name": "spine_80fc9024a8_default_die.png",
+      "sha256": "b43901e44dd44badbd53ad64e811ae26ddcc0f4957a441f78dd5d8df730f3224",
+      "bytes": 703010,
+      "url": "spine_80fc9024a8_default_die.png",
+      "local": "die-0.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "sourceMotion": "die",
+  "team": "blue",
+  "palette": "azure-cyan skin / navy cloth"
+}

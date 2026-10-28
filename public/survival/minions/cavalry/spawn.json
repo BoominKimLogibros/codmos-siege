@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "0ded43335aae131ab2586b8ecdbf37f922b67230f4897f8c941d5bff0148604b",
+  "sourceId": "80fc9024a85d7f37719e1310b29256d16afdfc17e2c096f9b2c0fd67fe0466c7",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "spawn",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 213,
+  "frameHeight": 256,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -135.00001808019107,
+    "y": -19.839996337890597,
+    "width": 272.7775556171189,
+    "height": 329.9999999999999,
+    "scale": 0.7515151515151518,
+    "origin": {
+      "x": 105.45455904208302,
+      "y": 237.0899421460701
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 6,
+      "rows": 4,
+      "name": "spine_80fc9024a8_default_spawn.png",
+      "sha256": "6c36f5a0c30f4a673b8519cf3526a8991383bf0616e90503c821da7c35680bfd",
+      "bytes": 463349,
+      "url": "spine_80fc9024a8_default_spawn.png",
+      "local": "spawn-0.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "sourceMotion": "spawn"
+}

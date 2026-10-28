@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "sourceReferenceDirectory": "/Users/logibros/Downloads/codmos-tile-assets/images/multi_objects",
+  "prompt": "Use case: stylized-concept. Asset type: transparent 2D siege game STRUCTURE ATLAS. Match the attached reference sprites: simple flat hand-painted vector-like polygon shapes, muted gray faceted stone and green-world-friendly art, overhead three-quarter game view, absolutely no realistic 3D rendering or tiny noisy details. Transparent background. Exactly SIX isolated buildings in a strict 3 columns by 2 rows grid, equal square cells, ample transparent padding around each. Top row BLUE TEAM icy blue crystals and blue cloth. Bottom row WHITE TEAM pearly white crystals and white cloth. Column 1: tall squat defensive stone turret with crenellations, a small luminous crystal spear at its summit, no people. Column 2: low circular stone inhibitor plinth with one large faceted crystal. Column 3: imposing wide nexus citadel with twin side towers and central large crystal, largest building. Identical silhouette and scale for blue and white versions in corresponding columns. All assets fully contained per cell, do not touch adjacent cells. Consistent foot baseline within each cell, tiny transparent ground shadow only. Buildings face camera, flat readable silhouettes like references. No ground tiles, no text, no borders, no labels, no watermark. Generate a landscape 1536x1024 sprite atlas if possible.",
+  "cleanupPrompt": "Edit this 3x2 sprite atlas. Preserve all six exact buildings, their team colors, geometry, scale and positions. Remove ALL surrounding colored mist, gradients, glow halos, ambient light haze, ground plane and atmosphere between and around the buildings. Every pixel outside the actual solid building/plant silhouettes must be fully transparent alpha 0. Keep the buildings opaque. Each of the six objects must be cleanly isolated and fit within its own equal 512x512 grid cell without touching cell edges; add transparent padding if needed. Crisp flat painted game cutouts. No background of any color, no checkerboard drawn in, no text, no labels. Transparent background is essential.",
+  "layout": {
+    "columns": [
+      "tower",
+      "inhibitor",
+      "nexus"
+    ],
+    "rows": [
+      "blue",
+      "white"
+    ]
+  },
+  "processing": "Crop the six large connected alpha-component bounds (threshold 20 for locating bounds only). Preserve original generated alpha/colors in each crop. No recoloring.",
+  "atlas": "structures-clean-atlas.png"
+}

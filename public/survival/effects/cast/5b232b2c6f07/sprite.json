@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "d9c45745884bce1c76591061e8a6666ef36b0fe9e6c9f133788611d47b3c63d4",
+  "sourceId": "027031059f6875c9e0dac5e5a5a96dab89af4db83a0187a7a45501a18768fd52",
+  "sourceEngine": "spine",
+  "skin": "down",
+  "motion": "animation",
+  "fps": 30,
+  "frameCount": 13,
+  "frameWidth": 256,
+  "frameHeight": 205,
+  "duration": 0.4332999885082245,
+  "bounds": {
+    "x": -182.6332517486619,
+    "y": -148.51797657964994,
+    "width": 363.94445619617466,
+    "height": 287.6968008576075,
+    "scale": 0.6814226615566913,
+    "origin": {
+      "x": 128.45043649532644,
+      "y": 98.83960487181689
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 4,
+      "rows": 4,
+      "name": "spine_027031059f_down_animation.png",
+      "sha256": "5b232b2c6f07448beb3691374cac826cd944a1335ef4ececb33fb69aff2e9067",
+      "bytes": 102487,
+      "url": "spine_027031059f_down_animation.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true
+}

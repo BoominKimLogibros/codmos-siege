@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "16faf33e2368c468719333bd8cfdc17dc662974506f26e1a129d40f9ab506a73",
+  "sourceId": "acef8de87e1f2fe72202365bc0c517f690041bd8ab24a55f592a2b2a3c1df8b5",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "idle",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 256,
+  "frameHeight": 232,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -343.3508414386863,
+    "y": -19.03571214210949,
+    "width": 495.57484751316656,
+    "height": 445.7583179307538,
+    "scale": 0.5004289488146613,
+    "origin": {
+      "x": 175.82270065579124,
+      "y": 217.54434505026435
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 5,
+      "rows": 5,
+      "name": "spine_acef8de87e_default_idle.png",
+      "sha256": "9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9",
+      "bytes": 376308,
+      "url": "/file/9e86637b6931faca0bcd16f483f35bd7b6e98ec68d64d29b449fb618c194b0a9",
+      "local": "idle-0.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "sourceMotion": "idle",
+  "team": "blue",
+  "palette": "azure-cyan skin / navy cloth"
+}

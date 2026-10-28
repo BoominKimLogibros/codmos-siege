@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "956bcc74f939c184109859d09181a94173348270bd8fa9a6242e5d8632901ef1",
+  "sourceId": "80fc9024a85d7f37719e1310b29256d16afdfc17e2c096f9b2c0fd67fe0466c7",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "attacked",
+  "fps": 30,
+  "frameCount": 15,
+  "frameWidth": 256,
+  "frameHeight": 256,
+  "duration": 0.4666999876499176,
+  "bounds": {
+    "x": -135.00001808019107,
+    "y": -19.839996337890597,
+    "width": 342.3312137911672,
+    "height": 343.5692536976959,
+    "scale": 0.7218340911792224,
+    "origin": {
+      "x": 101.44761536009331,
+      "y": 237.67881427443962
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 4,
+      "rows": 4,
+      "name": "spine_80fc9024a8_default_attacked.png",
+      "sha256": "16169ca8a00a0dbe621c4e4a824c4e9aeb9f661bdc01b0c675e25ffa0ffc5907",
+      "bytes": 528391,
+      "url": "spine_80fc9024a8_default_attacked.png",
+      "local": "attacked-0.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "sourceMotion": "attacked",
+  "team": "white",
+  "palette": "pearl-ivory skin / silver cloth"
+}

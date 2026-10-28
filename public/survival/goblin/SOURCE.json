@@ -1,0 +1,31 @@
+{
+  "source": "https://codmos-creator-studio.bm33728090.chatgpt.site/#assets",
+  "goblin": [
+    {
+      "motion": "attack",
+      "id": "1fc18a499953d60dfe86a04880c288d4e3943871110c71104e195f132f305240",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/1fc18a499953d60dfe86a04880c288d4e3943871110c71104e195f132f305240"
+    },
+    {
+      "motion": "die",
+      "id": "e5f54aa73e41759995536d6d63e2c41613a93063422809c118f4dfde74bdaad5",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/e5f54aa73e41759995536d6d63e2c41613a93063422809c118f4dfde74bdaad5"
+    },
+    {
+      "motion": "idle",
+      "id": "e62493bd0c5b1feec3f23babcd54f0d9e5aac9f8d07ceef0231d9d0994560705",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/e62493bd0c5b1feec3f23babcd54f0d9e5aac9f8d07ceef0231d9d0994560705"
+    },
+    {
+      "motion": "spawn",
+      "id": "7f9197494dec2fb8110c85f11fb89dbbe84931f41d68b697c170b8cc720cfd71",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/7f9197494dec2fb8110c85f11fb89dbbe84931f41d68b697c170b8cc720cfd71"
+    },
+    {
+      "motion": "stun",
+      "id": "6c49a6be4348d26e53b84efd9145f69d09818924569ba5e60443e9aede5855e8",
+      "detailUrl": "https://codmos-creator-studio.bm33728090.chatgpt.site/api/assets/6c49a6be4348d26e53b84efd9145f69d09818924569ba5e60443e9aede5855e8"
+    }
+  ],
+  "movement": "idle timeline with a small step bob; source has no separately authored walk clip"
+}

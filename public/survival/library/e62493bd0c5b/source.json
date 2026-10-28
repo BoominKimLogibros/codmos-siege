@@ -1,0 +1,166 @@
+{
+  "id": "e62493bd0c5b1feec3f23babcd54f0d9e5aac9f8d07ceef0231d9d0994560705",
+  "name": "spine_52081da08b_default_idle.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 612891,
+  "width": 1190,
+  "height": 1115,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "shared",
+      "source": "공통 리소스",
+      "name": "공통 리소스"
+    }
+  ],
+  "occurrences": 1,
+  "preview": {
+    "type": "spritesheet",
+    "status": "ready"
+  },
+  "generatedLabels": [
+    "default",
+    "idle",
+    "대기",
+    "스프라이트 시트",
+    "Spine",
+    "고블린",
+    "곤봉",
+    "몬스터",
+    "송곳니",
+    "초록색 몬스터"
+  ],
+  "spriteSheet": {
+    "schemaVersion": 1,
+    "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+    "jobKey": "34f84c714c060524ba89488d0efdc67b34cdc7ca258c975e21bea701379e7e3a",
+    "sourceId": "52081da08bde93ae825e4e531268cd4dd0f33a0bbb05d7f2bba70e96d9c9aba4",
+    "sourceEngine": "spine",
+    "skin": "default",
+    "motion": "idle",
+    "fps": 30,
+    "frameCount": 21,
+    "frameWidth": 238,
+    "frameHeight": 223,
+    "duration": 0.666700005531311,
+    "bounds": {
+      "x": -141.10387702124112,
+      "y": -20.960690767318113,
+      "width": 229.0853202438664,
+      "height": 214.0000070744165,
+      "scale": 1,
+      "origin": {
+        "x": 145.10387702124112,
+        "y": 197.03931630709837
+      }
+    },
+    "pages": [
+      {
+        "startFrame": 0,
+        "columns": 5,
+        "rows": 5,
+        "name": "spine_52081da08b_default_idle.png",
+        "sha256": "e62493bd0c5b1feec3f23babcd54f0d9e5aac9f8d07ceef0231d9d0994560705",
+        "bytes": 612891,
+        "url": "/file/e62493bd0c5b1feec3f23babcd54f0d9e5aac9f8d07ceef0231d9d0994560705"
+      }
+    ],
+    "order": "row-major",
+    "loop": true
+  },
+  "locations": [
+    {
+      "path": "generated/sprites/52081da08bde93ae825e4e531268cd4dd0f33a0bbb05d7f2bba70e96d9c9aba4/default/idle",
+      "source": "스프라이트 변환",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [
+    "스파인"
+  ],
+  "publicLabels": [
+    {
+      "key": "default",
+      "text": "default",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "idle",
+      "text": "idle",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "대기",
+      "text": "대기",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "스프라이트 시트",
+      "text": "스프라이트 시트",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "spine",
+      "text": "Spine",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "고블린",
+      "text": "고블린",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "곤봉",
+      "text": "곤봉",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "몬스터",
+      "text": "몬스터",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "송곳니",
+      "text": "송곳니",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "초록색 몬스터",
+      "text": "초록색 몬스터",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    }
+  ],
+  "assetGroups": []
+}

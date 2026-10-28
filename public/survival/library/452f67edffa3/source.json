@@ -1,0 +1,30 @@
+{
+  "id": "452f67edffa374cecdc244ed9d3faa2f3bda85f44450847f26dc9857ac8964df",
+  "name": "building_crystal.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 44673,
+  "width": 283,
+  "height": 206,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "flutter-math/p518",
+      "source": "수학 · P518 · 숫자 마을 길 잇기",
+      "name": "수학 · P518 · 숫자 마을 길 잇기"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "@flutter-math/assets/images/p518/building_crystal.png",
+      "source": "수학 · P518 · 숫자 마을 길 잇기",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [],
+  "publicLabels": [],
+  "assetGroups": []
+}

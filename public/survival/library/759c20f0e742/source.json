@@ -1,0 +1,65 @@
+{
+  "id": "759c20f0e742e95db5c516148c22f1325b41337ba01b9c82bb084d845822259d",
+  "name": "monster-mint.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 14905,
+  "width": 306,
+  "height": 282,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "hand-recognition",
+      "source": "hand-recognition",
+      "name": "AI체험 손인식 #AI20"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "cms/hand-recognition/assets/mission5/monster-mint.png",
+      "source": "hand-recognition",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [
+    "몬스터"
+  ],
+  "publicLabels": [
+    {
+      "key": "송곳니",
+      "text": "송곳니",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740539665,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "외눈박이",
+      "text": "외눈박이",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740539665,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "지느러미",
+      "text": "지느러미",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740539665,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "청록색 몬스터",
+      "text": "청록색 몬스터",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740539665,
+      "authorNickname": "1픽이즈리얼"
+    }
+  ],
+  "assetGroups": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "87d503ff9324cb612aab8ee8b80754ca0a663fc4e3346745305839d1e2b08f04",
+  "name": "chest_3.svg",
+  "kind": "image",
+  "ext": "svg",
+  "bytes": 41061,
+  "width": null,
+  "height": null,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "flutter-math/p556",
+      "source": "수학 · P556 · 고대 중국의 수",
+      "name": "수학 · P556 · 고대 중국의 수"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "@flutter-math/assets/images/p556/figma/chest/chest_3.svg",
+      "source": "수학 · P556 · 고대 중국의 수",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [],
+  "publicLabels": [],
+  "assetGroups": []
+}

@@ -1,0 +1,14 @@
+{
+  "characters": 53,
+  "pngSheets": 424,
+  "jsonFiles": 424,
+  "frames": 10600,
+  "checks": [
+    "All 53 characters have 8 sheets",
+    "PNG dimensions match JSON",
+    "All frames nonempty and inside sheet",
+    "Transparent padding retained around every frame",
+    "Frame durations sum to source duration"
+  ],
+  "errors": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "5408e6e1c2d6d13e6adb524564a5906a45af1ff05c345b344e9ac07a0336a103",
+  "name": "crystal_blue.svg",
+  "kind": "image",
+  "ext": "svg",
+  "bytes": 3084,
+  "width": null,
+  "height": null,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "flutter-math/p830",
+      "source": "수학 · P830 · 수에 가까운 두 수의 곱 만들기",
+      "name": "수학 · P830 · 수에 가까운 두 수의 곱 만들기"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "@flutter-math/assets/images/p830/crystal_blue.svg",
+      "source": "수학 · P830 · 수에 가까운 두 수의 곱 만들기",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [],
+  "publicLabels": [],
+  "assetGroups": []
+}

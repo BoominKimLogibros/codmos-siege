@@ -1,0 +1,32 @@
+{
+  "id": "959f79b4cd697b056426a884c8af9dbd637a8ee721b1aba6875166d66995cb15",
+  "name": "monster-defeated.wav",
+  "kind": "audio",
+  "ext": "wav",
+  "bytes": 66228,
+  "width": null,
+  "height": null,
+  "kindLabel": "사운드",
+  "projects": [
+    {
+      "project": "hand-recognition",
+      "source": "hand-recognition",
+      "name": "AI체험 손인식 #AI20"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "cms/hand-recognition/sounds/mission5/monster-defeated.wav",
+      "source": "hand-recognition",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [
+    "몬스터"
+  ],
+  "publicLabels": [],
+  "assetGroups": []
+}

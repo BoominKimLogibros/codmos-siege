@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "ae9ef79574ed3631da013b5ed389fd938daa679ce5c0b6b95c583c9e6331bda2",
+  "sourceId": "1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "idle",
+  "fps": 30,
+  "frameCount": 21,
+  "frameWidth": 193,
+  "frameHeight": 256,
+  "duration": 0.666700005531311,
+  "bounds": {
+    "x": -146.12337635053876,
+    "y": -1.8700000047683711,
+    "width": 288.3637476642524,
+    "height": 387.18576857858824,
+    "scale": 0.640519409869949,
+    "origin": {
+      "x": 97.59485878825156,
+      "y": 250.80222870048897
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 6,
+      "rows": 4,
+      "name": "spine_1bb99aaaca_default_idle.png",
+      "sha256": "1fcad786438323a3fe08aa5df72fda88b45eea2b1a1d509aac2f971b05bfff98",
+      "bytes": 546913,
+      "url": "spine_1bb99aaaca_default_idle.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true
+}

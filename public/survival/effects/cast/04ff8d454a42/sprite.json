@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+  "jobKey": "08c6a586d45133de4b9d2587055cc6fe9d2d6acb38dd5b55fb6e824f380512a3",
+  "sourceId": "027031059f6875c9e0dac5e5a5a96dab89af4db83a0187a7a45501a18768fd52",
+  "sourceEngine": "spine",
+  "skin": "up",
+  "motion": "animation",
+  "fps": 30,
+  "frameCount": 13,
+  "frameWidth": 256,
+  "frameHeight": 205,
+  "duration": 0.4332999885082245,
+  "bounds": {
+    "x": -182.6332517486619,
+    "y": -148.51797657964994,
+    "width": 363.94445619617466,
+    "height": 287.6968008576075,
+    "scale": 0.6814226615566913,
+    "origin": {
+      "x": 128.45043649532644,
+      "y": 98.83960487181689
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "columns": 4,
+      "rows": 4,
+      "name": "spine_027031059f_up_animation.png",
+      "sha256": "04ff8d454a42f6bda6a1ec90c4b51cbc5b61c7ce22c780e3b8a105c687ac352f",
+      "bytes": 113024,
+      "url": "spine_027031059f_up_animation.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true
+}

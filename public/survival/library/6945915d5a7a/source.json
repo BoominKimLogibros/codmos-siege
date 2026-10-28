@@ -1,0 +1,158 @@
+{
+  "id": "6945915d5a7a768ab9dd4337e961a6b472a10c7a259af63d345590a1cd2f383d",
+  "name": "spine_e5f5d6e488_default_attack.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 274200,
+  "width": 1024,
+  "height": 908,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "shared",
+      "source": "공통 리소스",
+      "name": "공통 리소스"
+    }
+  ],
+  "occurrences": 1,
+  "preview": {
+    "type": "spritesheet",
+    "status": "ready"
+  },
+  "generatedLabels": [
+    "default",
+    "attack",
+    "공격",
+    "스프라이트 시트",
+    "Spine",
+    "뿔",
+    "송곳니",
+    "스카이콩콩",
+    "주황색 몬스터"
+  ],
+  "spriteSheet": {
+    "schemaVersion": 1,
+    "batch": "73c2ca58311474b96ac8914966ad68607e3e04e5542e57155a2a344ddf3f1f10",
+    "jobKey": "377372747d70c1ef86aaa3d5bf15bd1c7ed8dfe3b12477412119f86fd644c99d",
+    "sourceId": "e5f5d6e488328c87d1425a4f224f6a092f5e53c4fdd4421447947414656c12c0",
+    "sourceEngine": "spine",
+    "skin": "default",
+    "motion": "attack",
+    "fps": 30,
+    "frameCount": 13,
+    "frameWidth": 256,
+    "frameHeight": 227,
+    "duration": 0.4000000059604645,
+    "bounds": {
+      "x": -184.21993326587315,
+      "y": -7.6652167892325735,
+      "width": 339.93784866901854,
+      "height": 299.41937405442116,
+      "scale": 0.7295451241190443,
+      "origin": {
+        "x": 138.39675407965348,
+        "y": 216.8478228742792
+      }
+    },
+    "pages": [
+      {
+        "startFrame": 0,
+        "columns": 4,
+        "rows": 4,
+        "name": "spine_e5f5d6e488_default_attack.png",
+        "sha256": "6945915d5a7a768ab9dd4337e961a6b472a10c7a259af63d345590a1cd2f383d",
+        "bytes": 274200,
+        "url": "/file/6945915d5a7a768ab9dd4337e961a6b472a10c7a259af63d345590a1cd2f383d"
+      }
+    ],
+    "order": "row-major",
+    "loop": true
+  },
+  "locations": [
+    {
+      "path": "generated/sprites/e5f5d6e488328c87d1425a4f224f6a092f5e53c4fdd4421447947414656c12c0/default/attack",
+      "source": "스프라이트 변환",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [
+    "공격",
+    "스파인"
+  ],
+  "publicLabels": [
+    {
+      "key": "default",
+      "text": "default",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "attack",
+      "text": "attack",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "공격",
+      "text": "공격",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "스프라이트 시트",
+      "text": "스프라이트 시트",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "spine",
+      "text": "Spine",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "뿔",
+      "text": "뿔",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "송곳니",
+      "text": "송곳니",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "스카이콩콩",
+      "text": "스카이콩콩",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    },
+    {
+      "key": "주황색 몬스터",
+      "text": "주황색 몬스터",
+      "type": "generated",
+      "version": 1,
+      "updatedAt": 0,
+      "authorNickname": "자동 라벨"
+    }
+  ],
+  "assetGroups": []
+}

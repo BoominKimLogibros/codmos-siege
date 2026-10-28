@@ -1,0 +1,95 @@
+{
+  "method": "Per-pixel skin and cloth palette substitution; original frame cells, origins, dimensions and alpha preserved.",
+  "variants": [
+    {
+      "team": "blue",
+      "motion": "idle",
+      "index": 0,
+      "width": 1190,
+      "height": 1115,
+      "changedPixels": 283071,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "idle",
+      "index": 0,
+      "width": 1190,
+      "height": 1115,
+      "changedPixels": 283071,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "attack",
+      "index": 0,
+      "width": 1160,
+      "height": 1115,
+      "changedPixels": 290718,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "attack",
+      "index": 0,
+      "width": 1160,
+      "height": 1115,
+      "changedPixels": 290718,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "stun",
+      "index": 0,
+      "width": 1255,
+      "height": 1115,
+      "changedPixels": 259411,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "stun",
+      "index": 0,
+      "width": 1255,
+      "height": 1115,
+      "changedPixels": 259411,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "die",
+      "index": 0,
+      "width": 1225,
+      "height": 1280,
+      "changedPixels": 192911,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "die",
+      "index": 0,
+      "width": 1225,
+      "height": 1280,
+      "changedPixels": 192911,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "blue",
+      "motion": "spawn",
+      "index": 0,
+      "width": 1280,
+      "height": 1205,
+      "changedPixels": 314262,
+      "alphaUnchanged": true
+    },
+    {
+      "team": "white",
+      "motion": "spawn",
+      "index": 0,
+      "width": 1280,
+      "height": 1205,
+      "changedPixels": 314262,
+      "alphaUnchanged": true
+    }
+  ]
+}

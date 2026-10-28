@@ -1,0 +1,114 @@
+[
+  {
+    "file": "51e902d8a4f7/spine_a17b717c9a_default_magic01.png",
+    "sha256": "51e902d8a4f7ca5a932e2c37ed950cef0bcf6ca3131bbc61f833bba163978d7a",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/default/magic01"
+    ]
+  },
+  {
+    "file": "58c316e376bf/spine_a17b717c9a_super_magic03.png",
+    "sha256": "58c316e376bfcec8db443b0d557ade46d53b7311978fb2a6b2fd32d711f1d10e",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/super/magic03"
+    ]
+  },
+  {
+    "file": "5eab9bf042b5/spine_a17b717c9a_default_magic03.png",
+    "sha256": "5eab9bf042b5339e8edd6684962819598dd1dd13724f8d85a83d350e8c8a4c59",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/default/magic03"
+    ]
+  },
+  {
+    "file": "6508019da5ed/spine_a17b717c9a_normal_magic01.png",
+    "sha256": "6508019da5ed4a6dfa45b81768119de2c8636630a3985c586e7c0636f344a91d",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/normal/magic01"
+    ]
+  },
+  {
+    "file": "743ce3094600/spine_a97fb9ee78_default_HP_Up.png",
+    "sha256": "743ce30946004a8dcf92c4f776b7c76d0d6880d5042b5ef10a571731467b3166",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a97fb9ee788fd0bce4950f66bfd5a93daa7cc0a1a235dcface913b6d66447d9a/default/HP Up"
+    ]
+  },
+  {
+    "file": "758dc2bebec5/spine_a17b717c9a_normal_magic03.png",
+    "sha256": "758dc2bebec5ee373730034b1821b429fc36ca5abe99b3c2cf57c8498ceec116",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/normal/magic03"
+    ]
+  },
+  {
+    "file": "79a03c5558cf/spine_a17b717c9a_super_magic01.png",
+    "sha256": "79a03c5558cf3309fec54854029036d044c975cae70d2971f1aef4ec3fd581f0",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/super/magic01"
+    ]
+  },
+  {
+    "file": "7b8422e51ce7/spine_a17b717c9a_normal_idle.png",
+    "sha256": "7b8422e51ce7c9e9f496d24c97666221bd6c32cf74ec9f08a49fd7a5e5a3c0eb",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/normal/idle"
+    ]
+  },
+  {
+    "file": "96659cf8ade2/spine_a17b717c9a_default_magic02.png",
+    "sha256": "96659cf8ade219c05515cb65d85849a8c1126261c7846b5302ec772e5afd2d47",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/default/magic02"
+    ]
+  },
+  {
+    "file": "a88ef4748095/spine_a17b717c9a_super_magic02.png",
+    "sha256": "a88ef474809594fb7f6d9d0f5a8e54c3c594eb986d545150328caaec2b19ddce",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/super/magic02"
+    ]
+  },
+  {
+    "file": "aba0637f6027/spine_a17b717c9a_normal_magic02.png",
+    "sha256": "aba0637f6027f2df3e04df7c81bd6dd56b1fc6b4ba2236f6688dd23c1974c7be",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/normal/magic02"
+    ]
+  },
+  {
+    "file": "e726d25adee6/spine_a17b717c9a_default_idle.png",
+    "sha256": "e726d25adee6f94d7f8169607cb54b2ac72048d6a85bd5b92c82613f559b4464",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/default/idle"
+    ]
+  },
+  {
+    "file": "f566ac4e30a9/spine_a97fb9ee78_default_HP_Down.png",
+    "sha256": "f566ac4e30a9eeab8f466268dcf2a70146ea0a68c42b7b8599b09b148145910c",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a97fb9ee788fd0bce4950f66bfd5a93daa7cc0a1a235dcface913b6d66447d9a/default/HP Down"
+    ]
+  },
+  {
+    "file": "f5788a085070/spine_a17b717c9a_super_idle.png",
+    "sha256": "f5788a085070c196bfd47ef8dd7a7feebb008b6a66994d3a9e62563b96a3583f",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/a17b717c9a83b743254285525cfa15d7ac4b0d8d25c043e25ee07fb0e1c9be93/super/idle"
+    ]
+  }
+]

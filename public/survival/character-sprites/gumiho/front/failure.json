@@ -1,0 +1,439 @@
+{
+  "frames": {
+    "failure_000": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_001": {
+      "frame": {
+        "x": 432,
+        "y": 1,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_002": {
+      "frame": {
+        "x": 863,
+        "y": 1,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_003": {
+      "frame": {
+        "x": 1294,
+        "y": 1,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_004": {
+      "frame": {
+        "x": 1725,
+        "y": 1,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_005": {
+      "frame": {
+        "x": 2156,
+        "y": 1,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_006": {
+      "frame": {
+        "x": 2587,
+        "y": 1,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_007": {
+      "frame": {
+        "x": 3018,
+        "y": 1,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_008": {
+      "frame": {
+        "x": 1,
+        "y": 255,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_009": {
+      "frame": {
+        "x": 432,
+        "y": 255,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_010": {
+      "frame": {
+        "x": 863,
+        "y": 255,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_011": {
+      "frame": {
+        "x": 1294,
+        "y": 255,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_012": {
+      "frame": {
+        "x": 1725,
+        "y": 255,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_013": {
+      "frame": {
+        "x": 2156,
+        "y": 255,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 41,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_014": {
+      "frame": {
+        "x": 2587,
+        "y": 255,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    },
+    "failure_015": {
+      "frame": {
+        "x": 3018,
+        "y": 255,
+        "w": 429,
+        "h": 252
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 429,
+        "h": 252
+      },
+      "sourceSize": {
+        "w": 429,
+        "h": 252
+      },
+      "duration": 42,
+      "pivot": {
+        "x": 0.5011655011655012,
+        "y": 0.9285714285714286
+      }
+    }
+  },
+  "meta": {
+    "app": "Codmos Spine sprite exporter",
+    "version": "1.0",
+    "format": "RGBA8888",
+    "size": {
+      "w": 3448,
+      "h": 508
+    },
+    "scale": "0.4",
+    "fps": 24,
+    "durationMs": 667,
+    "frameCount": 16,
+    "animation": "failure",
+    "direction": "front",
+    "mirrored": false,
+    "anchor": {
+      "x": 215,
+      "y": 234
+    },
+    "loop": false,
+    "frameTags": [
+      {
+        "name": "failure",
+        "from": 0,
+        "to": 15,
+        "direction": "forward"
+      }
+    ],
+    "image": "failure.png",
+    "character": {
+      "id": "gumiho",
+      "name": "\uad6c\ubbf8\ud638",
+      "skin": "codmos_jet"
+    }
+  }
+}

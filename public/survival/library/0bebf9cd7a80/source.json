@@ -1,0 +1,65 @@
+{
+  "id": "0bebf9cd7a805bda9de473c428c5e7299b85772ed878bc9e46e1b7a1272ac896",
+  "name": "monster-pink.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 18976,
+  "width": 299,
+  "height": 259,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "hand-recognition",
+      "source": "hand-recognition",
+      "name": "AI체험 손인식 #AI20"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "cms/hand-recognition/assets/mission5/monster-pink.png",
+      "source": "hand-recognition",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [
+    "몬스터"
+  ],
+  "publicLabels": [
+    {
+      "key": "박쥐 날개",
+      "text": "박쥐 날개",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740550200,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "분홍색 몬스터",
+      "text": "분홍색 몬스터",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740550200,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "외눈박이",
+      "text": "외눈박이",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740550200,
+      "authorNickname": "1픽이즈리얼"
+    },
+    {
+      "key": "털",
+      "text": "털",
+      "type": "custom",
+      "version": 1,
+      "updatedAt": 1792740550200,
+      "authorNickname": "1픽이즈리얼"
+    }
+  ],
+  "assetGroups": []
+}

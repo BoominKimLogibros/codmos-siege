@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "batch": "bda407d224191c7988dd5fda7e1c165ca550ef023ca1558f5318c6e99b06ae44",
+  "jobKey": "2ddab406ddb414eb03267cd80850a3ff9dbf2c24c49a46df9bd39e207f992f4a",
+  "sourceId": "1bb99aaaca6561d3ac486688bb87a2cc62677cfe78f1755b6217397d7f5582f2",
+  "sourceEngine": "spine",
+  "skin": "default",
+  "motion": "juice_grapes",
+  "fps": 30,
+  "frameCount": 120,
+  "frameWidth": 256,
+  "frameHeight": 172,
+  "duration": 4,
+  "bounds": {
+    "x": -289.5680326092919,
+    "y": -1.8700000047683711,
+    "width": 587.8651764033536,
+    "height": 387.18576857858824,
+    "scale": 0.42186543778167096,
+    "origin": {
+      "x": 126.1587448442961,
+      "y": 166.55140539357552
+    }
+  },
+  "pages": [
+    {
+      "startFrame": 0,
+      "frameCount": 88,
+      "columns": 8,
+      "rows": 11,
+      "width": 2048,
+      "height": 1892,
+      "name": "spine_1bb99aaaca_default_juice_grapes.png",
+      "sha256": "2c8e68ee702b3aae7c2f5bfed9fc15cd2e74349556844863057a703d3028442d",
+      "bytes": 1219288,
+      "url": "spine_1bb99aaaca_default_juice_grapes.png"
+    },
+    {
+      "startFrame": 88,
+      "frameCount": 32,
+      "columns": 8,
+      "rows": 4,
+      "width": 2048,
+      "height": 688,
+      "name": "spine_1bb99aaaca_default_juice_grapes-page2.png",
+      "sha256": "f0e4958d05e64a6f861cde73b125e1a64fe77e521038862f41ffd200455ae3e9",
+      "bytes": 418286,
+      "url": "spine_1bb99aaaca_default_juice_grapes-page2.png"
+    }
+  ],
+  "order": "row-major",
+  "loop": true,
+  "replaces": "94d0c4387084dfc87ceb2bbadfd8c91b56437c5bb24869cb517522c677ce43c2",
+  "maxSheetSize": 2048,
+  "totalBytes": 1637574
+}

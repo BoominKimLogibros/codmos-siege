@@ -1,0 +1,30 @@
+{
+  "id": "2660d8351496d45dd963c97289a4fa19a9e2a15b27e4a167d0fb93aa895e872a",
+  "name": "building_forest.png",
+  "kind": "image",
+  "ext": "png",
+  "bytes": 49731,
+  "width": 248,
+  "height": 258,
+  "kindLabel": "이미지",
+  "projects": [
+    {
+      "project": "flutter-math/p518",
+      "source": "수학 · P518 · 숫자 마을 길 잇기",
+      "name": "수학 · P518 · 숫자 마을 길 잇기"
+    }
+  ],
+  "occurrences": 1,
+  "preview": null,
+  "locations": [
+    {
+      "path": "@flutter-math/assets/images/p518/building_forest.png",
+      "source": "수학 · P518 · 숫자 마을 길 잇기",
+      "original_url": ""
+    }
+  ],
+  "related": [],
+  "tags": [],
+  "publicLabels": [],
+  "assetGroups": []
+}

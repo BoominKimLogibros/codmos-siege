@@ -1,0 +1,34 @@
+[
+  {
+    "file": "04ff8d454a42/spine_027031059f_up_animation.png",
+    "sha256": "04ff8d454a42f6bda6a1ec90c4b51cbc5b61c7ce22c780e3b8a105c687ac352f",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/027031059f6875c9e0dac5e5a5a96dab89af4db83a0187a7a45501a18768fd52/up/animation"
+    ]
+  },
+  {
+    "file": "10bfa5b1f175/spine_027031059f_left_animation.png",
+    "sha256": "10bfa5b1f1752299e21eba786d89741fa79c1e230fa9b2f5f9eac02ba11f112b",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/027031059f6875c9e0dac5e5a5a96dab89af4db83a0187a7a45501a18768fd52/left/animation"
+    ]
+  },
+  {
+    "file": "5b232b2c6f07/spine_027031059f_down_animation.png",
+    "sha256": "5b232b2c6f07448beb3691374cac826cd944a1335ef4ececb33fb69aff2e9067",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/027031059f6875c9e0dac5e5a5a96dab89af4db83a0187a7a45501a18768fd52/down/animation"
+    ]
+  },
+  {
+    "file": "704dddf873e4/spine_027031059f_right_animation.png",
+    "sha256": "704dddf873e44c895f39b50e2906bcd620b5fed850a5c4ac03211af477ca7ba5",
+    "assetGroups": [],
+    "originalPaths": [
+      "generated/sprites/027031059f6875c9e0dac5e5a5a96dab89af4db83a0187a7a45501a18768fd52/right/animation"
+    ]
+  }
+]
