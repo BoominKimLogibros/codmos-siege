@@ -58,4 +58,4 @@ export function targetMarker(){
  const texture=cached('target',(c,w,h)=>{c.strokeStyle='#ff4b4b';c.lineWidth=7;c.beginPath();c.arc(w/2,h/2,w*.4,0,Math.PI*2);c.stroke();c.fillStyle='#ff4b4b';for(let i=0;i<4;i++){c.save();c.translate(w/2,h/2);c.rotate(i*Math.PI/2);c.beginPath();c.moveTo(w*.3,0);c.lineTo(w*.48,-w*.07);c.lineTo(w*.48,w*.07);c.closePath();c.fill();c.restore();}});
  const s=sprite(texture,2.4,1.1);s.visible=false;s.renderOrder=-80;return s;
 }
-export function rangeRing(){const texture=cached('range',(c,w,h)=>{c.strokeStyle='#ffffff';c.lineWidth=3;c.setLineDash([10,8]);c.beginPath();c.arc(w/2,h/2,w*.47,0,Math.PI*2);c.stroke();},256);const s=sprite(texture,1);s.visible=false;s.renderOrder=-85;return s;}
+export function rangeRing(){const texture=cached('range',(c,w,h)=>{c.strokeStyle='#ffffff';c.lineWidth=5;c.setLineDash([12,8]);c.beginPath();c.arc(w/2,h/2,w*.47,0,Math.PI*2);c.stroke();},256);const s=sprite(texture,1);s.visible=false;s.renderOrder=-85;return s;}
