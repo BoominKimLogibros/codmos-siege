@@ -1,11 +1,11 @@
-# 청백 공성전 타일 맵
+# CODMOS 공성전 타일 맵
 
 240 × 40 크기의 단일 가로 맵. 지형 단위는 4 × 4이며, 바닥은 연속된 1.8 단위 석재 포장, 원형 기지 광장, 포탑 주변 광장, 초원 샛길, 연못으로 디자인한다. 기존 2D 캐릭터와 카메라를 유지한다.
 
 ## 원본과 제작 이미지
 
 - 사용자가 제공한 `/Users/logibros/Downloads/codmos-tile-assets/`에서 22개 원본 PNG를 `public/survival/map/`으로 복사했다. 원본 해시와 메타데이터: `sources.json`.
-- 포탑/억제기/넥서스의 청팀/백팀 6개 이미지는 첨부 바위·나무·풀을 참조하여 built-in `image_gen`으로 생성했다. 최종 프롬프트와 후속 투명 배경 정리 프롬프트: `GENERATION.json`.
+- 포탑/억제기/넥서스의 블루팀/레드팀 6개 이미지는 첨부 바위·나무·풀을 참조하여 built-in `image_gen`으로 생성했다. 최종 프롬프트와 후속 투명 배경 정리 프롬프트: `GENERATION.json`.
 - `structures-clean-atlas.png`가 최종 생성 원본이다. 각 건물의 알파 연결 영역에 맞춰 개별 PNG를 잘랐으며 생성된 색상과 알파를 유지했다. `structures-atlas.png`는 첫 생성본이다.
 
 ## 이동과 시야

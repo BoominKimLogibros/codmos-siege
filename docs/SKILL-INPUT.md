@@ -77,7 +77,7 @@
 
 첨부 codmos-assets-9의 네 방향 별 이펙트(13프레임/30fps)를 실제 스킬 발동 순간 시전자 몸 위에서 한 번 재생한다. 캐릭터의 HEROES.color로 중심부를 셰이더에서 착색하고 흰색 외곽선과 원본 투명도는 유지한다. 조준·준비 동작·취소된 스킬에는 표시하지 않는다. 공격/버프/회복/보호막/이동 등 44개 스킬에 공통 적용한다.
 
-이펙트는 약 0.433초 동안 시전자 위치를 따라가며 돌진/순간이동 후에도 해당 캐릭터 위에 표시된다. 방향은 발동 방향에 맞춰 고정하고, 청팀/백팀 색 대신 캐릭터 색상을 사용한다. 일시정지 시 재생도 멈춘다. 원본 PNG/JSON 및 SHA manifest는 public/survival/effects/cast에 보관한다.
+이펙트는 약 0.433초 동안 시전자 위치를 따라가며 돌진/순간이동 후에도 해당 캐릭터 위에 표시된다. 방향은 발동 방향에 맞춰 고정하고, 블루팀/레드팀 색 대신 캐릭터 색상을 사용한다. 일시정지 시 재생도 멈춘다. 원본 PNG/JSON 및 SHA manifest는 public/survival/effects/cast에 보관한다.
 
 관련 파일: cast-effect-spec.js / cast-effects.js, engine.js의 executeSkill 및 효과 위치 갱신. 검증: test-survival-cast-effects.mjs (44종·파일 해시·프레임·색·시전자 추적), check-survival-cast-effects-browser.mjs (11캐릭터 실제 발동·셰이더·모바일).
 
