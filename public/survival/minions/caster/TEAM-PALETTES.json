@@ -11,7 +11,7 @@
       "alphaUnchanged": true
     },
     {
-      "team": "white",
+      "team": "red",
       "motion": "idle",
       "index": 0,
       "width": 1280,
@@ -29,7 +29,7 @@
       "alphaUnchanged": true
     },
     {
-      "team": "white",
+      "team": "red",
       "motion": "attack",
       "index": 0,
       "width": 1687,
@@ -47,7 +47,7 @@
       "alphaUnchanged": true
     },
     {
-      "team": "white",
+      "team": "red",
       "motion": "stun",
       "index": 0,
       "width": 1280,
@@ -65,7 +65,7 @@
       "alphaUnchanged": true
     },
     {
-      "team": "white",
+      "team": "red",
       "motion": "die",
       "index": 0,
       "width": 1280,
@@ -83,7 +83,7 @@
       "alphaUnchanged": true
     },
     {
-      "team": "white",
+      "team": "red",
       "motion": "spawn",
       "index": 0,
       "width": 1280,
@@ -101,7 +101,7 @@
       "alphaUnchanged": true
     },
     {
-      "team": "white",
+      "team": "red",
       "motion": "explosion",
       "index": 0,
       "width": 1215,

@@ -18,9 +18,9 @@ try{
    original.apply(this,args);
   };
  },mode);await page.waitForTimeout(120);}
- await arrange('hidden');let state=await page.evaluate(()=>survival.snapshot);const enemy=state.units.find(u=>u.team==='white');assert(enemy.inBrush&&!enemy.visible);assert.equal(state.spriteStates.find(s=>s.id===enemy.id).visible,false);await page.screenshot({path:'output/survival/tile-brush-hidden.png'});
- await arrange('inside');state=await page.evaluate(()=>survival.snapshot);assert(state.units.find(u=>u.team==='white').visible);assert(state.spriteStates.find(s=>s.id===enemy.id).visible);await page.screenshot({path:'output/survival/tile-brush-shared.png'});
- await arrange('reveal');assert((await page.evaluate(()=>survival.snapshot.units.find(u=>u.team==='white'))).visible);
+ await arrange('hidden');let state=await page.evaluate(()=>survival.snapshot);const enemy=state.units.find(u=>u.team==='red');assert(enemy.inBrush&&!enemy.visible);assert.equal(state.spriteStates.find(s=>s.id===enemy.id).visible,false);await page.screenshot({path:'output/survival/tile-brush-hidden.png'});
+ await arrange('inside');state=await page.evaluate(()=>survival.snapshot);assert(state.units.find(u=>u.team==='red').visible);assert(state.spriteStates.find(s=>s.id===enemy.id).visible);await page.screenshot({path:'output/survival/tile-brush-shared.png'});
+ await arrange('reveal');assert((await page.evaluate(()=>survival.snapshot.units.find(u=>u.team==='red'))).visible);
  await arrange('rock');await page.keyboard.down('ArrowRight');await page.waitForTimeout(900);await page.keyboard.up('ArrowRight');assert((await page.evaluate(()=>survival.snapshot.position.x))<-33.8);
  await arrange('tower-front');await page.keyboard.down('ArrowRight');await page.waitForTimeout(1200);await page.keyboard.up('ArrowRight');assert((await page.evaluate(()=>survival.snapshot.position.x))>-35,'pass below turret plinth');await page.screenshot({path:'output/survival/designed-map-turret.png'});
  await arrange('tree-front');await page.keyboard.down('ArrowRight');await page.waitForTimeout(900);await page.keyboard.up('ArrowRight');assert((await page.evaluate(()=>survival.snapshot.position.x))>-99,'pass below tree trunk');

@@ -6,7 +6,7 @@ import {canWalk} from '../src/survival/terrain.js';
 const close=(a,b)=>assert(Math.abs(a-b)<1e-7,`${a} != ${b}`);
 function setup(team='blue',id='naruto'){const g=new Survival(()=>.5);g.start(id,team);g.waveClock=999;g.bot.stun=999;const shop=SHOPS.find(s=>s.team===team);g.player.x=shop.x;g.player.z=shop.z+2.3;return g;}
 assert.equal(ITEMS.length,17);for(const item of ITEMS)assert(item.cost>0&&(!item.components||item.cost>=item.components.reduce((sum,id)=>sum+ITEMS.find(i=>i.id===id).cost,0)));
-for(const team of ['blue','white']){
+for(const team of ['blue','red']){
  const g=setup(team),p=g.player;assert.equal(p.meso,STARTING_MESO);assert(g.shopStatus().canTrade);assert(canWalk(p.x,p.z,.35,g.structures));assert(g.buyItem('short-sword').ok);assert.equal(p.inventory[0],'short-sword');assert.equal(p.meso,STARTING_MESO-120);close(p.damage,HEROES[0].damage+6);
  p.x=0;const money=p.meso,inventory=[...p.inventory];assert(!g.buyItem('tome').ok);assert(!g.sellItem(0).ok);assert.equal(p.meso,money);assert.deepEqual(p.inventory,inventory);
  const enemy=SHOPS.find(s=>s.team!==team);p.x=enemy.x;p.z=enemy.z+2;assert(!g.shopStatus().canTrade);p.hp=0;p.x=SHOPS.find(s=>s.team===team).x;assert(!g.buyItem('bead').ok);

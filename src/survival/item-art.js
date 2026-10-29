@@ -23,7 +23,7 @@ export function itemIcon(item){return `<svg viewBox="0 0 64 64" aria-hidden="tru
 const shopTextures=new Map();
 export function shopTexture(team){
  if(shopTextures.has(team))return shopTextures.get(team);
- const canvas=document.createElement('canvas');canvas.width=canvas.height=320;const c=canvas.getContext('2d'),blue=team==='blue',cloth=blue?'#508ca4':'#dfdbc4',light=blue?'#86bfce':'#fffae4';
+ const canvas=document.createElement('canvas');canvas.width=canvas.height=320;const c=canvas.getContext('2d'),blue=team==='blue',cloth=blue?'#508ca4':'#b8474b',light=blue?'#86bfce':'#e58a86';
  const poly=(points,color)=>{c.fillStyle=color;c.beginPath();points.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.closePath();c.fill();};
  const rect=(x,y,w,h,color)=>{c.fillStyle=color;c.fillRect(x,y,w,h);};
  c.fillStyle='#192e2944';c.beginPath();c.ellipse(160,290,132,17,0,0,Math.PI*2);c.fill();

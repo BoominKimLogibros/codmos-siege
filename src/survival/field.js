@@ -8,7 +8,7 @@ const names={lane:'planet__path_beige',base:'planet__path_bluegray',grass:'multi
 const rocks=['multi_objects__rock_cluster_86_086','multi_objects__rock_cluster_87_087','multi_objects__rock_cluster_94_094'];
 const waters={tl:'multi_objects__water_green_corner_top_left_006',t:'multi_objects__water_green_edge_top_007',tr:'multi_objects__water_green_corner_top_right_008',l:'multi_objects__water_green_edge_left_012',c:'multi_objects__water_green_center_013',r:'multi_objects__water_green_edge_right_014',bl:'multi_objects__water_green_corner_bottom_left_018',b:'multi_objects__water_green_edge_bottom_019',br:'multi_objects__water_green_corner_bottom_right_020'};
 export async function loadFieldAssets(){
- const loader=new THREE.TextureLoader();await Promise.all([...new Set([...Object.values(names),...rocks,...Object.values(waters),...['blue','white'].flatMap(t=>['tower','inhibitor','nexus'].map(k=>`${t}-${k}`))])].map(async name=>{
+ const loader=new THREE.TextureLoader();await Promise.all([...new Set([...Object.values(names),...rocks,...Object.values(waters),...['blue','red'].flatMap(t=>['tower','inhibitor','nexus'].map(k=>`${t}-${k}`))])].map(async name=>{
   const texture=await loader.loadAsync(ROOT+name+'.png');texture.colorSpace=THREE.SRGBColorSpace;texture.minFilter=THREE.LinearFilter;texture.generateMipmaps=false;textures.set(name,texture);images.set(name,texture.image);
  }));
 }
@@ -63,6 +63,6 @@ export function structureFootprintTexture(type,team){
  const key=type+team;if(footprintTextures.has(key))return footprintTextures.get(key);
  const c=document.createElement('canvas');c.width=512;c.height=160;const x=c.getContext('2d');
  x.fillStyle='#455246';x.beginPath();x.ellipse(256,80,252,76,0,0,Math.PI*2);x.fill();
- x.strokeStyle='#c4bd97';x.lineWidth=9;x.stroke();x.strokeStyle=team==='blue'?'#6b9b9e':'#d1c8a5';x.lineWidth=3;x.beginPath();x.ellipse(256,79,236,63,0,0,Math.PI*2);x.stroke();
+ x.strokeStyle='#c4bd97';x.lineWidth=9;x.stroke();x.strokeStyle=team==='blue'?'#6b9b9e':'#b97a74';x.lineWidth=3;x.beginPath();x.ellipse(256,79,236,63,0,0,Math.PI*2);x.stroke();
  const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;footprintTextures.set(key,texture);return texture;
 }
