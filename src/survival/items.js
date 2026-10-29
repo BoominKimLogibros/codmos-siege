@@ -16,16 +16,27 @@ export const ITEMS=[
  {id:'aegis',name:'수호자의 갑옷',icon:'aegis',category:'defense',cost:430,unique:true,components:['ruby','cloth'],stats:{maxHp:180,armor:30,magicResist:15}},
  {id:'fang',name:'흡혈 송곳니',icon:'fang',category:'attack',cost:400,unique:true,components:['short-sword'],stats:{attackDamage:12,lifeSteal:.12}},
  {id:'void-orb',name:'공허의 보주',icon:'orb',category:'magic',cost:400,unique:true,components:['tome'],stats:{abilityPower:35,magicPen:12}},
- {id:'swiftboots',name:'질풍 장화',icon:'swiftboots',category:'move',cost:350,group:'boots',unique:true,components:['boots','dagger'],stats:{moveSpeed:45,attackSpeedPercent:.25}}
+ {id:'swiftboots',name:'질풍 장화',icon:'swiftboots',category:'move',cost:350,group:'boots',unique:true,components:['boots','dagger'],stats:{moveSpeed:45,attackSpeedPercent:.25}},
+ {id:'crystal-band',name:'수정 팔찌',icon:'band',category:'sustain',cost:320,unique:true,components:['ruby','bead'],stats:{maxHp:180,hpRegen5:8}},
+ {id:'spellcloak',name:'주문 수호 망토',icon:'cloak',category:'defense',cost:380,unique:true,components:['amulet','ruby'],stats:{maxHp:120,magicResist:30}},
+ // Legendary tier: built from mid-tier items plus a recipe fee, like a three-step build path.
+ {id:'kingsbane',name:'몰락한 왕의 검',icon:'kingsbane',category:'attack',cost:1140,unique:true,components:['fang','stormblade'],stats:{attackDamage:40,attackSpeedPercent:.3,critChance:.2,lifeSteal:.15}},
+ {id:'starcrown',name:'별무리 왕관',icon:'crown',category:'magic',cost:1200,unique:true,components:['archstaff','void-orb'],stats:{abilityPower:120,maxMana:200,abilityHaste:25,magicPen:18,manaRegen5:8}},
+ {id:'titan-wall',name:'거인의 성벽',icon:'bulwark',category:'defense',cost:1100,unique:true,components:['aegis','spellcloak'],stats:{maxHp:500,armor:50,magicResist:45}},
+ {id:'soul-reaper',name:'영혼 수확자',icon:'scythe',category:'attack',cost:1100,unique:true,components:['fang','void-orb'],stats:{attackDamage:25,abilityPower:60,omnivamp:.12,magicPen:10}},
+ {id:'life-tree',name:'세계수의 심장',icon:'heart',category:'sustain',cost:800,unique:true,components:['crystal-band','sapphire'],stats:{maxHp:300,hpRegen5:15,maxMana:150,manaRegen5:6,healShieldPower:.15}}
 ];
 ITEMS.push({id:'health-potion',name:'체력 물약',icon:'health-potion',category:'sustain',cost:50,stats:{},consumable:{resource:'hp',amount:120,duration:5}},{id:'mana-potion',name:'마나 물약',icon:'mana-potion',category:'magic',cost:50,stats:{},consumable:{resource:'mana',amount:100,duration:5}});
 export function trimInventory(inventory){while(inventory.length&&!inventory.at(-1))inventory.pop();return inventory;}
 export const ITEM_BY_ID=new Map(ITEMS.map(i=>[i.id,i]));
+export function itemTier(item){return !item.components?1:item.components.some(id=>ITEM_BY_ID.get(id)?.components)?3:2;}
+export function buildsInto(id){return ITEMS.filter(item=>item.components?.includes(id));}
+// Owned components count at full price; a missing component is broken down into its own owned parts.
+function consumeComponents(item,inventory,consumed){let saved=0;for(const component of item.components||[]){const index=inventory.findIndex((owned,i)=>owned===component&&!consumed.includes(i));if(index>=0){consumed.push(index);saved+=ITEM_BY_ID.get(component).cost;}else saved+=consumeComponents(ITEM_BY_ID.get(component),inventory,consumed);}return saved;}
 export function purchaseQuote(unit,id){
  const item=ITEM_BY_ID.get(id);if(!item)return{ok:false,reason:'item'};
  const inventory=unit.inventory||[],consumed=[];
- for(const component of item.components||[]){const index=inventory.findIndex((owned,i)=>owned===component&&!consumed.includes(i));if(index>=0)consumed.push(index);}
- const remaining=inventory.map((owned,i)=>consumed.includes(i)?null:owned),price=item.cost-consumed.reduce((sum,i)=>sum+ITEM_BY_ID.get(inventory[i]).cost,0);
+ const saved=consumeComponents(item,inventory,consumed),remaining=inventory.map((owned,i)=>consumed.includes(i)?null:owned),price=item.cost-saved;
  let reason=null;if(item.unique&&remaining.includes(id)||item.group&&remaining.some(owned=>ITEM_BY_ID.get(owned)?.group===item.group))reason='unique';
  else if(remaining.filter(Boolean).length>=INVENTORY_SIZE)reason='slots';else if((unit.meso||0)<price)reason='funds';
  const result=[...remaining],slot=result.findIndex(owned=>!owned);if(slot>=0)result[slot]=id;else result.push(id);

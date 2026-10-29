@@ -17,8 +17,16 @@ const art={
  aegis:'<path d="m32 6 22 8-3 24C48 49 32 58 32 58S16 49 13 38L10 14Z"/><path d="m32 16 13 5-2 16-11 11-11-11-2-16ZM32 18v27M22 31h20"/>',
  fang:'<path d="M13 10c35-1 45 15 35 35-4 7-10 10-18 14 2-21-1-30-17-49Z"/><path d="M25 17c11 13 14 24 9 35M49 13l5 6-6 8"/>',
  orb:'<circle cx="32" cy="32" r="18"/><ellipse cx="32" cy="32" rx="30" ry="9" transform="rotate(-32 32 32)"/><path d="m32 17 7 15-7 15-7-15ZM9 12h5M11 9v6M50 52h5M52 49v6"/>',
- swiftboots:'<path d="M24 10h20l-4 26 13 8v11H13V44l11-10Z"/><path d="m25 21 15 4M19 47h27M7 23h12M4 32h13M6 41h10"/>'
+ swiftboots:'<path d="M24 10h20l-4 26 13 8v11H13V44l11-10Z"/><path d="m25 21 15 4M19 47h27M7 23h12M4 32h13M6 41h10"/>',
+ band:'<ellipse cx="32" cy="38" rx="20" ry="12"/><ellipse cx="32" cy="38" rx="12" ry="6"/><path d="m32 8 8 10-8 10-8-10Z"/>',
+ cloak:'<path d="M20 8h24l4 10-6 4 10 34H12l10-34-6-4Z"/><path d="M26 22h12M32 22v30M22 44l10 8 10-8"/>',
+ kingsbane:'<path d="m10 54 30-34 12-9-4 13-34 30M6 46l12 12M16 48l-6 8"/><path d="M38 6l3 5 6 1-4 4 1 6-6-3-5 3 1-6-4-4 6-1Z"/>',
+ crown:'<path d="m8 46 4-28 12 12 8-18 8 18 12-12 4 28Z"/><path d="M8 54h48M32 30v8M20 40h24"/><circle cx="32" cy="10" r="3"/>',
+ bulwark:'<path d="M10 22h8v-8h8v8h12v-8h8v8h8v34H10Z"/><path d="M26 56V42a6 6 0 0 1 12 0v14M10 32h44"/>',
+ scythe:'<path d="M20 58 42 10"/><path d="M42 10C24 6 10 14 6 28c10-8 22-10 34-6"/><path d="m14 50 10 4"/>',
+ heart:'<path d="M32 54C10 40 6 28 10 18c4-9 16-11 22-2 6-9 18-7 22 2 4 10 0 22-22 36Z"/><path d="M32 24v20M24 34h16"/>'
 };
+export const TIER_COLORS={1:'#8c9aa3',2:'#5aa9e6',3:'#f2c45a'};
 export function itemIcon(item){return `<svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="${ITEM_COLORS[item.category]}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">${art[item.icon]||art.ruby}</svg>`;}
 const shopTextures=new Map();
 export function shopTexture(team){
