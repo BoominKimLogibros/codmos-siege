@@ -19,4 +19,4 @@ for(let row=0;row<10;row++)for(let col=0;col<60;col++){
 }
 // Scenery extends beyond movement bounds so camera padding never exposes a cut edge.
 export const SCENERY={minX:-144,maxX:144,minZ:-44,maxZ:44,width:288,height:88};
-export const SHOPS=[{id:'shop-blue',kind:'shop',team:'blue',x:-111,z:9,r:2.25,accessRadius:5},{id:'shop-white',kind:'shop',team:'white',x:111,z:9,r:2.25,accessRadius:5}];
+export const SHOPS=[{id:'shop-blue',kind:'shop',team:'blue',x:-111,z:9,r:2.25,accessRadius:5},{id:'shop-red',kind:'shop',team:'red',x:111,z:9,r:2.25,accessRadius:5}];

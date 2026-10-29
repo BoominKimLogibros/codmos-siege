@@ -6,12 +6,12 @@ export const BLUE_MERCHANT_MOTIONS={idle:'1fcad7864383',hello:'d7477f5290e2',inp
 export class Shopkeeper {
  constructor(){this.clips=new Map();this.events=new Map();this.sequence=0;}
  async load(){
-  const definitions=[['white','idle','/survival/shopkeeper/5e923855fb18/'],...Object.entries(BLUE_MERCHANT_MOTIONS).map(([motion,folder])=>['blue',motion,`/survival/shopkeeper/blue/${folder}/`])];
+  const definitions=[['red','idle','/survival/shopkeeper/5e923855fb18/'],...Object.entries(BLUE_MERCHANT_MOTIONS).map(([motion,folder])=>['blue',motion,`/survival/shopkeeper/blue/${folder}/`])];
   const loaded=await Promise.all(definitions.map(async([team,motion,base])=>{const response=await fetch(base+'sprite.json');if(!response.ok)throw Error(base+'sprite.json');const data=await response.json(),textures=await Promise.all(data.pages.map(p=>new THREE.TextureLoader().loadAsync(base+p.name)));for(const t of textures){t.colorSpace=THREE.SRGBColorSpace;t.minFilter=THREE.LinearFilter;t.magFilter=THREE.LinearFilter;t.generateMipmaps=false;}const clip=normalizeCastEffect(data,textures);clip.meta={animation:motion,team};clip.duration=data.frameCount/data.fps;return{team,motion,clip,data};}));
   const idle=loaded.find(d=>d.team==='blue'&&d.motion==='idle'),worldUnit=3/idle.data.frameHeight*idle.data.bounds.scale;
   for(const {team,motion,clip,data}of loaded){clip.worldScale=team==='blue'?worldUnit/data.bounds.scale:3/data.frameHeight;clip.loop=true;this.clips.set(`${team}/${motion}`,clip);}
  }
- make(team='white'){
+ make(team='red'){
   const animation=new SpritePlayer(),clip=this.clips.get(`${team}/idle`);animation.merchant={team,motion:'idle',loop:true,priority:0,queue:[],near:false,selection:null,seenEvent:this.events.get(team)?.id||0};animation.setClip(`shopkeeper/${team}/idle`,clip);const frame=clip.frames[0].rect;animation.root.position.z=1.2-(frame.h-clip.anchor.y)*clip.worldScale;animation.update(0,{loop:true});return animation;
  }
  react(team,result){this.events.set(team,{id:++this.sequence,...result});}

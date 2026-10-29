@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {Survival} from '../src/survival/engine.js';
 import {clearSight,sightPolygon,sightRange} from '../src/survival/vision.js';
 import {OBSTACLES,BRUSHES} from '../src/survival/map-layout.js';
-for(const team of ['blue','white']){
+for(const team of ['blue','red']){
  const g=new Survival();g.start('naruto',team);g.structures=[];g.waveClock=100;g.player.x=0;g.player.z=0;g.bot.x=30;g.bot.z=0;
  assert(!g.isVisible(g.bot,team),'outside all allied sight');assert.equal(g.nearest(g.player,100,false),undefined);
  g.bot.revealed=1;assert(!g.isVisible(g.bot,team),'attacks must not grant global sight');g.bot.revealed=0;
