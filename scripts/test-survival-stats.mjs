@@ -22,6 +22,7 @@ for(const h of HEROES){
 for(const h of HEROES){
  const g=setup(h.id),p=g.player,t=g.bot;p.attackCd=999;
  switch(h.id){
+  case 'gdragon':{p.mana-=50;for(let i=0;i<5;i++)g.hit(t,1,p,{basic:true});assert.equal(p.encoreHits,0);assert.equal(p.buffs.haste,3);close(p.mana,p.maxMana-20);break;}
   case 'karina':for(const key of ['q','w','e']){p.castGesture=null;assert(g.cast(key));releaseCast(g);}assert.equal(p.neonBeats,0);assert(p.shield>100);break;
   case 'naruto':for(let i=0;i<3;i++)g.basic(p,t);break;
   case 'int':g.update(.05);break;
@@ -52,3 +53,6 @@ console.log('PASS passive shield preserves ultimate shield; poison stacks only o
 {const g=setup('karina'),p=g.player;p.stats.healShieldPower=.5;for(let i=0;i<3;i++){p.castGesture=null;p.cooldowns.q=0;assert(g.cast('q'));releaseCast(g);if(i<2){assert.equal(p.shield,0);assert.equal(passiveState(p,g.units).value,i+1);}}close(p.shield,(65+p.stats.abilityPower*.35)*1.5);assert.equal(p.passiveEvents,1);assert.equal(passiveState(p,g.units).value,0);}
 
 {const g=setup('karina'),p=g.player;p.neonBeats=2;g.hit(p,1e9,g.bot);p.respawn=0;g.update(.05);assert.equal(p.neonBeats,0);assert.equal(p.shield,0);}
+
+// Encore requires landed basic attacks; skills, blocked hits and firing do not build it.
+{const g=setup('gdragon'),p=g.player,t=g.bot;p.mana=0;g.basic(p,t);assert.equal(p.encoreHits,0);assert.equal(p.passiveEvents,0);g.shots=[];g.hit(t,1,p,{skill:true});assert.equal(p.encoreHits,0);t.invulnerable=1;g.hit(t,1,p,{basic:true});assert.equal(p.encoreHits,0);t.invulnerable=0;for(let i=0;i<4;i++)g.hit(t,1,p,{basic:true});assert.equal(p.encoreHits,4);assert(passiveState(p,g.units).active);assert.equal(p.mana,0);g.hit(t,1,p,{basic:true});assert.equal(p.encoreHits,0);assert.equal(p.mana,30);close(currentStats(p).attackSpeed,Math.min(2.5,p.stats.attackSpeed*1.4));p.encoreHits=4;g.hit(p,1e9,t);p.respawn=0;g.update(.05);assert.equal(p.encoreHits,0);assert(!p.buffs.haste);}

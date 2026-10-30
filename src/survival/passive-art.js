@@ -8,6 +8,7 @@ export function passiveMaterial(id){
  const circle=(r,x=0,y=0)=>{c.beginPath();c.arc(x,y,r,0,Math.PI*2);c.stroke();};
  const polygon=(n,r,rotation=0)=>{const points=Array.from({length:n+1},(_,i)=>[Math.cos(i*Math.PI*2/n+rotation)*r,Math.sin(i*Math.PI*2/n+rotation)*r]);line(points);};
  switch(p.shape){
+  case 'crown':line([[-80,-48],[-45,-10],[0,-85],[45,-10],[80,-48],[60,65],[-60,65],[-80,-48]]);line([[-60,38],[60,38]]);circle(10);break;
   case 'neon':polygon(4,86,Math.PI/4);circle(44);line([[-85,0],[-50,0],[-25,-45],[0,45],[25,-45],[50,0],[85,0]]);break;
   case 'spiral':{const points=[];for(let i=0;i<=110;i++){const a=i/110*Math.PI*5,r=8+i*.7;points.push([Math.cos(a)*r,Math.sin(a)*r]);}line(points);break;}
   case 'hex':polygon(6,86);polygon(6,55);line([[-25,0],[25,0]]);line([[0,-25],[0,25]]);break;

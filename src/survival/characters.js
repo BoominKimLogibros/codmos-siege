@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {HEROES} from './heroes.js';
 import {SpritePlayer,normalizeCharacter,facingDirection} from './sprite-player.js';
-export const SPRITE_FOLDERS={karina:'karina',naruto:'naruto',int:'basic',kim:'kim',nova:'codmos_nova',lucy:'codmos_lucy',jet:'codmos_jet',bora:'codmos_bora',dokkaebi:'dokkaebi',gumiho:'gumiho','young-forty':'young-forty',danso:'danso',sasuke:'sasuke',gaara:'gaara',sakura:'sakura'};
+export const SPRITE_FOLDERS={gdragon:'gdragon',karina:'karina',naruto:'naruto',int:'basic',kim:'kim',nova:'codmos_nova',lucy:'codmos_lucy',jet:'codmos_jet',bora:'codmos_bora',dokkaebi:'dokkaebi',gumiho:'gumiho','young-forty':'young-forty',danso:'danso',sasuke:'sasuke',gaara:'gaara',sakura:'sakura'};
 export class CharacterCast {
  constructor(){this.ready=false;this.portraits=new Map();this.clips=new Map();this.inflight=new Map();}
  async clip(id,direction,motion){const key=`${id}/${direction}/${motion}`;if(this.clips.has(key))return this.clips.get(key);if(this.inflight.has(key))return this.inflight.get(key);const pending=(async()=>{const directory=`/survival/character-sprites/${SPRITE_FOLDERS[id]}/${direction}/`,response=await fetch(directory+motion+'.json');if(!response.ok)throw Error(directory+motion+'.json');const data=await response.json(),texture=await new THREE.TextureLoader().loadAsync(directory+data.meta.image);texture.colorSpace=THREE.SRGBColorSpace;texture.minFilter=THREE.LinearFilter;texture.magFilter=THREE.LinearFilter;texture.generateMipmaps=false;const clip=normalizeCharacter(data,texture);this.clips.set(key,clip);return clip;})();this.inflight.set(key,pending);try{return await pending;}finally{this.inflight.delete(key);}}

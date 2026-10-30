@@ -1,4 +1,5 @@
 export const PASSIVES={
+ gdragon:{icon:'♛',color:'#f4c44f',shape:'crown',count:5,desc:'살아 있는 적 유닛에게 기본 공격을 5회 적중하면 마나 30을 회복하고 3초 동안 공격속도가 40% 증가합니다.'},
  karina:{icon:'✧',color:'#66d9ef',shape:'neon',count:3,desc:'스킬을 세 번 시전하면 65 + 주문력 35%의 네온 보호막을 얻습니다. 보호막 강화 효과가 적용됩니다.'},
  naruto:{icon:'✦',color:'#ffc875',shape:'spiral',count:3,desc:'기본 공격 3회마다 공격력 80%의 추가 피해. 주황색 나선 표식이 터집니다.'},
  int:{icon:'⬡',color:'#8cebd2',shape:'hex',count:60,desc:'매초 체력 2.5와 보호막 5 충전. 보호막은 최대 60까지 유지됩니다.'},
@@ -19,6 +20,7 @@ export function passiveState(unit,units=[]){
  const p=PASSIVES[unit.heroId];let value=0,max=p.count,active=false;
  const marks=Math.max(0,...Object.entries(unit.marks||{}).filter(([id])=>units.some(u=>String(u.id)===id&&u.hp>0)).map(([,value])=>value));
  switch(unit.heroId){
+  case 'gdragon':value=unit.encoreHits||0;active=value===4||(unit.buffs?.haste>0);break;
   case 'karina':value=unit.neonBeats||0;active=value===2;break;
   case 'naruto':value=(unit.attacks||0)%3;break;case 'lucy':case 'dokkaebi':value=(unit.attacks||0)%4;break;
   case 'nova':case 'danso':value=marks;break;case 'jet':value=unit.charge||0;break;

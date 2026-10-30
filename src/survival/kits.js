@@ -1,6 +1,7 @@
 import {PASSIVES} from './passives.js';
 const skill=(name,kind,cooldown,damage,extra={})=>({name,kind,cooldown,damage,...extra});
 export const KITS={
+ gdragon:{passive:{name:'앵콜 템포',desc:'기본 공격 5회 적중마다 마나·공격속도 강화'},q:skill('골든 비트','fan',5,36,{count:3}),w:skill('스웨그 실드','buff',12,0,{shield:90,duration:4,speed:1.3}),e:skill('무대 전환','blink',9,45,{distance:8}),r:skill('크라운 피날레','barrage',29,52,{count:5,radius:4.5})},
  karina:{passive:{name:'네온 리듬',desc:'세 번째 스킬 시전마다 네온 보호막'},q:skill('프리즘 펄스','beam',5,65,{range:17,width:1.2}),w:skill('스포트라이트','buff',12,0,{duration:3,shield:85,speed:1.25}),e:skill('싱크 스텝','dash',8,50,{distance:7}),r:skill('슈퍼노바 스테이지','zone',28,42,{radius:5.5,duration:4,slow:2})},
  naruto:{passive:{name:'그림자 연계',desc:'기본 공격 3회마다 추가 타격'},q:skill('나선환','rasengan',4,70,{distance:3.6,width:1.1,dashDuration:.18}),w:skill('그림자 분신','summon',13,18,{count:1,duration:7}),e:skill('순신술','dash',8,45,{distance:9}),r:skill('대옥 나선환','area',25,190,{radius:7,stun:1.2})},
  int:{passive:{name:'자가 충전',desc:'전투 중에도 체력과 보호막 재생'},q:skill('펄스 광선','beam',5,55,{range:18}),w:skill('복구 프로토콜','heal',12,0,{heal:100,allies:true}),e:skill('자기장','pull',10,45,{radius:6}),r:skill('오버클록','buff',28,0,{duration:8,haste:2.3,shield:160})},
@@ -30,6 +31,7 @@ for(const [id,kit]of Object.entries(KITS)){
 // Every skill declares its input contract and preview geometry.
 const input=(targeting,shape,castRange,extra={})=>({targeting,shape,castRange,...extra});
 const INPUTS={
+ gdragon:{q:input('aim','fan',17),w:input('self','self',0),e:input('aim','blink',8),r:input('aim','circle',15)},
  karina:{q:input('aim','line',17),w:input('self','self',0),e:input('aim','dash',7),r:input('aim','circle',14)},
  naruto:{q:input('direction','dash',3.6),w:input('self','self',0),e:input('aim','dash',9),r:input('aim','circle',14)},
  int:{q:input('aim','line',18),w:input('aim','circle',10,{radius:6}),e:input('aim','circle',10),r:input('self','self',0)},

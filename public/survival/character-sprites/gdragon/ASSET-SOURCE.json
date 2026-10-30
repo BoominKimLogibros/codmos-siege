@@ -1,0 +1,183 @@
+{
+  "archive": "gdragon-jet-all-motions-20261030.zip",
+  "source": {
+    "id": "gdragon",
+    "name": "\uad8c\uc9c0\uc6a9",
+    "sourceSkin": "codmos_jet",
+    "artTool": "built-in image_gen",
+    "referencePhoto": "/Users/logibros/Downloads/839345_52139_2353.jpg",
+    "front": "approved gloved front reused",
+    "viewArt": {
+      "side": "/Users/logibros/.codex/generated_images/01a17780-f290-7982-95ff-7e79b50cd73a/exec-c95920b7-bf51-454d-bf69-49f2e8ff6d5b.png",
+      "back": "/Users/logibros/.codex/generated_images/01a17780-f290-7982-95ff-7e79b50cd73a/exec-cc92d53a-d96b-45fc-836b-15c4e54001ac.png",
+      "jump": "/Users/logibros/.codex/generated_images/01a17780-f290-7982-95ff-7e79b50cd73a/exec-725dc680-b309-494d-affe-cb17cc659e4c.png",
+      "slide": "/Users/logibros/.codex/generated_images/01a17780-f290-7982-95ff-7e79b50cd73a/exec-3fb73e98-ef84-4ca5-93cf-acc1e1372241.png"
+    },
+    "neck": "native weighted mesh using head/body UV bone influences, inserted behind original slots; per-view head placement recorded in NECK-JOIN-FIX.json",
+    "rig": "source UV, bone indices, animations retained; custom neck attachment and head setup positions only",
+    "scope": "8 views, 38 view/action combinations; no game champion registration"
+  },
+  "runtimePairs": 20,
+  "files": [
+    {
+      "path": "front/idle.png",
+      "sha256": "72d9bbf2eda5f9bed6c23944248c37e6008b7fe1d4753649bb76f1efc575fccf"
+    },
+    {
+      "path": "front/idle.json",
+      "sha256": "7ae4ca649e4a05b5ae9fb4f492f5fe3d13ebbdace00e0785780c7575ee261555"
+    },
+    {
+      "path": "front/move.png",
+      "sha256": "830da6e0aebc461ef7f9ab6a86146f54c340f1b45066e75b6930e76deb10bdb7"
+    },
+    {
+      "path": "front/move.json",
+      "sha256": "94fccff3ded50de1d6bf1222f59457635493a97b76d358f83350a4e22db37e02"
+    },
+    {
+      "path": "front/attack.png",
+      "sha256": "439e8f2f2efe32f2371f64a6302736011b95553b0ee1876a515a1c91e38f43e9"
+    },
+    {
+      "path": "front/attack.json",
+      "sha256": "9520eb4acd4c8062fc8365821e542a8f64636d8de11947bf0a741e730c7f1f48"
+    },
+    {
+      "path": "front/defend.png",
+      "sha256": "2615d000e61c1a28af3fd52d6f3848c2300ddb9d83e8ec2a51fdbd9576288fd0"
+    },
+    {
+      "path": "front/defend.json",
+      "sha256": "e6d9008d21d4c9f1a472e7adb2820a339c38db344bb29658fd0b86f93fe5e0c7"
+    },
+    {
+      "path": "front/failure.png",
+      "sha256": "2f34e26d9740bdb4a9bc4adc65ce1d1ab85b0d7d699284f291017140c645dc7c"
+    },
+    {
+      "path": "front/failure.json",
+      "sha256": "c1e0aa2de88907c89129c092272852f2150696f635da38abd4df525a30681bda"
+    },
+    {
+      "path": "front/success.png",
+      "sha256": "94c78c5115cfea0507931d2ab1fb4e269ec4259ef672a762fb7b94db7fdd6c47"
+    },
+    {
+      "path": "front/success.json",
+      "sha256": "d26c56c0d1bd4c68eb471f25df5ec10ffc8554befd14e38e1375db92081a62cc"
+    },
+    {
+      "path": "back/idle.png",
+      "sha256": "d700f1ab9dfdc2101bbf5b2074a452ecc31d2ce8a45cd386e1c55f998880a4e5"
+    },
+    {
+      "path": "back/idle.json",
+      "sha256": "a6bbc4bffd1c10833628bc33bbd9a7a66d92771e3013735c232eaaf3029f3ce2"
+    },
+    {
+      "path": "back/move.png",
+      "sha256": "986b1b2c863bb1a4dd66218c684900b462f34a6186eefe088c0ba1777b6004a1"
+    },
+    {
+      "path": "back/move.json",
+      "sha256": "f618070ffa7b0f20c97f94b69c9ff05947cd485d182e01789208b3b913745011"
+    },
+    {
+      "path": "back/attack.png",
+      "sha256": "189a734a2fe9dc12e3eb693a66e377ff70a3bebc25cd1e179b20e9d5475a9be9"
+    },
+    {
+      "path": "back/attack.json",
+      "sha256": "e96a4304c85467776f474352aead80558a8308b7ead09720ed9eeec58b76df06"
+    },
+    {
+      "path": "back/defend.png",
+      "sha256": "85d3ac32bf3fdc0572055291b96deb82fb48d4d9f390f6631cb1e71e22af7178"
+    },
+    {
+      "path": "back/defend.json",
+      "sha256": "b0ddcd5bd8148433efa3e6acea034797d0439f65c87da3cfbe59bfbecfc5b151"
+    },
+    {
+      "path": "side_left/idle.png",
+      "sha256": "797b2beb21f4e2a00b3e494ac84a8ccca2bc5ca86373eef9a6f5591bd61d99ac"
+    },
+    {
+      "path": "side_left/idle.json",
+      "sha256": "7a351fd427bf86d4dcae03263d4d076610a9a9195c2b09b3fa3c5e07ae460da4"
+    },
+    {
+      "path": "side_left/move.png",
+      "sha256": "323f693d17b943ff1de71a09092d85b583df54b94664f067ffae01a218bf4df6"
+    },
+    {
+      "path": "side_left/move.json",
+      "sha256": "2517dc8eafbb434c5d0a35815f4ffacc3f5d086d8c8c98ef4cb8e996b87933ba"
+    },
+    {
+      "path": "side_left/attack.png",
+      "sha256": "e3e4fc8f9ac300902225dbc5a55766f7c489ac8732eff5ec664306aa0a24c2f4"
+    },
+    {
+      "path": "side_left/attack.json",
+      "sha256": "49f601a8394864406f9ff0eff4005ff8f13dbc812f9ea13dfac55d93c6885ec9"
+    },
+    {
+      "path": "side_left/defend.png",
+      "sha256": "0ad532d3324d909c793a97eba3c174ac3936513fddcf7643807dbfce629d442e"
+    },
+    {
+      "path": "side_left/defend.json",
+      "sha256": "1bacabd21253e2de4f377ac1b7b03ffe5dace37d887964378d6df31b054814fc"
+    },
+    {
+      "path": "side_left/run.png",
+      "sha256": "a2799dce6971f7f67231578a018ca9f5d75ef80abb2c357f58135168ed8a7d46"
+    },
+    {
+      "path": "side_left/run.json",
+      "sha256": "fd8d1aaf12eaaac22b6cd5b875806711a2fe8b94b9fd985f4441824fd40cfc13"
+    },
+    {
+      "path": "side_right/idle.png",
+      "sha256": "2865270c51f6b817504854ed1cdfb8e1fcc4e7dc18431946f5b1e73c7baabf6d"
+    },
+    {
+      "path": "side_right/idle.json",
+      "sha256": "cd4731cd102cd2accc00476347a7c10ae05ea005a43ef96c43e4e72a09cedd2a"
+    },
+    {
+      "path": "side_right/move.png",
+      "sha256": "ef5131f1f29870110b27b1c275625b72150aa5d733c9eda06ad91db5dbc148ef"
+    },
+    {
+      "path": "side_right/move.json",
+      "sha256": "a1791b539f082342a9e564f808e3e3d4ca691084fb67078112bce32ef4e5dfa0"
+    },
+    {
+      "path": "side_right/attack.png",
+      "sha256": "1d9b18d2ae79dba5f4b10bce6ecba3c1318390221b3c1a42150030570d4ca40e"
+    },
+    {
+      "path": "side_right/attack.json",
+      "sha256": "203723b228b23a4f0d43a1710a41c988b9159e636abb9bfeaaacae3fbf4521b2"
+    },
+    {
+      "path": "side_right/defend.png",
+      "sha256": "a523161bc182801bdafadf2b43c2a99354708be425e4b76c47fd013455de12dc"
+    },
+    {
+      "path": "side_right/defend.json",
+      "sha256": "d84285c796e17a96a2f18b9b73cd174f756778e7cb26aa9445b10132d18febf2"
+    },
+    {
+      "path": "side_right/run.png",
+      "sha256": "023698d6436c16e8310bc21c168e49aa82b22978ae2e40ad5a8de520e9af9938"
+    },
+    {
+      "path": "side_right/run.json",
+      "sha256": "e41b9941bb0ba3f7b9321ce493e69d9898e9efc0a38d6d3288c8bf2e02780028"
+    }
+  ]
+}

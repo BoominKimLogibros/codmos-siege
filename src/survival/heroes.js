@@ -238,5 +238,21 @@ export const HEROES = [
     "asset": "karina",
     "skin": "br_isabele",
     "desc": "프리즘 광선과 빠른 스텝으로 싸우며, 세 번째 스킬마다 네온 보호막을 얻습니다."
-  }
+  },
+{
+  "id": "gdragon",
+  "name": "권지용",
+  "role": "황금 무대의 지휘자",
+  "icon": "♛",
+  "color": "#f4c44f",
+  "skill": "골든 비트",
+  "attack": "ranger",
+  "hp": 100,
+  "speed": 7.5,
+  "damage": 24,
+  "cooldown": 0.62,
+  "asset": "gdragon",
+  "skin": "codmos_jet",
+  "desc": "금빛 비트를 흩뿌리고 무대를 넘나드는 사수. 기본 공격 5회 적중마다 마나와 공격속도를 얻습니다."
+}
 ];
