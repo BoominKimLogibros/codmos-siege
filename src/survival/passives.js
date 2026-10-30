@@ -9,6 +9,9 @@ export const PASSIVES={
  dokkaebi:{icon:'⚒',color:'#efb178',shape:'thunder',count:4,desc:'4번째 기본 공격에 0.9초 기절. 황금 번개 문양으로 강타를 표시합니다.'},
  gumiho:{icon:'♥',color:'#f0a5dc',shape:'soul',count:100,desc:'챔피언에게 실제로 준 피해의 18%만큼 체력을 회복. 여우 혼불이 되돌아옵니다.'},
  'young-forty':{icon:'◇',color:'#dfcba0',shape:'guard',count:100,desc:'8 거리 안 아군이 있으면 받는 피해 30% 감소. 체력 40% 미만일 때 매초 체력 9 추가 재생.'},
+ sasuke:{icon:'◉',color:'#ff5a5a',shape:'sharingan',count:1,desc:'스킬을 쓰면 사륜안이 켜집니다. 다음 기본 공격은 200% 치명타 피해를 줍니다.'},
+ gaara:{icon:'◈',color:'#e3b778',shape:'sand',count:10,desc:'보호막이 없을 때 피해를 받으면 70 + 주문력 30%의 모래 보호막이 자동으로 생깁니다. 재사용 대기시간 10초.'},
+ sakura:{icon:'❀',color:'#ff8fbf',shape:'byakugo',count:45,desc:'체력이 35% 아래로 떨어지면 최대 체력의 25%를 즉시 회복합니다. 재사용 대기시간 45초.'},
  danso:{icon:'♪',color:'#e3d2aa',shape:'music',count:3,desc:'같은 적에게 스킬 3회 적중 시 45 + 주문력 35%의 추가 마법 피해. 세 음표가 공명합니다.'}
 };
 export function passiveState(unit,units=[]){
@@ -21,6 +24,9 @@ export function passiveState(unit,units=[]){
   case 'kim':value=units.filter(u=>u.kind==='minion'&&u.team===unit.team&&u.hp>0&&Math.hypot(u.x-unit.x,u.z-unit.z)<14).length;max=Math.max(4,value);active=value>0;break;
   case 'bora':value=Math.max(0,...units.filter(u=>u.poisonSourceId===unit.id&&u.poison>0&&u.hp>0).map(u=>u.poisonStacks||0));active=value>0;break;
   case 'gumiho':value=unit.passiveHeal||0;active=(unit.passiveFlash||0)>0;break;
+  case 'sasuke':value=unit.sharingan?1:0;active=value>0;break;
+  case 'gaara':value=10-Math.min(10,unit.sandCd||0);active=!(unit.sandCd>0);break;
+  case 'sakura':value=45-Math.min(45,unit.byakugoCd||0);active=!(unit.byakugoCd>0)&&unit.hp<unit.maxHp*.5;break;
   case 'young-forty':value=unit.hp/unit.maxHp*100;active=unit.hp<unit.maxHp*.4||units.some(u=>u!==unit&&u.team===unit.team&&u.hp>0&&Math.hypot(u.x-unit.x,u.z-unit.z)<8);break;
  }
  if(['naruto','lucy','dokkaebi','nova','danso'].includes(unit.heroId))active=value===max-1;

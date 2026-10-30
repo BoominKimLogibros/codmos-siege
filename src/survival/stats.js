@@ -1,7 +1,7 @@
 import {MAX_LEVEL} from './progression-constants.js';
 // Custom roster balance, using MOBA stat names. 50 displayed distance units = 1 map unit.
 const profiles={
- naruto:[8,280,8,12,30,30,55,2.8],int:[7,340,12,24,28,34,52,2.4],kim:[10,260,7,0,44,38,72,2.8],nova:[6,360,11,30,24,32,50,2.5],lucy:[5.5,250,8,0,23,28,45,3.5],jet:[6,260,8,8,26,30,48,3.8],bora:[6.5,380,13,34,23,35,48,2.4],dokkaebi:[11,250,7,0,46,40,78,2.6],gumiho:[6,350,11,28,25,32,48,2.8],'young-forty':[12,270,8,0,40,38,68,2.7],danso:[7,320,10,20,28,31,52,3.1]
+ naruto:[8,280,8,12,30,30,55,2.8],int:[7,340,12,24,28,34,52,2.4],kim:[10,260,7,0,44,38,72,2.8],nova:[6,360,11,30,24,32,50,2.5],lucy:[5.5,250,8,0,23,28,45,3.5],jet:[6,260,8,8,26,30,48,3.8],bora:[6.5,380,13,34,23,35,48,2.4],dokkaebi:[11,250,7,0,46,40,78,2.6],gumiho:[6,350,11,28,25,32,48,2.8],'young-forty':[12,270,8,0,40,38,68,2.7],danso:[7,320,10,20,28,31,52,3.1],sasuke:[7,300,9,16,29,30,54,3],gaara:[8,340,11,26,36,36,60,2.4],sakura:[9,290,9,10,34,32,64,2.8]
 };
 export const STAT_LABELS={maxHp:'최대 체력',hpRegen5:'체력 재생 / 5초',maxMana:'최대 마나',manaRegen5:'마나 재생 / 5초',attackDamage:'공격력',attackSpeed:'공격속도 / 초',abilityPower:'주문력',armor:'방어력',magicResist:'마법저항력',moveSpeed:'이동속도',attackRange:'공격 사거리',critChance:'치명타 확률',critDamage:'치명타 피해',abilityHaste:'스킬 가속',armorPen:'물리 관통력',magicPen:'마법 관통력',lifeSteal:'생명력 흡수',omnivamp:'모든 피해 흡혈',tenacity:'강인함',healShieldPower:'회복·보호막 효과'};
 export const PERCENT_STATS=new Set(['critChance','critDamage','lifeSteal','omnivamp','tenacity','healShieldPower']);

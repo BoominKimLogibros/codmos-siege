@@ -18,6 +18,9 @@ export function passiveMaterial(id){
   case 'thunder':line([[15,-98],[-62,8],[0,8],[-15,97],[69,-22],[12,-22],[15,-98]]);break;
   case 'soul':for(const x of [-52,0,52]){c.beginPath();c.moveTo(x,-78+Math.abs(x)*.7);c.bezierCurveTo(x-65,5,x-25,80,x+7,64);c.bezierCurveTo(x+47,35,x+22,-5,x,-78+Math.abs(x)*.7);c.stroke();}break;
   case 'guard':line([[0,-88],[74,-55],[60,35],[0,94],[-60,35],[-74,-55],[0,-88]]);line([[-30,0],[-5,28],[40,-28]]);break;
+  case 'sharingan':circle(84);circle(46);for(let i=0;i<3;i++){const a=i*Math.PI*2/3-Math.PI/2,x=Math.cos(a)*46,y=Math.sin(a)*46;c.beginPath();c.arc(x,y,13,0,Math.PI*2);c.fill();c.beginPath();c.moveTo(x,y);c.quadraticCurveTo(x+Math.cos(a+1.4)*30,y+Math.sin(a+1.4)*30,x+Math.cos(a+2.2)*24,y+Math.sin(a+2.2)*24);c.stroke();}c.beginPath();c.arc(0,0,14,0,Math.PI*2);c.fill();break;
+  case 'sand':for(const [r,a] of [[86,0],[60,.6],[34,1.2]]){c.beginPath();c.arc(0,0,r,a,a+Math.PI*1.5);c.stroke();}for(const [x,y] of [[70,40],[-62,52],[-30,-78],[50,-62]]){c.beginPath();c.arc(x,y,6,0,Math.PI*2);c.fill();}break;
+  case 'byakugo':polygon(4,70,Math.PI/4);polygon(4,36,Math.PI/4);line([[0,-92],[0,92]]);line([[-92,0],[92,0]]);break;
   case 'music':for(const [x,y]of [[-58,25],[0,-10],[58,-45]]){c.beginPath();c.ellipse(x,y+45,18,12,-.3,0,Math.PI*2);c.fill();line([[x+16,y+40],[x+16,y-38],[x+44,y-22]]);}break;
  }
  const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;const material=new THREE.SpriteMaterial({map:texture,transparent:true,depthWrite:false});materials.set(id,material);return material;

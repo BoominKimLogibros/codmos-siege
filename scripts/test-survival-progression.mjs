@@ -26,4 +26,4 @@ for(const hero of HEROES){
 {const g=new Survival();g.start();g.hit(g.player,1e9,g.bot);g.gainXp(g.player.team,g.player.required);assert.equal(g.player.hp,0);const points=g.player.skillPoints;assert(g.upgradeSkill('w'));assert.equal(g.player.hp,0);assert.equal(g.player.skillPoints,points-1);}
 for(const h of HEROES)assert.deepEqual(statsAt(h,999),statsAt(h,18));
 {const g=new Survival();g.start('int');levelTo(g,18);const p=g.player;g.upgradeSkill('w');p.hp=1;g.cast('w',p,p);releaseCast(g);const first=p.hp;p.cooldowns.w=0;for(let i=0;i<4;i++)g.upgradeSkill('w');p.hp=1;g.cast('w',p,p);releaseCast(g);assert(p.hp>first);}
-console.log('PASS 11 heroes × 18 levels: point budgets, locked unlearned skills, QWE 1/3/5/7/9 and R 6/11/16 gates, 5/5/5/3 caps, rank damage/utility/cooldowns, no cooldown/mana reset, death persistence, fresh-match reset, AI allocation and absolute level/stat/XP cap');
+console.log('PASS 14 heroes × 18 levels: point budgets, locked unlearned skills, QWE 1/3/5/7/9 and R 6/11/16 gates, 5/5/5/3 caps, rank damage/utility/cooldowns, no cooldown/mana reset, death persistence, fresh-match reset, AI allocation and absolute level/stat/XP cap');

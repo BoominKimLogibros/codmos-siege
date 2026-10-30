@@ -23,4 +23,4 @@ for(const hero of HEROES)for(const key of KEYS){
 {
  const g=new Survival();g.start();g.waveClock=999;g.player.skillRanks.r=1;g.cast('r');g.hit(g.player,1e9,g.bot);for(let i=0;i<10;i++)g.update(.05);assert(!g.effects.some(e=>e.kind==='cast'),'canceled skill has no cast flash');
 }
-console.log(`PASS ${total} skill effects: release-only, own caster including dash/blink, 11 hero accents, original 4-direction assets/alpha/anchors, sprite timing, shader tint isolation, follow movement, pause and one-shot expiry`);
+console.log(`PASS ${total} skill effects: release-only, own caster including dash/blink, ${HEROES.length} hero accents, original 4-direction assets/alpha/anchors, sprite timing, shader tint isolation, follow movement, pause and one-shot expiry`);

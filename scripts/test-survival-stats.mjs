@@ -29,15 +29,18 @@ for(const h of HEROES){
   case 'lucy':case 'dokkaebi':for(let i=0;i<4;i++)g.basic(p,t);break;
   case 'jet':p.charge=5;g.basic(p,t);assert.equal(p.charge,0);break;
   case 'bora':g.basic(p,t);assert(g.shots.at(-1).options.poisonDmg>9);break;
-  case 'gumiho':p.hp-=50;g.hit(t,30,p);assert(p.passiveHeal>0);break;
+  case 'gumiho':p.hp-=50;t.sandCd=99;g.hit(t,30,p);assert(p.passiveHeal>0);break;
   case 'young-forty':p.hp=p.maxHp*.3;g.update(.05);break;
   case 'danso':for(let i=0;i<3;i++)g.hit(t,1,p,{skill:true});break;
+  case 'sasuke':{p.sharingan=1;const hp=t.hp;g.basic(p,t);assert.equal(p.sharingan,0);close(hp-t.hp,mitigate(p.damage*2,t,p,'physical'));break;}
+  case 'gaara':g.hit(p,20,t);assert(p.shield>0&&p.sandCd===10);break;
+  case 'sakura':p.hp=p.maxHp*.4;g.hit(p,p.maxHp*.1,t,{damageType:'true'});close(p.hp,p.maxHp*.55);assert.equal(p.byakugoCd,45);break;
  }
  assert(p.passiveEvents>0,h.id+' passive event');assert(g.effects.some(e=>e.kind==='passive'&&e.heroId===h.id));
 }
 assert.equal(new Set(Object.values(PASSIVES).map(p=>p.shape)).size,HEROES.length);
 assert.equal(mitigate(100,{stats:{armor:0}},{stats:{armorPen:999}}),100);
-console.log('PASS 11 rosters × 20 stats, level growth, exact 5s HP/mana regeneration, physical/magic/true damage, penetration/shields, actual-damage lifesteal, AP scaling, mana gating, haste/AS/crit and 11 unique passive mechanics/events');
+console.log('PASS 14 rosters × 20 stats, level growth, exact 5s HP/mana regeneration, physical/magic/true damage, penetration/shields, actual-damage lifesteal, AP scaling, mana gating, haste/AS/crit and 14 unique passive mechanics/events');
 
 {const g=setup('int'),p=g.player;g.units=[p];g.update(.05);close(p.shield,.25);assert(g.cast('r'));releaseCast(g);const shield=p.shield;g.update(.05);assert(p.shield>160&&p.shield<shield,'passive must preserve the larger ultimate shield');}
 {const g=setup('bora');g.basic(g.player,g.bot);assert.equal(g.bot.poisonStacks||0,0,'firing alone must not stack poison');g.update(.05);assert.equal(g.bot.poisonStacks,1,'landed attack adds one stack');}

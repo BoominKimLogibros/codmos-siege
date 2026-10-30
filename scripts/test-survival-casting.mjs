@@ -22,7 +22,7 @@ for(const hero of HEROES)for(const key of KEYS){
   assert(!a.release(key));
  }
 }
-assert.equal(counts.target+counts.self+counts.aim+counts.direction,44);
+assert.equal(counts.target+counts.self+counts.aim+counts.direction,HEROES.length*4);
 for(const reason of ['death','stun','silence','pause','mana']){const {g,a,p}=setup('naruto');a.press('r');if(reason==='death')p.hp=0;if(reason==='stun')p.stun=1;if(reason==='silence')p.silence=1;if(reason==='pause')g.pause();if(reason==='mana')p.mana=0;a.update(.05,{x:0,z:0});assert(!a.active,reason+' cancels aim');assert.equal(p.cooldowns.r,0);}
 {const {g,a,p}=setup('nova');g.units=[p];p.x=-48;p.z=0;const enemy=g.bot;enemy.x=-48;enemy.z=7.5;g.units.push(enemy);assert(!a.press('q'),'hidden brush target cannot be locked');enemy.z=0;enemy.x=p.x+17;assert(!a.press('q'),'out of range');enemy.x=p.x+4;enemy.invulnerable=1;assert(!a.press('q'),'invulnerable target');enemy.invulnerable=0;assert(a.press('q'));}
 // Lock-on attacks cannot be intercepted by another minion.
@@ -34,6 +34,6 @@ for(const reason of ['death','stun','silence','pause','mana']){const {g,a,p}=set
 // Area-based silence and support resolve at the chosen point, not the caster.
 {const {g,p,t}=setup('danso');p.x=0;t.x=9;g.cast('w',p,{x:9,z:0});releaseCast(g);assert(t.silence>0);}
 {const {g,p}=setup('int');p.hp-=100;const ally={id:3000,kind:'minion',team:p.team,x:9,z:0,hp:1,maxHp:100,r:.4};g.units.push(ally);const hp=p.hp;assert(g.cast('w',p,{x:9,z:0}));releaseCast(g);assert(ally.hp>1);close(p.hp,hp);}
-console.log('PASS 44 skill contracts',counts,'hold/move/release, no early costs/autoattack, cancellation/lifecycle, target eligibility, homing lock, exact dash collisions and selected-area support/CC');
+console.log(`PASS ${HEROES.length*4} skill contracts`,counts,'hold/move/release, no early costs/autoattack, cancellation/lifecycle, target eligibility, homing lock, exact dash collisions and selected-area support/CC');
 
 {const {g,a,p,t}=setup('lucy');assert(a.press('e'));assert(a.active.point.x<p.x,'backstep starts away from the enemy');assert(a.release('e'));releaseCast(g);assert(p.x<0);assert(g.shots.some(s=>s.targetId===t.id));}

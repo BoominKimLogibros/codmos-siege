@@ -18,7 +18,7 @@ for(const id of ['int','young-forty']){
  const {g,p}=setup('young-forty');p.hp=p.maxHp*.7;g.cast('w');release(g);assert.equal(health(g).length,0);g.update(.05);assert(health(g).some(e=>e.reason==='regen'&&e.direction==='up'));
 }
 {
- const {g,p,t}=setup('gumiho');p.hp-=100;g.hit(t,50,p,{basic:true});assert(health(g).some(e=>e.targetId===p.id&&e.reason==='passive'&&e.direction==='up'));assert(!health(g).some(e=>e.targetId===t.id));
+ const {g,p,t}=setup('gumiho');p.hp-=100;t.sandCd=99;g.hit(t,50,p,{basic:true});assert(health(g).some(e=>e.targetId===p.id&&e.reason==='passive'&&e.direction==='up'));assert(!health(g).some(e=>e.targetId===t.id));
 }
 {
  const {g,p,t}=setup('bora');p.hp-=100;g.cast('e',p,t);release(g);assert(health(g).some(e=>e.targetId===p.id&&e.reason==='drain'));g.effects=[];g.hit(t,1,p,{poison:3,poisonDmg:10});g.update(.05);assert(health(g).some(e=>e.targetId===t.id&&e.direction==='down'&&e.reason==='debuff'));
