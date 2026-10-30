@@ -16,7 +16,13 @@ function vfxBolt(color){const trace=vfxTexture('trace_06')?.image,glow=vfxTextur
   c.save();c.translate(w*.4,h/2);c.rotate(-Math.PI/2);c.drawImage(trace,-h*.9,-w*.55,h*1.8,w*.9);c.restore();c.drawImage(glow,w*.72-h*.7,-h*.2,h*1.4,h*1.4);
   c.globalCompositeOperation='source-in';c.fillStyle=color;c.fillRect(0,0,w,h);c.globalCompositeOperation='lighter';c.globalAlpha=.85;c.drawImage(glow,w*.72-h*.32,h*.18,h*.64,h*.64);
  },128,48);}
+// Skill projectiles: a larger hero-colored orb with a white core and a long streak, so they never read as basic attacks.
+function vfxOrb(color){const trace=vfxTexture('trace_06')?.image,glow=vfxTexture('spotlight_05')?.image,star=vfxTexture('star_06')?.image;if(!trace||!glow||!star)return null;return cached('vfxorb'+color,(c,w,h)=>{
+  c.save();c.translate(w*.38,h/2);c.rotate(-Math.PI/2);c.drawImage(trace,-h*1.1,-w*.6,h*2.2,w*1);c.restore();c.drawImage(glow,w*.7-h*.85,-h*.35,h*1.7,h*1.7);
+  c.globalCompositeOperation='source-in';c.fillStyle=color;c.fillRect(0,0,w,h);c.globalCompositeOperation='lighter';c.drawImage(star,w*.7-h*.5,0,h,h);c.globalAlpha=.9;c.drawImage(glow,w*.7-h*.3,h*.2,h*.6,h*.6);
+ },160,64);}
 export function boltObject(shot,color){
+ if(shot.options?.skill&&!shot.tower){const orb=vfxOrb(color);if(orb){const s=sprite(orb,4.6,1.84);s.center.set(.7,.5);return s;}}
  const texture=vfxBolt(color)||cached('bolt'+color,(c,w,h)=>{
   const glow=c.createRadialGradient(w*.72,h/2,0,w*.72,h/2,h/2);glow.addColorStop(0,'#ffffff');glow.addColorStop(.35,color);glow.addColorStop(1,color+'00');
   const trail=c.createLinearGradient(0,0,w*.75,0);trail.addColorStop(0,color+'00');trail.addColorStop(1,color+'cc');
@@ -32,7 +38,7 @@ export function slashObject(effect,color){
  // Crescent swing facing the attack direction; crits add a gold flash and burst at the tip.
  const size=effect.radius*2,rotation=Math.atan2(-effect.dirZ,effect.dirX)+Math.PI/2,arc=vfxLayer('slash_02',color,{size}),core=vfxLayer('slash_02','#ffffff',{size:size*.8}),layers=[arc,core];
  for(const l of layers){l.material.rotation=rotation;l.position.set(effect.dirX*effect.radius*.35,0,effect.dirZ*effect.radius*.35);}
- if(effect.critical){const flash=vfxLayer('star_09','#ffd84a',{size:size*.9}),burst=bigHitLayer(size*1.1);for(const l of [flash,burst])l.position.set(effect.dirX*effect.radius*.8,0,effect.dirZ*effect.radius*.8);layers.push(flash,burst);}
+ if(effect.critical){const flash=vfxLayer('star_09','#ffd84a',{blend:'add',size:size*.9}),burst=bigHitLayer(size*1.1);for(const l of [flash,burst])l.position.set(effect.dirX*effect.radius*.8,0,effect.dirZ*effect.radius*.8);layers.push(flash,burst);}
  const g=new THREE.Group();g.add(...layers);g.userData.layers=layers;g.userData.vfx=true;g.userData.dispose=()=>layers.forEach(l=>l.userData.dispose());return g;
 }
 function legacySlash(effect,color){
@@ -55,7 +61,7 @@ export function updateSlash(object,effect){
 export function sparkObject(effect,color){
  if(!vfxTexture('impact')||!vfxTexture('spotlight_05')||!vfxTexture('bighit'))return legacySpark(effect,color);
  // Flipbook impact in the attacker's color over a short white flash; structures get the larger burst sheet.
- const structure=effect.radius>1.2,layers=[impactLayer(color,structure?3.4:2),vfxLayer('spotlight_05','#ffffff',{size:structure?2.6:1.5})];if(structure)layers.push(bigHitLayer(3.2));
+ const structure=effect.radius>1.2,big=structure||effect.skill,layers=[impactLayer(color,big?3.4:2),vfxLayer('spotlight_05','#ffffff',{size:big?2.6:1.5})];if(big)layers.push(effect.skill&&!structure?vfxLayer('star_09',color,{size:3}):bigHitLayer(3.2));
  for(const l of layers)l.material.rotation=effect.id%7;
  const g=new THREE.Group();g.add(...layers);g.userData.layers=layers;g.userData.vfx=true;g.userData.dispose=()=>layers.forEach(l=>l.userData.dispose());return g;
 }
@@ -71,7 +77,7 @@ function updateLegacySpark(object,effect,structure){const f=1-effect.life/effect
 export function updateSpark(object,effect,structure){
  if(!object.userData.vfx){updateLegacySpark(object,effect,structure);return;}
  const f=1-effect.life/effect.duration,[impact,flash,burst]=object.userData.layers;object.position.z=effect.z-(structure?2:1.1);
- vfxFrame(impact,f);flash.material.opacity=Math.max(0,1-f*3);flash.scale.setScalar(flash.userData.base*(1+f));if(burst)vfxFrame(burst,f);
+ vfxFrame(impact,f);flash.material.opacity=Math.max(0,1-f*3);flash.scale.setScalar(flash.userData.base*(1+f));if(burst){if(burst.userData.frames)vfxFrame(burst,f);else{burst.material.opacity=Math.max(0,1-f*1.8);burst.material.rotation=f*2;}}
 }
 
 const DAMAGE_COLORS={physical:'#ffb35c',magic:'#c792ff',true:'#ffffff'};

@@ -258,9 +258,11 @@ public/survival/character-sprites/forest-guardian/
 
 | 효과 종류 | 언제 나오는가 | 모양 | 정의 위치 |
 | --- | --- | --- | --- |
+| `sigil` | 모든 스킬을 쓰는 순간 | 시전자 발밑에서 도는 마법진과 섬광 | [vfx.js](../src/survival/vfx.js) |
+| `shield`, `poof` | 보호막·반사·회피 스킬, 분신 소환 | 방어막 고리와 별, 흰 연기 | [vfx.js](../src/survival/vfx.js) |
 | `slash` | 근접 평타 | 공격 방향을 향한 초승달 베기. 치명타는 금색 섬광과 폭발이 더해집니다. | [combat-fx.js](../src/survival/combat-fx.js) |
 | `hit` | 평타·투사체 명중 | 공격한 팀 색의 타격 플립북. 건물 피격은 더 큰 폭발이 더해집니다. | [combat-fx.js](../src/survival/combat-fx.js) |
-| 투사체 | 원거리 평타, 포탑 | 팀 색으로 빛나는 머리와 꼬리 | [combat-fx.js](../src/survival/combat-fx.js) |
+| 투사체 | 원거리 평타, 포탑, 스킬 | 평타와 포탑은 팀 색의 작은 빛줄기, 스킬은 챔피언 색의 큰 빛 구슬 | [combat-fx.js](../src/survival/combat-fx.js) |
 | `burst` | 범위 피해 스킬 | 퍼지는 충격파 고리, 그을음, 흰 섬광 | [vfx.js](../src/survival/vfx.js) |
 | `zone` | 장판 스킬의 피해 주기 | 고리가 한 번 퍼집니다. 장판 자체는 천천히 도는 마법진으로 표시됩니다. | [vfx.js](../src/survival/vfx.js) |
 | `heal`, `mana` | 회복 스킬, 물약 | 초록(마나는 파랑) 빛, 소용돌이, 떠오르는 별 | [vfx.js](../src/survival/vfx.js) |
@@ -283,7 +285,13 @@ public/survival/character-sprites/forest-guardian/
 node scripts/import-free-assets.mjs --vfx <brackeys_vfx_bundle 폴더> --only vfx
 ```
 
-텍스처는 흰색이므로 색은 코드에서 정합니다. 팀을 구분해야 하는 효과는 팀 색(`TEAM_COLORS`)을, 회복·강화처럼 의미가 정해진 효과는 고정 색을 씁니다. 화면 확인은 실제 플레이에서 스킬을 써 보는 것이 가장 정확하며, 콘솔에 텍스처 로드 오류가 없는지도 함께 확인해 주세요.
+텍스처는 흰색이므로 색은 코드에서 정합니다. 평타·건물 피격처럼 팀을 구분해야 하는 효과는 팀 색(`TEAM_COLORS`)을 쓰고, 회복처럼 의미가 정해진 효과는 고정 색을 씁니다. **스킬에서 나온 효과는 챔피언 색**으로 칠합니다. 엔진은 스킬이 만든 효과에 시전자의 `heroId`를 붙이고, 화면에서는 [asset-manifest.js](../src/survival/asset-manifest.js)의 `SKILL_VFX_COLORS`에서 색을 찾습니다. 새 캐릭터는 스킬 아이콘의 색 계열과 어울리는 선명한 색을 한 줄 추가해 주세요. 항목이 없으면 `heroes.js`의 캐릭터 색을 쓰는데, 이 색은 옅은 파스텔 톤이라 이펙트가 흐리게 보입니다.
+
+아래는 실제로 스킬을 썼을 때의 화면입니다. 왼쪽 위부터 보라 Q, 단소살인마 R, 도깨비 W, 구미호 Q, 인트 W, 김정은 Q입니다.
+
+![스킬 이펙트 예시](media/skill-vfx-casts.jpg)
+
+화면 확인은 실제 플레이에서 스킬을 써 보는 것이 가장 정확하며, 콘솔에 텍스처 로드 오류가 없는지도 함께 확인해 주세요.
 
 ### 에셋 출처
 
