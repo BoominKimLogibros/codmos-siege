@@ -174,5 +174,53 @@ export const HEROES = [
     "asset": "danso",
     "skin": "codmos_jet",
     "desc": "빠른 투사체로 여러 적을 관통합니다."
+  },
+  {
+    "id": "sasuke",
+    "name": "사스케",
+    "role": "우치하의 천재",
+    "icon": "✦",
+    "color": "#7f8fd6",
+    "skill": "치도리",
+    "attack": "knight",
+    "hp": 100,
+    "speed": 7.2,
+    "damage": 26,
+    "cooldown": 0.62,
+    "asset": "sasuke",
+    "skin": "codmos_jet",
+    "desc": "화둔과 치도리로 파고든 뒤 사륜안으로 다음 일격을 꿰뚫어 봅니다."
+  },
+  {
+    "id": "gaara",
+    "name": "가아라",
+    "role": "모래의 수호자",
+    "icon": "◈",
+    "color": "#d9a46a",
+    "skill": "사박구",
+    "attack": "witch",
+    "hp": 120,
+    "speed": 6.4,
+    "damage": 23,
+    "cooldown": 0.7,
+    "asset": "gaara",
+    "skin": "codmos_jet",
+    "desc": "자동 모래 방패로 버티며 멀리서 모래로 적을 묶습니다."
+  },
+  {
+    "id": "sakura",
+    "name": "사쿠라",
+    "role": "의료 닌자",
+    "icon": "❀",
+    "color": "#f58bb2",
+    "skill": "괴력 강타",
+    "attack": "knight",
+    "hp": 115,
+    "speed": 7,
+    "damage": 28,
+    "cooldown": 0.8,
+    "asset": "sakura",
+    "skin": "codmos_lucy",
+    "desc": "괴력 주먹으로 적을 기절시키고 의료 닌술로 아군을 치료합니다."
   }
 ];

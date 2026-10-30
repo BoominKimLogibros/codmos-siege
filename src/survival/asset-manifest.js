@@ -11,10 +11,13 @@ export const SKILL_ICON_SOURCES={
  dokkaebi:{p:'rock-orange-1',q:'rock-plain-2',w:'shielding-fire-2',e:'wind-red-2',r:'lightning-orange-3'},
  gumiho:{p:'rip-magenta-1',q:'fireball-eerie-2',w:'fireball-red-2',e:'evil-eye-eerie-2',r:'slice-spirit-3'},
  'young-forty':{p:'protect-jade-1',q:'rock-sky-2',w:'heal-jade-2',e:'wind-grasp-acid-2',r:'enchant-red-3'},
- danso:{p:'link-eerie-1',q:'needles-royal-2',w:'horror-eerie-2',e:'runes-blue-2',r:'beam-magenta-3'}
+ danso:{p:'link-eerie-1',q:'needles-royal-2',w:'horror-eerie-2',e:'runes-blue-2',r:'beam-magenta-3'},
+ sasuke:{p:'evil-eye-red-2',q:'fireball-red-2',w:'lightning-blue-2',e:'haste-royal-2',r:'lightning-blue-3'},
+ gaara:{p:'protect-orange-1',q:'rock-orange-2',w:'shielding-acid-2',e:'wind-grasp-acid-2',r:'fog-orange-3'},
+ sakura:{p:'heal-royal-1',q:'rock-royal-2',w:'heal-jade-2',e:'haste-fire-2',r:'enchant-magenta-3'}
 };
 // Vivid per-hero tint for skill VFX (cast rune, skill projectiles and hits, auras), matched to each hero's icon palette. Heroes without an entry use their HEROES color.
-export const SKILL_VFX_COLORS={naruto:'#59c8ff',int:'#5fe3ff',kim:'#ff9a3c',nova:'#8f7bff',lucy:'#ff5fb0',jet:'#5df0e0',bora:'#7dff4f',dokkaebi:'#ff6a3c',gumiho:'#ff4fd8','young-forty':'#6dff9a',danso:'#b06bff'};
+export const SKILL_VFX_COLORS={naruto:'#59c8ff',int:'#5fe3ff',kim:'#ff9a3c',nova:'#8f7bff',lucy:'#ff5fb0',jet:'#5df0e0',bora:'#7dff4f',dokkaebi:'#ff6a3c',gumiho:'#ff4fd8','young-forty':'#6dff9a',danso:'#b06bff',sasuke:'#4f8cff',gaara:'#e0a94f',sakura:'#ff6fae'};
 // Item icons: 496 Pixel Art Icons for Medieval/Fantasy RPG by Henrique Lazarini (7Soul1), CC0. Keyed by ITEMS[].icon.
 export const ITEM_ICON_SOURCES={
  sword:'W_Sword001',ruby:'I_Ruby',armor:'A_Armor04',amulet:'Ac_Necklace03',book:'W_Book01',dagger:'W_Dagger002',boots:'A_Shoes01',seed:'I_Clover',sapphire:'I_Sapphire',

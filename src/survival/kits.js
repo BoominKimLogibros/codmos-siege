@@ -11,6 +11,9 @@ export const KITS={
  dokkaebi:{passive:{name:'도깨비 강타',desc:'기본 공격 4회마다 기절'},q:skill('방망이 내려치기','cone',5,90,{radius:5}),w:skill('금강불괴','reflect',13,0,{shield:150,duration:5}),e:skill('도깨비 걸음','dash',9,55,{distance:8,stun:.7}),r:skill('천둥 방망이','area',30,170,{radius:7,stun:2})},
  gumiho:{passive:{name:'혼의 포식',desc:'챔피언에게 준 피해 18% 회복'},q:skill('돌아오는 여우불','return',5,48,{range:15}),w:skill('여우불 셋','homing',9,36,{count:3}),e:skill('홀리는 눈빛','charm',12,30,{stun:1.6}),r:skill('구미 난무','multidash',27,70,{count:3,distance:6})},
  'young-forty':{passive:{name:'노련한 생존',desc:'아군 근처에서 피해 감소, 저체력 재생'},q:skill('어깨 치기','cone',5,72,{radius:4,slow:2}),w:skill('한숨 돌리기','regen',13,0,{heal:160,duration:5}),e:skill('능숙한 회피','evade',10,0,{distance:8,duration:1.8}),r:skill('베테랑의 저력','buff',30,0,{duration:8,haste:1.8,shield:200,speed:1.25})},
+ sasuke:{passive:{name:'사륜안',desc:'스킬 사용 후 다음 기본 공격이 치명타'},q:skill('화둔 호화구','area',5,75,{radius:3.5}),w:skill('치도리','dash',9,85,{distance:8,stun:.6}),e:skill('사륜안 간파','evade',11,0,{distance:6,duration:1.2}),r:skill('기린','area',26,200,{radius:6,stun:1})},
+ gaara:{passive:{name:'모래 방패',desc:'피격 시 자동으로 모래 보호막 생성'},q:skill('사박구','pierce',6,70,{range:15,stun:1}),w:skill('모래 갑옷','reflect',13,0,{shield:140,duration:5}),e:skill('모래 순신','blink',9,40,{distance:9}),r:skill('사막 장송','zone',28,45,{radius:6,duration:4,slow:2})},
+ sakura:{passive:{name:'백호의 인',desc:'체력이 낮아지면 한 번 크게 회복'},q:skill('괴력 강타','cone',5,90,{radius:5,stun:.8}),w:skill('의료 닌술','heal',12,0,{heal:110,allies:true}),e:skill('순신 돌진','dash',8,50,{distance:8}),r:skill('백호 해방','buff',30,0,{duration:8,haste:1.6,shield:180,speed:1.2})},
  danso:{passive:{name:'공명',desc:'스킬 적중 시 공명 중첩, 3중첩 추가 피해'},q:skill('단소 직격','pierce',4,65,{range:16}),w:skill('불협화음','silence',11,42,{radius:5,duration:2}),e:skill('장단 바꾸기','rhythm',9,30,{distance:7,slow:2}),r:skill('최후의 연주','beam',26,210,{range:24,width:3})}
 };
 export const KEYS=['q','w','e','r'];
@@ -19,11 +22,11 @@ export function skillDescription(s){const labels={rasengan:'방향키 방향 근
 // Explicit damage types, scaling and resource costs for every skill.
 for(const [id,kit]of Object.entries(KITS)){
  kit.passive={...kit.passive,...PASSIVES[id]};
- const physical=['kim','lucy','jet','dokkaebi','young-forty','danso'].includes(id);
+ const physical=['kim','lucy','jet','dokkaebi','young-forty','danso','sakura'].includes(id);
  for(const key of KEYS){const s=kit[key];s.damageType=physical?'physical':'magic';s.apRatio=s.damage?(physical?.25:.65):0;s.adRatio=s.damage?(physical?.9:.2):0;s.manaCost={q:25,w:40,e:30,r:80}[key];}
 }
 
-// Each of the 44 skills declares its input contract and preview geometry.
+// Each of the 56 skills declares its input contract and preview geometry.
 const input=(targeting,shape,castRange,extra={})=>({targeting,shape,castRange,...extra});
 const INPUTS={
  naruto:{q:input('direction','dash',3.6),w:input('self','self',0),e:input('aim','dash',9),r:input('aim','circle',14)},
@@ -36,7 +39,10 @@ const INPUTS={
  dokkaebi:{q:input('aim','cone',5),w:input('self','self',0),e:input('aim','dash',8),r:input('aim','circle',12)},
  gumiho:{q:input('aim','line',15),w:input('target','target',13),e:input('aim','line',18),r:input('target','target',15)},
  'young-forty':{q:input('aim','cone',4),w:input('self','self',0),e:input('aim','dash',8),r:input('self','self',0)},
- danso:{q:input('aim','line',16),w:input('aim','circle',10),e:input('aim','dash',7),r:input('aim','line',24)}
+ danso:{q:input('aim','line',16),w:input('aim','circle',10),e:input('aim','dash',7),r:input('aim','line',24)},
+ sasuke:{q:input('aim','circle',12),w:input('aim','dash',8),e:input('aim','dash',6),r:input('aim','circle',14)},
+ gaara:{q:input('aim','line',15),w:input('self','self',0),e:input('aim','blink',9),r:input('aim','circle',14)},
+ sakura:{q:input('aim','cone',5),w:input('aim','circle',10,{radius:6}),e:input('aim','dash',8),r:input('self','self',0)}
 };
 for(const [id,kit]of Object.entries(KITS))for(const key of KEYS)Object.assign(kit[key],INPUTS[id][key]);
 export function inputDescription(spec){return spec.targeting==='direction'?'방향키 방향 · 준비 후 근접 돌진':spec.targeting==='target'?'타겟팅 · 준비 후 시전':spec.targeting==='self'?'준비 후 사용':'누르기: 조준 · 방향키: 이동 · 놓기: 시전 · Esc: 취소';}
