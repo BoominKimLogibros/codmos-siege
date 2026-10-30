@@ -4,9 +4,11 @@
   "pairs": 20,
   "changes": [
     "Generated front, side and back head/body/arms/legs",
-    "Original skeleton bones, mesh UVs and animation preserved",
+    "Original skeleton bones and mesh UVs preserved",
     "Uniform head fit to original mesh hull",
-    "Generated gourd attached as an extra region to original body bone"
+    "Gourd attached to body; corrected per-view height, offset, tilt and scale to avoid hiding legs",
+    "Six regenerated dark trouser/sandal leg parts registered to original alpha silhouettes",
+    "Gaara-only side leg_l2/leg_r2 rotations limited to +/-5 degrees to prevent foot mesh inversion; hip movement and clip durations preserved"
   ],
   "files": [
     {
@@ -15,7 +17,7 @@
     },
     {
       "path": "back/attack.png",
-      "sha256": "da131176de03746b06cebfc3db5920336e5039d8f2dc24e51ff1b5842cbbe892"
+      "sha256": "a0385a6f8ebc7fa0c591f9bd1df4f3ea6c61b5679e8f722d386e96533ed8dbd8"
     },
     {
       "path": "back/defend.json",
@@ -23,7 +25,7 @@
     },
     {
       "path": "back/defend.png",
-      "sha256": "8f4d09e771163122aad3cc8b11c258f39579dc7ab6a640999039b007a18aba3d"
+      "sha256": "e726bc396a536920f5a3c5a81e903dffc7f14fc330ac7c7d2ac0b56e811ccd48"
     },
     {
       "path": "back/idle.json",
@@ -31,7 +33,7 @@
     },
     {
       "path": "back/idle.png",
-      "sha256": "cef6dd070e171ed1a66b8c7eb253596c7467c483a79cee0724e1375f5590f0db"
+      "sha256": "026041bee4c95accd2adf9b4e5df021396c8822041f3161c4093d56fc323a548"
     },
     {
       "path": "back/move.json",
@@ -39,39 +41,39 @@
     },
     {
       "path": "back/move.png",
-      "sha256": "967409472230d55fb1ac98b27ff12f0db227fd6cee941ee7d541225effb7c83e"
+      "sha256": "feed289065346a806750ff41148a7003b814897e37de712e620e7e330e05423d"
     },
     {
       "path": "front/attack.json",
-      "sha256": "11a5be6efd3dbeafcee7e5e585ce0c8f5b2c908c14564bef187c7ff865cca8f0"
+      "sha256": "e2eb8f7817713c4910095a6ddb5791f07381fc59dd56dc2b4069f4622feb9e69"
     },
     {
       "path": "front/attack.png",
-      "sha256": "822f671b7b60626e8806cea4bdc65c8c0a3d4a600fe799c8d0db05d88621d583"
+      "sha256": "cb9be58c57681008e6c71963800786dd160c1f8a0879c1e8d08f5f8f3b4c731b"
     },
     {
       "path": "front/defend.json",
-      "sha256": "876632f8d76aee1496e11e20d4f455ea251e75bbf1927dfa8b0351dda52d2558"
+      "sha256": "5d4a6ee1b73415dfc7bf2b17e76877cfa4bb5fc33c733ed025c6c8f13b94ec7a"
     },
     {
       "path": "front/defend.png",
-      "sha256": "94ec0013e9d0728ac9d5eb68777cf19386305926f748e53b9a895cb34d8759ab"
+      "sha256": "4a1ef818f67fa50a5d8f94dfd2b0eb8cfe853b27302e0c8ffdb3ec4bed43fd30"
     },
     {
       "path": "front/failure.json",
-      "sha256": "8595bf7783e8c8d4b50c96124b72490a4ee0b31f6a7606a48b07a9fb9ac71ea3"
+      "sha256": "ddecc6b34dfa628f8319c6696752bdc0de42687695c71a4c578be5f6e78731e7"
     },
     {
       "path": "front/failure.png",
-      "sha256": "b3ad602a3676493bd4b6d2544c900192275fe4c879b516022ae24cca767b326b"
+      "sha256": "d838fe85245081a12fe10340635e4053c2b1065d1d611a494f9b6e4f3c03bc97"
     },
     {
       "path": "front/idle.json",
-      "sha256": "3e82b71a8b718074f9f52ea11c8cb5d424e59bec30ea18ab8a35095f6fb0b1a0"
+      "sha256": "cd9b82fa7c651e6596cae4cdb0668ead4fe9d9c4c8573062c10c9b92e6495708"
     },
     {
       "path": "front/idle.png",
-      "sha256": "013754a2ccb0d3ee7b940952826b5490c93e67ad96928a0de84fc3554a17a029"
+      "sha256": "450e54ce9243c52ca511ada366e935d774a463585c6cc64f5b76a24c032de448"
     },
     {
       "path": "front/move.json",
@@ -79,95 +81,95 @@
     },
     {
       "path": "front/move.png",
-      "sha256": "6e2cfae56167a05060d3b01249a84059d981375f506c37108eaf2d24f85a0076"
+      "sha256": "6c4dfe6039a2cf46ff716b7150d49b9135d4a9ad05ab814a0524cb2a7e675c79"
     },
     {
       "path": "front/success.json",
-      "sha256": "c78ed387ee1193a828426dfc31ed79f128ce762ada674ffe19e699d2a17be2b4"
+      "sha256": "07226659280a7c3d26d1bf0efc1a9186e3faea5351b06aba70579d5d5374c1e5"
     },
     {
       "path": "front/success.png",
-      "sha256": "7b187555e700dc5353277325ad87e858427602c5bff29147a21aa380eff00324"
+      "sha256": "e9ac67885f41b37a34fb808504459b43931b84e96fadf93b78937201f2ea5b17"
     },
     {
       "path": "side_left/attack.json",
-      "sha256": "1be872377af1b19f4d6d6897d8d9716615bcbd998bba157dcab10541ab5433cd"
+      "sha256": "863477db67c2333991e07a7ff9e26a9361b3ea0238a6e969231093f27949cb80"
     },
     {
       "path": "side_left/attack.png",
-      "sha256": "937e62724f16dc1c341b55f43f227ba47da6e4641b76cd9ab4b40091aabb7d04"
+      "sha256": "ded7769c44b61adcbee9f7ef168c28ffaa98a47614ca1b0ea40a103c7462a0d0"
     },
     {
       "path": "side_left/defend.json",
-      "sha256": "c7d8490e31921415e1a8a6f5976ef7748494266dc8a095e7ee64d3d1baf16fad"
+      "sha256": "3d4659bb8365af5a5783e962de7d093381997848c8728a1d6d5b2d5320289180"
     },
     {
       "path": "side_left/defend.png",
-      "sha256": "f33482f27fe4f39b66cbf4473f30f067ed8c6f4a0418e5b4ba209b651104981c"
+      "sha256": "3afa6ce9778b61fa38d3e785aed10b5a5b2312f209432e7421293c4005607473"
     },
     {
       "path": "side_left/idle.json",
-      "sha256": "343d447ea901fd0a1d27bec2a4f2824ce2bf8f14aa70bcca8f12a3fd46fec40f"
+      "sha256": "9932143e5c8449513e8bc6039d7fe787df74e7ab729993c3420eb847adf5ef5c"
     },
     {
       "path": "side_left/idle.png",
-      "sha256": "9bba38700f4023a2511b87bcadc33da07b423e5b8b8f50d928d364edcc9a9b17"
+      "sha256": "21f35231ace1b977ea94a4fc137d327fe03d2bfb2c49d59ec10804a5c75456ae"
     },
     {
       "path": "side_left/move.json",
-      "sha256": "f5c8a927cde6b85602623e7fef9c0ae46567d89d3e8e92f32e429b56023307ca"
+      "sha256": "47c83cb7506c313c55a52a472e1dc1b778da48bee1ba7e3ae0f72d2580903a73"
     },
     {
       "path": "side_left/move.png",
-      "sha256": "516e61f1e6003ec916a9dbf8d5ea9f1d76e0df9a5866cdc13cd1b9d7dbb9fbc9"
+      "sha256": "46dd7145bb43c2ef97c796242235567df9c77f0df3c3bd4158aaf88410bf5d25"
     },
     {
       "path": "side_left/run.json",
-      "sha256": "a10a72564218845e91f175ac277a87c7c71838536282283cfb8aa3b68aebe28d"
+      "sha256": "632658c169f63614855a4f85364447794ed3ba314b550280bc908b3bd510b8e1"
     },
     {
       "path": "side_left/run.png",
-      "sha256": "b81b98783247ab0afbf41f04bee56763781d390c1f22ae54f71669d7e7449c42"
+      "sha256": "72747aaaaf9e37d196227b9db691782e44b123845f53ba994e1e83b6e8615ea2"
     },
     {
       "path": "side_right/attack.json",
-      "sha256": "b6b03789050a0c274e080ba2124f01b6cd45eb4cc72bacd27415d56ccb7ab00d"
+      "sha256": "e7c305639f75733d22e4c0a5246b9df17a6c7c8e25e739b66daa8b3230d644b0"
     },
     {
       "path": "side_right/attack.png",
-      "sha256": "490f6ad7fd474ddb6de2ddb8fe5803a53f059fda8af8c30a6738a3e0add0e647"
+      "sha256": "29986f731a7716939ddee5ffe21ae086ccb4105b74b0de6234ba248a3e4f8d07"
     },
     {
       "path": "side_right/defend.json",
-      "sha256": "1544912290be364e3fb741bbb38cc6a89e02abd64b63c75096078fa3f3be2584"
+      "sha256": "3887d05280feec9f4f128b84c1b6b6282b9a82b707ab8103df53fec788708d80"
     },
     {
       "path": "side_right/defend.png",
-      "sha256": "b68224c08b99d3ed157933c5ffed4e0bb639e517028418e0c3bccab690f642cf"
+      "sha256": "debc974039168005c693da99b8e91217aef8c4f8e12b646b62161940fe815d2d"
     },
     {
       "path": "side_right/idle.json",
-      "sha256": "e650ebc9519988cd9efeb2eb3c9435a02c7dcfe6a746d721021261e5ea9d1504"
+      "sha256": "a3d945f5cef63da0a2d248b9b0ee49f2116a2e83dde9b0e6eff3a6184a4c6ce8"
     },
     {
       "path": "side_right/idle.png",
-      "sha256": "485732669ee91cf65d49139f8f0558648db08eeb0f31890dd8d3dada70bf7739"
+      "sha256": "4d86266ac1a9c9f91701f3ca2fab2c5db09bf89953a1edee3e64b68b3f550616"
     },
     {
       "path": "side_right/move.json",
-      "sha256": "c8d9577173e11833600769d424db80e706597dd76010f87444a9ecb6cb6b42a9"
+      "sha256": "268e6218d700e46ee11d6776643771881bdc7f3726f81b0733091f73cd165c49"
     },
     {
       "path": "side_right/move.png",
-      "sha256": "6898f1029f54d8aa1eeb9697f9f9f2ff8bc8be8ae132fbb331dd28b65fe7707e"
+      "sha256": "bf75e102f6015559529d977ef4e0446458903a9801f2d698464e0c14cc33c36a"
     },
     {
       "path": "side_right/run.json",
-      "sha256": "ca83ffd4dcfdb395e9b6cb41ba4c89c653cbc13855b736e8d491086c2cfdc75a"
+      "sha256": "922ce97f054a544eef4aa9a90b0aec714aa0280332d8a0c92620afec7f4c2e85"
     },
     {
       "path": "side_right/run.png",
-      "sha256": "b3336e29617c7ce0df233fa70535d0acf0e4e7c67c57e65a24e08fb8c5ce7648"
+      "sha256": "fd2455f316927f6167cd878be43f1df916dfca8e2001cd54a14871777c156ef1"
     }
   ]
 }

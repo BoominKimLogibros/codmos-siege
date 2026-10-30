@@ -13,25 +13,27 @@
       "pairs": 20,
       "changes": [
         "Generated front, side and back head/body/arms/legs",
-        "Original skeleton bones, mesh UVs and animation preserved",
-        "Uniform head fit to original mesh hull"
+        "Original skeleton bones and mesh UVs preserved",
+        "Uniform head fit to original mesh hull",
+        "Arm correction: torso contains no duplicated arm artwork; body and arms use original alpha silhouettes",
+        "Sasuke-only attack/defend elbow rotations limited to +/-45 degrees and arm scale tracks removed; durations unchanged"
       ],
       "files": [
         {
           "path": "back/attack.json",
-          "sha256": "d43ebe704862726ea277b16e7168013377d129a37c409023961970882d668c35"
+          "sha256": "9e8977efd17caac85fa7142283df02d9a04fddf1f7407b774537c81983a72907"
         },
         {
           "path": "back/attack.png",
-          "sha256": "7ffb7ae7304bb23c446cbd7853cfff10eacdd09bd5233915eef9ea9de4e3ecd4"
+          "sha256": "8b1973fa401202917a0d7db62457b9b5a1d5eba935f6cc0109779c8c75e1d621"
         },
         {
           "path": "back/defend.json",
-          "sha256": "6b199d2f61d05db2231448054806d33d06e7a060ff433bb1d09b591ce5a896dd"
+          "sha256": "1ace3303186e76f46d283529a0565595048c50b4682086ca157ccd4bc2a39936"
         },
         {
           "path": "back/defend.png",
-          "sha256": "13a1f56410537369b2b8e800098bb64a997ee67c8e49bd1ad2e4a808d19ac34e"
+          "sha256": "8f453f14b6ab451e65b1703767b891c2f9b2ffcf98121c40694749e436e75321"
         },
         {
           "path": "back/idle.json",
@@ -39,15 +41,15 @@
         },
         {
           "path": "back/idle.png",
-          "sha256": "9794d25ab28d225f47f891e9e1f739b77b05f910b741f0262d7141940881447e"
+          "sha256": "7d9fdf93d8b0bc963308c4feae53e4b5e0440aee7cad65aa7fe255bfb7baf290"
         },
         {
           "path": "back/move.json",
-          "sha256": "f5307643a605f871016040cc92cf569fd8b027887514282517c8b4e6b2df5219"
+          "sha256": "eef7e0616abeccdd665ea6ef8ddc97c4953c360fd2c6d72dcba6ffe1279d6569"
         },
         {
           "path": "back/move.png",
-          "sha256": "4e8301bba9ce6633fe8ce212a25ddc175ec1d4cd97e82e6a0ac95b7c74c12e87"
+          "sha256": "016459a1c120b93f4e3a0d0fc739513c78b52ea8435f677b30c5198ce5edc30a"
         },
         {
           "path": "front/attack.json",
@@ -55,7 +57,7 @@
         },
         {
           "path": "front/attack.png",
-          "sha256": "02e712157e9d883b1ef0a941c45d98307d0d91f87993b402c7f39faf78d02207"
+          "sha256": "9b55a4020ceaa338769f894d58d71df7d4dbfc49dc378f9aa4a124e3c047aa71"
         },
         {
           "path": "front/defend.json",
@@ -63,7 +65,7 @@
         },
         {
           "path": "front/defend.png",
-          "sha256": "420f0b3d60109f1d0f2c62af22b4b68343b1610fcbd2d21392ddca6bbb28430d"
+          "sha256": "39e46f13a3d151c2ba0c880ecd8e17d6e1c92e5dc5bba8d04db1109a12f2723d"
         },
         {
           "path": "front/failure.json",
@@ -71,7 +73,7 @@
         },
         {
           "path": "front/failure.png",
-          "sha256": "29b41ff3166586d2b7bd7df12c689940a7a0d206bf06a0a4cb3ff1172aaf99d1"
+          "sha256": "fbff499f6eed5c8cb8f512b1997ad3261dd9326d940f2be64462a3eee1c42f4c"
         },
         {
           "path": "front/idle.json",
@@ -79,7 +81,7 @@
         },
         {
           "path": "front/idle.png",
-          "sha256": "c2baba0c8416459c26f55a6854daa46ac31e6d7ab985f6ffe44f7ee724996d0d"
+          "sha256": "b00829a1ffb6a4c9f32d95721685fdfe944f75202aad251ad86d0126eb739484"
         },
         {
           "path": "front/move.json",
@@ -87,7 +89,7 @@
         },
         {
           "path": "front/move.png",
-          "sha256": "b40993aa37db0ae4f57dd7a99c431936e3bce811b1748739e1877a22b67ea012"
+          "sha256": "d69b94657984e2cf19b169de3de7235a6f45431b1e927d123516976569069ceb"
         },
         {
           "path": "front/success.json",
@@ -95,15 +97,15 @@
         },
         {
           "path": "front/success.png",
-          "sha256": "5e797a91a80bde9d777d9a1422692c63146a9eaebff29804bfccaf3f3ac2bb8d"
+          "sha256": "11cee5e00aaf9c036526b2b949e07e72518bc40d627531e16a123d8b7e350e33"
         },
         {
           "path": "side_left/attack.json",
-          "sha256": "e663652178759590d3fd70042c936f04b3e7d2fe8df6c7d4d3daf4ee426552ec"
+          "sha256": "5bb0d3eddf72d7d7f6522666997a7cc9e94157828f56c24f504cc73f284cc3f4"
         },
         {
           "path": "side_left/attack.png",
-          "sha256": "ce7006d7679e100695c3519247c1fd66281d92015087b9e52249cceb68ec68c4"
+          "sha256": "10ea5d1d43683380726004fff45a1eabf8c417a33313fff637da5777282f5640"
         },
         {
           "path": "side_left/defend.json",
@@ -111,7 +113,7 @@
         },
         {
           "path": "side_left/defend.png",
-          "sha256": "407dcc641b3bae4079ffda50bf20135209ce8c56893742ff9571ad97a5c6bf1f"
+          "sha256": "2bf248ff307b3fb4e773d26ddd04188555dbe173a4913cd391b03cbefd223cf9"
         },
         {
           "path": "side_left/idle.json",
@@ -119,7 +121,7 @@
         },
         {
           "path": "side_left/idle.png",
-          "sha256": "4ec234162e7e2324908ab2f6cd8a376d8f69069ff3ece6995f17ae6b7eaf9f27"
+          "sha256": "edaeb32d1ce9585413772f855ebbb4af29578d427bada1ae09aaa0554c0333d5"
         },
         {
           "path": "side_left/move.json",
@@ -127,7 +129,7 @@
         },
         {
           "path": "side_left/move.png",
-          "sha256": "c33cd9eec3c381b531c61c41574797fbab455e8d1705efe3c0566cbf915f31a8"
+          "sha256": "c035064f37db1b671634c4e02d75c5030ead7b41c3b3ae0ff0daf195e9fb2963"
         },
         {
           "path": "side_left/run.json",
@@ -135,15 +137,15 @@
         },
         {
           "path": "side_left/run.png",
-          "sha256": "937cf8d7e3ea5db099039ce6244a783cc97847306557ed7a356e54ec70d57e24"
+          "sha256": "898b338015e20de41fce8ea1345e1466dbc3e38f6e8158ecd4d81a77c51f8619"
         },
         {
           "path": "side_right/attack.json",
-          "sha256": "2e316242c8bfe7fd18a59b2f075ddcea6c7a43feb136fa78550b6f9ecaf5bb64"
+          "sha256": "637c970471c2e4865bbce8f96127142c828f1d5cb4d0ecd261f547c699ba0bcc"
         },
         {
           "path": "side_right/attack.png",
-          "sha256": "3864e01fe82f2b23b887b516e88b03f8a8be052e25957a1df63a966690cff2ad"
+          "sha256": "b40cf403b2568479db5c6c00ae9e5b2f5020ffcd44f81d7bc094f971fd66806f"
         },
         {
           "path": "side_right/defend.json",
@@ -151,7 +153,7 @@
         },
         {
           "path": "side_right/defend.png",
-          "sha256": "a328a9360c68eb10101e06b88f0767e82530ccfaf14145e3084f9e3e2f2729f7"
+          "sha256": "04d82129f4a03873017c42be57544a47256c9287511b26305271ecea93598785"
         },
         {
           "path": "side_right/idle.json",
@@ -159,7 +161,7 @@
         },
         {
           "path": "side_right/idle.png",
-          "sha256": "238be87b3f538d69398240b6287838f4e46cb5fb09779d4306de38e47d50c886"
+          "sha256": "87b0fdcc8276a5f546e246fd41cc5901b342091c8868c1d1a81eaad1e852b326"
         },
         {
           "path": "side_right/move.json",
@@ -167,7 +169,7 @@
         },
         {
           "path": "side_right/move.png",
-          "sha256": "3f1be69d2f1d0488e07efb3795f3078f5ddc33a1410e7159405fd8ad270e492f"
+          "sha256": "51f4087f5db67dcbd7d238eedda72a769fd1891dc0f868d34cedfda16d7d455b"
         },
         {
           "path": "side_right/run.json",
@@ -175,7 +177,7 @@
         },
         {
           "path": "side_right/run.png",
-          "sha256": "638287f9259af5f89cffffa20f76cef00f5c9ac6fc2f8dc35d68308f5ecc0f83"
+          "sha256": "1fb61745c3e68842c061fdf47eaeed92d7f713beb8fcf377f3cf835c0abcc4ec"
         }
       ]
     },
@@ -185,9 +187,11 @@
       "pairs": 20,
       "changes": [
         "Generated front, side and back head/body/arms/legs",
-        "Original skeleton bones, mesh UVs and animation preserved",
+        "Original skeleton bones and mesh UVs preserved",
         "Uniform head fit to original mesh hull",
-        "Generated gourd attached as an extra region to original body bone"
+        "Gourd attached to body; corrected per-view height, offset, tilt and scale to avoid hiding legs",
+        "Six regenerated dark trouser/sandal leg parts registered to original alpha silhouettes",
+        "Gaara-only side leg_l2/leg_r2 rotations limited to +/-5 degrees to prevent foot mesh inversion; hip movement and clip durations preserved"
       ],
       "files": [
         {
@@ -196,7 +200,7 @@
         },
         {
           "path": "back/attack.png",
-          "sha256": "da131176de03746b06cebfc3db5920336e5039d8f2dc24e51ff1b5842cbbe892"
+          "sha256": "a0385a6f8ebc7fa0c591f9bd1df4f3ea6c61b5679e8f722d386e96533ed8dbd8"
         },
         {
           "path": "back/defend.json",
@@ -204,7 +208,7 @@
         },
         {
           "path": "back/defend.png",
-          "sha256": "8f4d09e771163122aad3cc8b11c258f39579dc7ab6a640999039b007a18aba3d"
+          "sha256": "e726bc396a536920f5a3c5a81e903dffc7f14fc330ac7c7d2ac0b56e811ccd48"
         },
         {
           "path": "back/idle.json",
@@ -212,7 +216,7 @@
         },
         {
           "path": "back/idle.png",
-          "sha256": "cef6dd070e171ed1a66b8c7eb253596c7467c483a79cee0724e1375f5590f0db"
+          "sha256": "026041bee4c95accd2adf9b4e5df021396c8822041f3161c4093d56fc323a548"
         },
         {
           "path": "back/move.json",
@@ -220,39 +224,39 @@
         },
         {
           "path": "back/move.png",
-          "sha256": "967409472230d55fb1ac98b27ff12f0db227fd6cee941ee7d541225effb7c83e"
+          "sha256": "feed289065346a806750ff41148a7003b814897e37de712e620e7e330e05423d"
         },
         {
           "path": "front/attack.json",
-          "sha256": "11a5be6efd3dbeafcee7e5e585ce0c8f5b2c908c14564bef187c7ff865cca8f0"
+          "sha256": "e2eb8f7817713c4910095a6ddb5791f07381fc59dd56dc2b4069f4622feb9e69"
         },
         {
           "path": "front/attack.png",
-          "sha256": "822f671b7b60626e8806cea4bdc65c8c0a3d4a600fe799c8d0db05d88621d583"
+          "sha256": "cb9be58c57681008e6c71963800786dd160c1f8a0879c1e8d08f5f8f3b4c731b"
         },
         {
           "path": "front/defend.json",
-          "sha256": "876632f8d76aee1496e11e20d4f455ea251e75bbf1927dfa8b0351dda52d2558"
+          "sha256": "5d4a6ee1b73415dfc7bf2b17e76877cfa4bb5fc33c733ed025c6c8f13b94ec7a"
         },
         {
           "path": "front/defend.png",
-          "sha256": "94ec0013e9d0728ac9d5eb68777cf19386305926f748e53b9a895cb34d8759ab"
+          "sha256": "4a1ef818f67fa50a5d8f94dfd2b0eb8cfe853b27302e0c8ffdb3ec4bed43fd30"
         },
         {
           "path": "front/failure.json",
-          "sha256": "8595bf7783e8c8d4b50c96124b72490a4ee0b31f6a7606a48b07a9fb9ac71ea3"
+          "sha256": "ddecc6b34dfa628f8319c6696752bdc0de42687695c71a4c578be5f6e78731e7"
         },
         {
           "path": "front/failure.png",
-          "sha256": "b3ad602a3676493bd4b6d2544c900192275fe4c879b516022ae24cca767b326b"
+          "sha256": "d838fe85245081a12fe10340635e4053c2b1065d1d611a494f9b6e4f3c03bc97"
         },
         {
           "path": "front/idle.json",
-          "sha256": "3e82b71a8b718074f9f52ea11c8cb5d424e59bec30ea18ab8a35095f6fb0b1a0"
+          "sha256": "cd9b82fa7c651e6596cae4cdb0668ead4fe9d9c4c8573062c10c9b92e6495708"
         },
         {
           "path": "front/idle.png",
-          "sha256": "013754a2ccb0d3ee7b940952826b5490c93e67ad96928a0de84fc3554a17a029"
+          "sha256": "450e54ce9243c52ca511ada366e935d774a463585c6cc64f5b76a24c032de448"
         },
         {
           "path": "front/move.json",
@@ -260,95 +264,95 @@
         },
         {
           "path": "front/move.png",
-          "sha256": "6e2cfae56167a05060d3b01249a84059d981375f506c37108eaf2d24f85a0076"
+          "sha256": "6c4dfe6039a2cf46ff716b7150d49b9135d4a9ad05ab814a0524cb2a7e675c79"
         },
         {
           "path": "front/success.json",
-          "sha256": "c78ed387ee1193a828426dfc31ed79f128ce762ada674ffe19e699d2a17be2b4"
+          "sha256": "07226659280a7c3d26d1bf0efc1a9186e3faea5351b06aba70579d5d5374c1e5"
         },
         {
           "path": "front/success.png",
-          "sha256": "7b187555e700dc5353277325ad87e858427602c5bff29147a21aa380eff00324"
+          "sha256": "e9ac67885f41b37a34fb808504459b43931b84e96fadf93b78937201f2ea5b17"
         },
         {
           "path": "side_left/attack.json",
-          "sha256": "1be872377af1b19f4d6d6897d8d9716615bcbd998bba157dcab10541ab5433cd"
+          "sha256": "863477db67c2333991e07a7ff9e26a9361b3ea0238a6e969231093f27949cb80"
         },
         {
           "path": "side_left/attack.png",
-          "sha256": "937e62724f16dc1c341b55f43f227ba47da6e4641b76cd9ab4b40091aabb7d04"
+          "sha256": "ded7769c44b61adcbee9f7ef168c28ffaa98a47614ca1b0ea40a103c7462a0d0"
         },
         {
           "path": "side_left/defend.json",
-          "sha256": "c7d8490e31921415e1a8a6f5976ef7748494266dc8a095e7ee64d3d1baf16fad"
+          "sha256": "3d4659bb8365af5a5783e962de7d093381997848c8728a1d6d5b2d5320289180"
         },
         {
           "path": "side_left/defend.png",
-          "sha256": "f33482f27fe4f39b66cbf4473f30f067ed8c6f4a0418e5b4ba209b651104981c"
+          "sha256": "3afa6ce9778b61fa38d3e785aed10b5a5b2312f209432e7421293c4005607473"
         },
         {
           "path": "side_left/idle.json",
-          "sha256": "343d447ea901fd0a1d27bec2a4f2824ce2bf8f14aa70bcca8f12a3fd46fec40f"
+          "sha256": "9932143e5c8449513e8bc6039d7fe787df74e7ab729993c3420eb847adf5ef5c"
         },
         {
           "path": "side_left/idle.png",
-          "sha256": "9bba38700f4023a2511b87bcadc33da07b423e5b8b8f50d928d364edcc9a9b17"
+          "sha256": "21f35231ace1b977ea94a4fc137d327fe03d2bfb2c49d59ec10804a5c75456ae"
         },
         {
           "path": "side_left/move.json",
-          "sha256": "f5c8a927cde6b85602623e7fef9c0ae46567d89d3e8e92f32e429b56023307ca"
+          "sha256": "47c83cb7506c313c55a52a472e1dc1b778da48bee1ba7e3ae0f72d2580903a73"
         },
         {
           "path": "side_left/move.png",
-          "sha256": "516e61f1e6003ec916a9dbf8d5ea9f1d76e0df9a5866cdc13cd1b9d7dbb9fbc9"
+          "sha256": "46dd7145bb43c2ef97c796242235567df9c77f0df3c3bd4158aaf88410bf5d25"
         },
         {
           "path": "side_left/run.json",
-          "sha256": "a10a72564218845e91f175ac277a87c7c71838536282283cfb8aa3b68aebe28d"
+          "sha256": "632658c169f63614855a4f85364447794ed3ba314b550280bc908b3bd510b8e1"
         },
         {
           "path": "side_left/run.png",
-          "sha256": "b81b98783247ab0afbf41f04bee56763781d390c1f22ae54f71669d7e7449c42"
+          "sha256": "72747aaaaf9e37d196227b9db691782e44b123845f53ba994e1e83b6e8615ea2"
         },
         {
           "path": "side_right/attack.json",
-          "sha256": "b6b03789050a0c274e080ba2124f01b6cd45eb4cc72bacd27415d56ccb7ab00d"
+          "sha256": "e7c305639f75733d22e4c0a5246b9df17a6c7c8e25e739b66daa8b3230d644b0"
         },
         {
           "path": "side_right/attack.png",
-          "sha256": "490f6ad7fd474ddb6de2ddb8fe5803a53f059fda8af8c30a6738a3e0add0e647"
+          "sha256": "29986f731a7716939ddee5ffe21ae086ccb4105b74b0de6234ba248a3e4f8d07"
         },
         {
           "path": "side_right/defend.json",
-          "sha256": "1544912290be364e3fb741bbb38cc6a89e02abd64b63c75096078fa3f3be2584"
+          "sha256": "3887d05280feec9f4f128b84c1b6b6282b9a82b707ab8103df53fec788708d80"
         },
         {
           "path": "side_right/defend.png",
-          "sha256": "b68224c08b99d3ed157933c5ffed4e0bb639e517028418e0c3bccab690f642cf"
+          "sha256": "debc974039168005c693da99b8e91217aef8c4f8e12b646b62161940fe815d2d"
         },
         {
           "path": "side_right/idle.json",
-          "sha256": "e650ebc9519988cd9efeb2eb3c9435a02c7dcfe6a746d721021261e5ea9d1504"
+          "sha256": "a3d945f5cef63da0a2d248b9b0ee49f2116a2e83dde9b0e6eff3a6184a4c6ce8"
         },
         {
           "path": "side_right/idle.png",
-          "sha256": "485732669ee91cf65d49139f8f0558648db08eeb0f31890dd8d3dada70bf7739"
+          "sha256": "4d86266ac1a9c9f91701f3ca2fab2c5db09bf89953a1edee3e64b68b3f550616"
         },
         {
           "path": "side_right/move.json",
-          "sha256": "c8d9577173e11833600769d424db80e706597dd76010f87444a9ecb6cb6b42a9"
+          "sha256": "268e6218d700e46ee11d6776643771881bdc7f3726f81b0733091f73cd165c49"
         },
         {
           "path": "side_right/move.png",
-          "sha256": "6898f1029f54d8aa1eeb9697f9f9f2ff8bc8be8ae132fbb331dd28b65fe7707e"
+          "sha256": "bf75e102f6015559529d977ef4e0446458903a9801f2d698464e0c14cc33c36a"
         },
         {
           "path": "side_right/run.json",
-          "sha256": "ca83ffd4dcfdb395e9b6cb41ba4c89c653cbc13855b736e8d491086c2cfdc75a"
+          "sha256": "922ce97f054a544eef4aa9a90b0aec714aa0280332d8a0c92620afec7f4c2e85"
         },
         {
           "path": "side_right/run.png",
-          "sha256": "b3336e29617c7ce0df233fa70535d0acf0e4e7c67c57e65a24e08fb8c5ce7648"
+          "sha256": "fd2455f316927f6167cd878be43f1df916dfca8e2001cd54a14871777c156ef1"
         }
       ]
     },
@@ -360,40 +364,41 @@
         "Generated front, side and back head/body/arms/legs",
         "Original skeleton bones, mesh UVs and animation preserved",
         "Uniform head fit to original mesh hull",
-        "Original extra blonde hair regions cleared only for selected br_flora skin"
+        "Original extra blonde hair regions cleared only for selected br_flora skin",
+        "Back head region uniformly scaled to 0.65 and raised by 30 local units to match front head width; original artwork, bones and animations preserved"
       ],
       "files": [
         {
           "path": "back/attack.json",
-          "sha256": "f081870dca2e7e8a474eb840fb15592d173d3f7da797242900e614bf309d9d36"
+          "sha256": "3adda3178397e98369d2cccd6504e191760ab4ac8d00b4cc6f27f2f358adcd35"
         },
         {
           "path": "back/attack.png",
-          "sha256": "54276f3c451be4f47af941fda5eded78cd3a380e55d9ca7ddab36c7a7832d942"
+          "sha256": "0470c497320b2d7461913ac0af0c5556ad4e62b6595948473cd154df44ce1533"
         },
         {
           "path": "back/defend.json",
-          "sha256": "eae93ab657a94650e15ff5d4b0ee269268b98eee31b65a26f050bf687c3910af"
+          "sha256": "0260ee89f719f6ef8a8950c44818e43f41b725c29d870bda9ee379202194fe21"
         },
         {
           "path": "back/defend.png",
-          "sha256": "5c4475d8c31bf9df37db884eff7525bb37f20f6a515d38a21fa8b4349b214bc1"
+          "sha256": "42a728481b96f1938abd6fcfc9e3a7ce1cabf0ae110edf2ab5e244f3489743a7"
         },
         {
           "path": "back/idle.json",
-          "sha256": "5eae073319684c2b383dcb575c442ae5964d820bd56205831c33ea3812a3e352"
+          "sha256": "7ee186ed7ebd34dab161eaa17d1e6bc85018328688c96c006a02b616adc7ab5d"
         },
         {
           "path": "back/idle.png",
-          "sha256": "c338e9082465d58bb8075781ff3ce004f1efa5441f5e339421b78edaf15284c9"
+          "sha256": "7198ad3f52b9fe61b7aa06897e82494367c51d23e3ea7a46048bd511bcbad1ea"
         },
         {
           "path": "back/move.json",
-          "sha256": "71421216b72452dcfcad0c72449837137aae4ae0dfafe2d52f214b89d71ef736"
+          "sha256": "ba866abc35fd68e9027fbeebd2097e75eeb2b172ff2e1134bf8488a7edb68ce8"
         },
         {
           "path": "back/move.png",
-          "sha256": "93739a316d7728c61f3ea6bcb404bd42b2d6d424b47a6d4a3b57483e184bad0a"
+          "sha256": "73032a9fe38e67f941b08b822beb4c43e1cadf47f8837076cd083a541a58b1a9"
         },
         {
           "path": "front/attack.json",

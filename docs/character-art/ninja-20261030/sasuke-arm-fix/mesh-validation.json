@@ -1,0 +1,141 @@
+{
+  "rows": [
+    {
+      "view": "front",
+      "animation": "idle",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 6989,
+      "inversions": 0,
+      "minSignedArea": 0.5838596546091139
+    },
+    {
+      "view": "front",
+      "animation": "move",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 6989,
+      "inversions": 0,
+      "minSignedArea": 0.5838439930230379
+    },
+    {
+      "view": "front",
+      "animation": "attack",
+      "duration": 0.8500000238418579,
+      "samples": 241,
+      "triangles": 6989,
+      "inversions": 0,
+      "minSignedArea": 0.5838255877606571
+    },
+    {
+      "view": "front",
+      "animation": "defend",
+      "duration": 1.2000000476837158,
+      "samples": 241,
+      "triangles": 6989,
+      "inversions": 0,
+      "minSignedArea": 0.5838273125700653
+    },
+    {
+      "view": "front",
+      "animation": "failure",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 6989,
+      "inversions": 0,
+      "minSignedArea": 0.5254947943612933
+    },
+    {
+      "view": "front",
+      "animation": "success",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 6989,
+      "inversions": 0,
+      "minSignedArea": 0.5255048545077443
+    },
+    {
+      "view": "side",
+      "animation": "idle",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 5784,
+      "inversions": 0,
+      "minSignedArea": 32.61008958611637
+    },
+    {
+      "view": "side",
+      "animation": "move",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 5784,
+      "inversions": 0,
+      "minSignedArea": 32.6100600506179
+    },
+    {
+      "view": "side",
+      "animation": "run",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 5784,
+      "inversions": 0,
+      "minSignedArea": 32.609980050474405
+    },
+    {
+      "view": "side",
+      "animation": "attack",
+      "duration": 0.8500000238418579,
+      "samples": 241,
+      "triangles": 5784,
+      "inversions": 0,
+      "minSignedArea": 32.610004294198006
+    },
+    {
+      "view": "side",
+      "animation": "defend",
+      "duration": 1.2000000476837158,
+      "samples": 241,
+      "triangles": 5784,
+      "inversions": 0,
+      "minSignedArea": 32.60995897417888
+    },
+    {
+      "view": "back",
+      "animation": "idle",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 5543,
+      "inversions": 0,
+      "minSignedArea": 35.89888810925186
+    },
+    {
+      "view": "back",
+      "animation": "move",
+      "duration": 0.6666666865348816,
+      "samples": 241,
+      "triangles": 5543,
+      "inversions": 0,
+      "minSignedArea": 35.9061235236004
+    },
+    {
+      "view": "back",
+      "animation": "attack",
+      "duration": 0.8500000238418579,
+      "samples": 241,
+      "triangles": 5543,
+      "inversions": 0,
+      "minSignedArea": 35.881578230299056
+    },
+    {
+      "view": "back",
+      "animation": "defend",
+      "duration": 1.2000000476837158,
+      "samples": 241,
+      "triangles": 5543,
+      "inversions": 0,
+      "minSignedArea": 35.92177462950349
+    }
+  ],
+  "totalInversions": 0,
+  "errors": []
+}

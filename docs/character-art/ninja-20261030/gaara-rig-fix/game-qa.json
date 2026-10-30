@@ -1,0 +1,180 @@
+{
+  "rows": [
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.8,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "gaara/front/move",
+      "materialId": "888d8e69-8723-449c-9895-dae5d827398d",
+      "frame": 1,
+      "scaleX": 2.556,
+      "renderScaleX": 2.556,
+      "flipX": false,
+      "repeatX": 0.12383720930232558,
+      "anchor": {
+        "x": 0.49295774647887325,
+        "y": 0.11003236245954695
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "front"
+    },
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.8,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "gaara/back/move",
+      "materialId": "888d8e69-8723-449c-9895-dae5d827398d",
+      "frame": 2,
+      "scaleX": 2.58,
+      "renderScaleX": 2.58,
+      "flipX": false,
+      "repeatX": 0.12384792626728111,
+      "anchor": {
+        "x": 0.49767441860465117,
+        "y": 0.02640264026402639
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "back"
+    },
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.8,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "gaara/side_left/move",
+      "materialId": "888d8e69-8723-449c-9895-dae5d827398d",
+      "frame": 2,
+      "scaleX": 2.3040000000000003,
+      "renderScaleX": 2.3040000000000003,
+      "flipX": false,
+      "repeatX": 0.12371134020618557,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.08191126279863481
+      },
+      "tint": "ffffff",
+      "mirrored": true,
+      "direction": "side_left"
+    },
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.8,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "gaara/side_right/move",
+      "materialId": "888d8e69-8723-449c-9895-dae5d827398d",
+      "frame": 2,
+      "scaleX": 2.3040000000000003,
+      "renderScaleX": 2.3040000000000003,
+      "flipX": false,
+      "repeatX": 0.12371134020618557,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.08191126279863481
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "side_right"
+    }
+  ],
+  "gesture": {
+    "cast": {
+      "motion": "attack",
+      "windup": 0.32,
+      "duration": 0.85,
+      "id": 1,
+      "key": "q",
+      "elapsed": 0.15260000000149013,
+      "direction": {
+        "x": 1,
+        "z": 0
+      }
+    },
+    "sprite": {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.8,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "gaara/side_right/attack",
+      "materialId": "888d8e69-8723-449c-9895-dae5d827398d",
+      "frame": 3,
+      "scaleX": 2.64,
+      "renderScaleX": 2.64,
+      "flipX": false,
+      "repeatX": 0.12387387387387387,
+      "anchor": {
+        "x": 0.4772727272727273,
+        "y": 0.09491525423728808
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "side_right"
+    }
+  },
+  "release": {
+    "key": "q",
+    "heroId": "gaara",
+    "sourceId": 13,
+    "targetId": null,
+    "point": {
+      "x": -91.80836455874775,
+      "z": 1.86233411185122
+    },
+    "mode": "aim",
+    "rank": 1,
+    "phase": "released",
+    "startedAt": 0.5322999999970197,
+    "windup": 0.32,
+    "releasedAt": 0.8847999999970196
+  },
+  "characterPackage": "20 PNG/JSON pairs passed"
+}

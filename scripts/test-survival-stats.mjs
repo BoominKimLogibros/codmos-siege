@@ -22,6 +22,7 @@ for(const h of HEROES){
 for(const h of HEROES){
  const g=setup(h.id),p=g.player,t=g.bot;p.attackCd=999;
  switch(h.id){
+  case 'karina':for(const key of ['q','w','e']){p.castGesture=null;assert(g.cast(key));releaseCast(g);}assert.equal(p.neonBeats,0);assert(p.shield>100);break;
   case 'naruto':for(let i=0;i<3;i++)g.basic(p,t);break;
   case 'int':g.update(.05);break;
   case 'kim':{g.waveSpawn();const m=g.units.find(u=>u.team===p.team&&u.kind==='minion');m.x=1;m.z=0;g.basic(m,t);break;}
@@ -40,8 +41,14 @@ for(const h of HEROES){
 }
 assert.equal(new Set(Object.values(PASSIVES).map(p=>p.shape)).size,HEROES.length);
 assert.equal(mitigate(100,{stats:{armor:0}},{stats:{armorPen:999}}),100);
-console.log('PASS 14 rosters × 20 stats, level growth, exact 5s HP/mana regeneration, physical/magic/true damage, penetration/shields, actual-damage lifesteal, AP scaling, mana gating, haste/AS/crit and 14 unique passive mechanics/events');
+console.log(`PASS ${HEROES.length} rosters × 20 stats, level growth, regeneration, combat scaling and unique passive mechanics/events`);
 
 {const g=setup('int'),p=g.player;g.units=[p];g.update(.05);close(p.shield,.25);assert(g.cast('r'));releaseCast(g);const shield=p.shield;g.update(.05);assert(p.shield>160&&p.shield<shield,'passive must preserve the larger ultimate shield');}
 {const g=setup('bora');g.basic(g.player,g.bot);assert.equal(g.bot.poisonStacks||0,0,'firing alone must not stack poison');g.update(.05);assert.equal(g.bot.poisonStacks,1,'landed attack adds one stack');}
 console.log('PASS passive shield preserves ultimate shield; poison stacks only on landed attacks');
+
+// Karina counts released skills only: canceled windup cannot grant rhythm or a shield.
+{const g=setup('karina'),p=g.player;assert(g.cast('q'));assert.equal(p.neonBeats,0);g.hit(p,1e9,g.bot);g.advanceCast(p,1);assert.equal(p.neonBeats,0);assert.equal(p.passiveEvents,0);}
+{const g=setup('karina'),p=g.player;p.stats.healShieldPower=.5;for(let i=0;i<3;i++){p.castGesture=null;p.cooldowns.q=0;assert(g.cast('q'));releaseCast(g);if(i<2){assert.equal(p.shield,0);assert.equal(passiveState(p,g.units).value,i+1);}}close(p.shield,(65+p.stats.abilityPower*.35)*1.5);assert.equal(p.passiveEvents,1);assert.equal(passiveState(p,g.units).value,0);}
+
+{const g=setup('karina'),p=g.player;p.neonBeats=2;g.hit(p,1e9,g.bot);p.respawn=0;g.update(.05);assert.equal(p.neonBeats,0);assert.equal(p.shield,0);}

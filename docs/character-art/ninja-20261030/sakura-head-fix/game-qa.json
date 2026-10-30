@@ -1,0 +1,179 @@
+{
+  "directionChanges": [
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.6,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "sakura/front/move",
+      "materialId": "943cc69a-6132-4c46-99b4-1a815d15b007",
+      "frame": 4,
+      "scaleX": 2.58,
+      "renderScaleX": 2.58,
+      "flipX": false,
+      "repeatX": 0.12384792626728111,
+      "anchor": {
+        "x": 0.4930232558139535,
+        "y": 0.12318840579710144
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "front"
+    },
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.6,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "sakura/side_right/move",
+      "materialId": "943cc69a-6132-4c46-99b4-1a815d15b007",
+      "frame": 2,
+      "scaleX": 2.052,
+      "renderScaleX": 2.052,
+      "flipX": false,
+      "repeatX": 0.12355491329479769,
+      "anchor": {
+        "x": 0.45614035087719296,
+        "y": 0.09960159362549803
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "side_right"
+    },
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.6,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "sakura/back/move",
+      "materialId": "943cc69a-6132-4c46-99b4-1a815d15b007",
+      "frame": 2,
+      "scaleX": 2.508,
+      "renderScaleX": 2.508,
+      "flipX": false,
+      "repeatX": 0.12381516587677725,
+      "anchor": {
+        "x": 0.49760765550239233,
+        "y": 0.0337078651685393
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "back"
+    },
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.6,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "sakura/side_left/move",
+      "materialId": "943cc69a-6132-4c46-99b4-1a815d15b007",
+      "frame": 2,
+      "scaleX": 2.052,
+      "renderScaleX": 2.052,
+      "flipX": false,
+      "repeatX": 0.12355491329479769,
+      "anchor": {
+        "x": 0.543859649122807,
+        "y": 0.09960159362549803
+      },
+      "tint": "ffffff",
+      "mirrored": true,
+      "direction": "side_left"
+    },
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.6,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "sakura/back/move",
+      "materialId": "943cc69a-6132-4c46-99b4-1a815d15b007",
+      "frame": 2,
+      "scaleX": 2.508,
+      "renderScaleX": 2.508,
+      "flipX": false,
+      "repeatX": 0.12381516587677725,
+      "anchor": {
+        "x": 0.49760765550239233,
+        "y": 0.0337078651685393
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "back"
+    },
+    {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.6,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "sakura/front/move",
+      "materialId": "943cc69a-6132-4c46-99b4-1a815d15b007",
+      "frame": 2,
+      "scaleX": 2.58,
+      "renderScaleX": 2.58,
+      "flipX": false,
+      "repeatX": 0.12384792626728111,
+      "anchor": {
+        "x": 0.4930232558139535,
+        "y": 0.12318840579710144
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "front"
+    }
+  ],
+  "characterPackage": "20 PNG/JSON pairs passed"
+}

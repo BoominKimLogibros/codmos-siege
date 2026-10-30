@@ -6,40 +6,41 @@
     "Generated front, side and back head/body/arms/legs",
     "Original skeleton bones, mesh UVs and animation preserved",
     "Uniform head fit to original mesh hull",
-    "Original extra blonde hair regions cleared only for selected br_flora skin"
+    "Original extra blonde hair regions cleared only for selected br_flora skin",
+    "Back head region uniformly scaled to 0.65 and raised by 30 local units to match front head width; original artwork, bones and animations preserved"
   ],
   "files": [
     {
       "path": "back/attack.json",
-      "sha256": "f081870dca2e7e8a474eb840fb15592d173d3f7da797242900e614bf309d9d36"
+      "sha256": "3adda3178397e98369d2cccd6504e191760ab4ac8d00b4cc6f27f2f358adcd35"
     },
     {
       "path": "back/attack.png",
-      "sha256": "54276f3c451be4f47af941fda5eded78cd3a380e55d9ca7ddab36c7a7832d942"
+      "sha256": "0470c497320b2d7461913ac0af0c5556ad4e62b6595948473cd154df44ce1533"
     },
     {
       "path": "back/defend.json",
-      "sha256": "eae93ab657a94650e15ff5d4b0ee269268b98eee31b65a26f050bf687c3910af"
+      "sha256": "0260ee89f719f6ef8a8950c44818e43f41b725c29d870bda9ee379202194fe21"
     },
     {
       "path": "back/defend.png",
-      "sha256": "5c4475d8c31bf9df37db884eff7525bb37f20f6a515d38a21fa8b4349b214bc1"
+      "sha256": "42a728481b96f1938abd6fcfc9e3a7ce1cabf0ae110edf2ab5e244f3489743a7"
     },
     {
       "path": "back/idle.json",
-      "sha256": "5eae073319684c2b383dcb575c442ae5964d820bd56205831c33ea3812a3e352"
+      "sha256": "7ee186ed7ebd34dab161eaa17d1e6bc85018328688c96c006a02b616adc7ab5d"
     },
     {
       "path": "back/idle.png",
-      "sha256": "c338e9082465d58bb8075781ff3ce004f1efa5441f5e339421b78edaf15284c9"
+      "sha256": "7198ad3f52b9fe61b7aa06897e82494367c51d23e3ea7a46048bd511bcbad1ea"
     },
     {
       "path": "back/move.json",
-      "sha256": "71421216b72452dcfcad0c72449837137aae4ae0dfafe2d52f214b89d71ef736"
+      "sha256": "ba866abc35fd68e9027fbeebd2097e75eeb2b172ff2e1134bf8488a7edb68ce8"
     },
     {
       "path": "back/move.png",
-      "sha256": "93739a316d7728c61f3ea6bcb404bd42b2d6d424b47a6d4a3b57483e184bad0a"
+      "sha256": "73032a9fe38e67f941b08b822beb4c43e1cadf47f8837076cd083a541a58b1a9"
     },
     {
       "path": "front/attack.json",

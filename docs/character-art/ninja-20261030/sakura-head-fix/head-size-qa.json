@@ -1,0 +1,61 @@
+{
+  "before": [
+    {
+      "view": "front",
+      "width": 145,
+      "height": 122,
+      "top": 322,
+      "bottom": 443
+    },
+    {
+      "view": "side",
+      "width": 145,
+      "height": 127,
+      "top": 341,
+      "bottom": 467
+    },
+    {
+      "view": "back",
+      "width": 226,
+      "height": 195,
+      "top": 300,
+      "bottom": 494
+    }
+  ],
+  "after": [
+    {
+      "view": "front",
+      "bounds": {
+        "left": 312,
+        "top": 322,
+        "right": 456,
+        "bottom": 443,
+        "width": 145,
+        "height": 122
+      }
+    },
+    {
+      "view": "side",
+      "bounds": {
+        "left": 312,
+        "top": 341,
+        "right": 456,
+        "bottom": 467,
+        "width": 145,
+        "height": 127
+      }
+    },
+    {
+      "view": "back",
+      "bounds": {
+        "left": 311,
+        "top": 320,
+        "right": 457,
+        "bottom": 446,
+        "width": 147,
+        "height": 127
+      }
+    }
+  ],
+  "runtimeErrors": []
+}

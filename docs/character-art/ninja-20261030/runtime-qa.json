@@ -1,7 +1,7 @@
 {
   "originalRigChecks": 9,
   "bonesAndOriginalAttachmentsUnchanged": true,
-  "boneAnimationKeyframesUnchanged": true,
+  "boneAnimationKeyframesUnchanged": false,
   "exportedPairs": 60,
   "bakedFrameChecks": "all 3 check:character commands passed",
   "runtime": "native Phaser/Spine preview; four-direction movement in actual game for all three heroes",
@@ -11,5 +11,26 @@
   "notes": [
     "Gaara adds a body-bound gourd slot and adjusts draw-order offsets for the added slot",
     "Sakura selected original extra hair textures are transparent; skeleton meshes remain unchanged"
-  ]
+  ],
+  "sasukeArmCorrection": {
+    "record": "sasuke-arm-fix/mesh-validation.json",
+    "animationsChanged": [
+      "attack",
+      "defend"
+    ],
+    "changes": "Elbow rotation +/-45 degrees; arm scaling removed; duration unchanged",
+    "totalArmMeshInversions": 0
+  },
+  "gaaraRigCorrection": {
+    "record": "gaara-rig-fix/mesh-validation.json",
+    "scope": "6 leg textures, 3 gourd attachments, side foot-joint rotate timelines only",
+    "totalLegMeshInversions": 0
+  },
+  "sakuraHeadCorrection": {
+    "record": "sakura-head-fix/head-size-qa.json",
+    "scope": "Back head region scale and position only; artwork, bones and animation preserved",
+    "beforeWidth": 226,
+    "afterWidth": 147,
+    "frontWidth": 145
+  }
 }

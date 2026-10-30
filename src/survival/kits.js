@@ -1,6 +1,7 @@
 import {PASSIVES} from './passives.js';
 const skill=(name,kind,cooldown,damage,extra={})=>({name,kind,cooldown,damage,...extra});
 export const KITS={
+ karina:{passive:{name:'네온 리듬',desc:'세 번째 스킬 시전마다 네온 보호막'},q:skill('프리즘 펄스','beam',5,65,{range:17,width:1.2}),w:skill('스포트라이트','buff',12,0,{duration:3,shield:85,speed:1.25}),e:skill('싱크 스텝','dash',8,50,{distance:7}),r:skill('슈퍼노바 스테이지','zone',28,42,{radius:5.5,duration:4,slow:2})},
  naruto:{passive:{name:'그림자 연계',desc:'기본 공격 3회마다 추가 타격'},q:skill('나선환','rasengan',4,70,{distance:3.6,width:1.1,dashDuration:.18}),w:skill('그림자 분신','summon',13,18,{count:1,duration:7}),e:skill('순신술','dash',8,45,{distance:9}),r:skill('대옥 나선환','area',25,190,{radius:7,stun:1.2})},
  int:{passive:{name:'자가 충전',desc:'전투 중에도 체력과 보호막 재생'},q:skill('펄스 광선','beam',5,55,{range:18}),w:skill('복구 프로토콜','heal',12,0,{heal:100,allies:true}),e:skill('자기장','pull',10,45,{radius:6}),r:skill('오버클록','buff',28,0,{duration:8,haste:2.3,shield:160})},
  kim:{passive:{name:'최고 지휘',desc:'주변 아군 미니언 공격력 30% 증가'},q:skill('포격 명령','area',6,80,{radius:4}),w:skill('돌격 지령','rally',12,0,{duration:7,speed:1.7}),e:skill('철벽 진형','shield',11,0,{shield:120,allies:true}),r:skill('총공세','barrage',30,55,{count:5,radius:5})},
@@ -26,9 +27,10 @@ for(const [id,kit]of Object.entries(KITS)){
  for(const key of KEYS){const s=kit[key];s.damageType=physical?'physical':'magic';s.apRatio=s.damage?(physical?.25:.65):0;s.adRatio=s.damage?(physical?.9:.2):0;s.manaCost={q:25,w:40,e:30,r:80}[key];}
 }
 
-// Each of the 56 skills declares its input contract and preview geometry.
+// Every skill declares its input contract and preview geometry.
 const input=(targeting,shape,castRange,extra={})=>({targeting,shape,castRange,...extra});
 const INPUTS={
+ karina:{q:input('aim','line',17),w:input('self','self',0),e:input('aim','dash',7),r:input('aim','circle',14)},
  naruto:{q:input('direction','dash',3.6),w:input('self','self',0),e:input('aim','dash',9),r:input('aim','circle',14)},
  int:{q:input('aim','line',18),w:input('aim','circle',10,{radius:6}),e:input('aim','circle',10),r:input('self','self',0)},
  kim:{q:input('aim','circle',16),w:input('self','self',0),e:input('aim','circle',10,{radius:6}),r:input('aim','circle',16)},

@@ -1,0 +1,32 @@
+[
+  {
+    "view": "front",
+    "slot": "leg_l",
+    "originalAlphaRetained": true
+  },
+  {
+    "view": "front",
+    "slot": "leg_r",
+    "originalAlphaRetained": true
+  },
+  {
+    "view": "side",
+    "slot": "leg_l",
+    "originalAlphaRetained": true
+  },
+  {
+    "view": "side",
+    "slot": "leg_r",
+    "originalAlphaRetained": true
+  },
+  {
+    "view": "back",
+    "slot": "leg_l",
+    "originalAlphaRetained": true
+  },
+  {
+    "view": "back",
+    "slot": "leg_r",
+    "originalAlphaRetained": true
+  }
+]

@@ -1,4 +1,5 @@
 export const PASSIVES={
+ karina:{icon:'✧',color:'#66d9ef',shape:'neon',count:3,desc:'스킬을 세 번 시전하면 65 + 주문력 35%의 네온 보호막을 얻습니다. 보호막 강화 효과가 적용됩니다.'},
  naruto:{icon:'✦',color:'#ffc875',shape:'spiral',count:3,desc:'기본 공격 3회마다 공격력 80%의 추가 피해. 주황색 나선 표식이 터집니다.'},
  int:{icon:'⬡',color:'#8cebd2',shape:'hex',count:60,desc:'매초 체력 2.5와 보호막 5 충전. 보호막은 최대 60까지 유지됩니다.'},
  kim:{icon:'⚑',color:'#d7d18b',shape:'banner',count:4,desc:'14 거리 안의 아군 미니언 공격력 30% 증가. 지휘권 안의 미니언에 황금 표식이 생깁니다.'},
@@ -18,6 +19,7 @@ export function passiveState(unit,units=[]){
  const p=PASSIVES[unit.heroId];let value=0,max=p.count,active=false;
  const marks=Math.max(0,...Object.entries(unit.marks||{}).filter(([id])=>units.some(u=>String(u.id)===id&&u.hp>0)).map(([,value])=>value));
  switch(unit.heroId){
+  case 'karina':value=unit.neonBeats||0;active=value===2;break;
   case 'naruto':value=(unit.attacks||0)%3;break;case 'lucy':case 'dokkaebi':value=(unit.attacks||0)%4;break;
   case 'nova':case 'danso':value=marks;break;case 'jet':value=unit.charge||0;break;
   case 'int':value=Math.min(60,unit.shield||0);break;

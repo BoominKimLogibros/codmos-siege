@@ -222,5 +222,21 @@ export const HEROES = [
     "asset": "sakura",
     "skin": "codmos_lucy",
     "desc": "괴력 주먹으로 적을 기절시키고 의료 닌술로 아군을 치료합니다."
+  },
+  {
+    "id": "karina",
+    "name": "카리나",
+    "role": "네온의 지휘자",
+    "icon": "✧",
+    "color": "#66d9ef",
+    "skill": "프리즘 펄스",
+    "attack": "ranger",
+    "hp": 100,
+    "speed": 7.3,
+    "damage": 23,
+    "cooldown": 0.65,
+    "asset": "karina",
+    "skin": "br_isabele",
+    "desc": "프리즘 광선과 빠른 스텝으로 싸우며, 세 번째 스킬마다 네온 보호막을 얻습니다."
   }
 ];

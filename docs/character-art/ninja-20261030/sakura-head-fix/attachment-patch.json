@@ -1,0 +1,24 @@
+{
+  "view": "back",
+  "skin": "br_flora",
+  "slot": "head",
+  "before": {
+    "name": "br_flora/br_flora_head",
+    "x": 138.75317,
+    "y": 1.0648203,
+    "rotation": -89.02346,
+    "width": 581,
+    "height": 519
+  },
+  "after": {
+    "name": "br_flora/br_flora_head",
+    "x": 168.75317,
+    "y": 1.0648203,
+    "rotation": -89.02346,
+    "width": 581,
+    "height": 519,
+    "scaleX": 0.65,
+    "scaleY": 0.65
+  },
+  "bonesAndAnimationsUnchanged": true
+}

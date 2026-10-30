@@ -1,0 +1,72 @@
+{
+  "hero": "sasuke",
+  "fourDirections": [
+    "front",
+    "back",
+    "side_left",
+    "side_right"
+  ],
+  "fourDirectionMovementPassed": true,
+  "gesture": {
+    "cast": {
+      "motion": "attack",
+      "windup": 0.32,
+      "duration": 0.85,
+      "id": 2,
+      "key": "q",
+      "elapsed": 0.2,
+      "direction": {
+        "x": 1,
+        "z": 0
+      }
+    },
+    "sprite": {
+      "id": 13,
+      "visible": true,
+      "kind": "champion",
+      "barTint": "7ee85a",
+      "healthBar": {
+        "width": 2.8,
+        "fillWidth": 2.8,
+        "segments": 4.54,
+        "tickWidth": 2.8,
+        "left": -1.4,
+        "ticksVisible": true
+      },
+      "rootScaleX": 1,
+      "clip": "sasuke/side_right/attack",
+      "materialId": "1831608c-42e6-4819-864a-320053d6c4c8",
+      "frame": 4,
+      "scaleX": 2.364,
+      "renderScaleX": 2.364,
+      "flipX": false,
+      "repeatX": 0.12374371859296482,
+      "anchor": {
+        "x": 0.5329949238578681,
+        "y": 0.08633093525179858
+      },
+      "tint": "ffffff",
+      "mirrored": false,
+      "direction": "side_right"
+    }
+  },
+  "release": {
+    "key": "q",
+    "heroId": "sasuke",
+    "sourceId": 13,
+    "targetId": null,
+    "point": {
+      "x": -92.00936000000537,
+      "z": 19.398800000000005
+    },
+    "mode": "aim",
+    "rank": 1,
+    "phase": "released",
+    "startedAt": 42.77459999999763,
+    "windup": 0.32,
+    "releasedAt": 43.10789999999838
+  },
+  "characterPackage": "20 PNG/JSON pairs passed",
+  "tests": "npm test passed",
+  "build": "npm run build passed"
+}

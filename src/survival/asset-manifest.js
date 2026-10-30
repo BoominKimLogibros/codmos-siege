@@ -1,6 +1,7 @@
 // Free art used by the HUD and combat effects. scripts/import-free-assets.mjs reads these tables to copy and resize the source packs into public/survival.
 // Skill icons: Painterly Spell Icons by J. W. Bjerk (eleazzaar), CC-BY 3.0. Names are "<pack file>" without .png; -1/-2/-3 is the glow strength.
 export const SKILL_ICON_SOURCES={
+ karina:{p:'light-royal-1',q:'beam-sky-2',w:'protect-royal-2',e:'wind-grasp-air-2',r:'explosion-royal-3'},
  naruto:{p:'link-blue-2',q:'air-burst-sky-2',w:'enchant-orange-2',e:'haste-sky-2',r:'explosion-sky-3'},
  int:{p:'shielding-spirit-1',q:'beam-sky-2',w:'heal-sky-2',e:'link-royal-2',r:'lighting-royal-3'},
  kim:{p:'runes-orange-1',q:'explosion-orange-2',w:'haste-fire-2',e:'protect-orange-2',r:'fire-arrows-3'},
@@ -17,7 +18,7 @@ export const SKILL_ICON_SOURCES={
  sakura:{p:'heal-royal-1',q:'rock-royal-2',w:'heal-jade-2',e:'haste-fire-2',r:'enchant-magenta-3'}
 };
 // Vivid per-hero tint for skill VFX (cast rune, skill projectiles and hits, auras), matched to each hero's icon palette. Heroes without an entry use their HEROES color.
-export const SKILL_VFX_COLORS={naruto:'#59c8ff',int:'#5fe3ff',kim:'#ff9a3c',nova:'#8f7bff',lucy:'#ff5fb0',jet:'#5df0e0',bora:'#7dff4f',dokkaebi:'#ff6a3c',gumiho:'#ff4fd8','young-forty':'#6dff9a',danso:'#b06bff',sasuke:'#4f8cff',gaara:'#e0a94f',sakura:'#ff6fae'};
+export const SKILL_VFX_COLORS={karina:'#66d9ef',naruto:'#59c8ff',int:'#5fe3ff',kim:'#ff9a3c',nova:'#8f7bff',lucy:'#ff5fb0',jet:'#5df0e0',bora:'#7dff4f',dokkaebi:'#ff6a3c',gumiho:'#ff4fd8','young-forty':'#6dff9a',danso:'#b06bff',sasuke:'#4f8cff',gaara:'#e0a94f',sakura:'#ff6fae'};
 // Item icons: 496 Pixel Art Icons for Medieval/Fantasy RPG by Henrique Lazarini (7Soul1), CC0. Keyed by ITEMS[].icon.
 export const ITEM_ICON_SOURCES={
  sword:'W_Sword001',ruby:'I_Ruby',armor:'A_Armor04',amulet:'Ac_Necklace03',book:'W_Book01',dagger:'W_Dagger002',boots:'A_Shoes01',seed:'I_Clover',sapphire:'I_Sapphire',
