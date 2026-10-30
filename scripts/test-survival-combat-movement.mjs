@@ -20,4 +20,11 @@ for(const key of ['w','r']){
  const dash=new DashInput();dash.down('ArrowRight',0);dash.up('ArrowRight');dash.down('ArrowRight',100);assert(dash.active);dash.clearTap();assert(dash.active);dash.down('ArrowUp',150);dash.up('ArrowRight');assert(dash.active,'direction change during aiming retains existing dash');dash.up('ArrowUp');assert(!dash.active);
  const {g,p}=setup(),aim=new SkillAim(g);g.update(.05,{x:1,z:0,dash:true});assert(aim.press('r'));assert(!p.moving&&!p.dashing);const pos={x:p.x,z:p.z};g.update(.05,{x:1,z:0,dash:true,aiming:true});close(p.x,pos.x);close(p.z,pos.z);assert(aim.release('r'));assert(g.gestureLocked());
 }
-console.log('PASS no walking/dash basic attacks, full attack/skill gesture movement lock at all AS, immediate cast stop, held-direction dash resume, intrinsic dash skills, aim stop and preserved dash input lifecycle');
+{
+ // Attack-move swings at an in-range enemy whenever the attack is ready and walks toward the clicked point in between.
+ const {g,p,t}=setup();g.destination={x:-20,z:0};g.update(.05);assert.equal(p.attacks,0,'a plain move order walks past the enemy');assert(p.x<0);
+ const r=setup();r.g.destination={x:-20,z:0};r.g.attackMove={x:-20,z:0};r.g.update(.05);assert(r.p.basicGesture,'attack-move stops to swing at the enemy in range');assert.equal(r.p.basicGesture.targetId??r.t.id,r.t.id);
+ let walked=false;for(let i=0;i<60;i++){r.g.update(.05);if(r.p.moving)walked=true;}assert(walked,'the champion walks between swings');assert(r.p.attacks>=2,'and swings again when the attack is ready');assert(r.p.x<0);
+ const k=setup();k.g.destination={x:-20,z:0};k.g.attackMove={x:-20,z:0};k.g.update(.05,{x:1,z:0});assert.equal(k.g.attackMove,null,'keyboard movement cancels attack-move');
+}
+console.log('PASS no walking/dash basic attacks, full attack/skill gesture movement lock at all AS, immediate cast stop, held-direction dash resume, intrinsic dash skills, aim stop, preserved dash input lifecycle and attack-move kiting');
