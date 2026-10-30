@@ -1,0 +1,172 @@
+{
+  "id": "sasuke",
+  "baseSkin": "codmos_jet",
+  "pairs": 20,
+  "changes": [
+    "Generated front, side and back head/body/arms/legs",
+    "Original skeleton bones, mesh UVs and animation preserved",
+    "Uniform head fit to original mesh hull"
+  ],
+  "files": [
+    {
+      "path": "back/attack.json",
+      "sha256": "d43ebe704862726ea277b16e7168013377d129a37c409023961970882d668c35"
+    },
+    {
+      "path": "back/attack.png",
+      "sha256": "7ffb7ae7304bb23c446cbd7853cfff10eacdd09bd5233915eef9ea9de4e3ecd4"
+    },
+    {
+      "path": "back/defend.json",
+      "sha256": "6b199d2f61d05db2231448054806d33d06e7a060ff433bb1d09b591ce5a896dd"
+    },
+    {
+      "path": "back/defend.png",
+      "sha256": "13a1f56410537369b2b8e800098bb64a997ee67c8e49bd1ad2e4a808d19ac34e"
+    },
+    {
+      "path": "back/idle.json",
+      "sha256": "606d0ea0a4c1ceb02f0ae3fb1a4e53607701dc0cfa372622304585c8d62525c1"
+    },
+    {
+      "path": "back/idle.png",
+      "sha256": "9794d25ab28d225f47f891e9e1f739b77b05f910b741f0262d7141940881447e"
+    },
+    {
+      "path": "back/move.json",
+      "sha256": "f5307643a605f871016040cc92cf569fd8b027887514282517c8b4e6b2df5219"
+    },
+    {
+      "path": "back/move.png",
+      "sha256": "4e8301bba9ce6633fe8ce212a25ddc175ec1d4cd97e82e6a0ac95b7c74c12e87"
+    },
+    {
+      "path": "front/attack.json",
+      "sha256": "46483b2b2eb603d5dcb81c360046b0a7d0ec7ddf410a54db7d686a51431e5e6d"
+    },
+    {
+      "path": "front/attack.png",
+      "sha256": "02e712157e9d883b1ef0a941c45d98307d0d91f87993b402c7f39faf78d02207"
+    },
+    {
+      "path": "front/defend.json",
+      "sha256": "323f96dfeb5b36fc6ce4a513d7b075e8c8e4166e909a550b9becdd413077ea6c"
+    },
+    {
+      "path": "front/defend.png",
+      "sha256": "420f0b3d60109f1d0f2c62af22b4b68343b1610fcbd2d21392ddca6bbb28430d"
+    },
+    {
+      "path": "front/failure.json",
+      "sha256": "0dd520f2a98c799c99c061649194fb7ca05221cf08625e348f4ba84038484cd2"
+    },
+    {
+      "path": "front/failure.png",
+      "sha256": "29b41ff3166586d2b7bd7df12c689940a7a0d206bf06a0a4cb3ff1172aaf99d1"
+    },
+    {
+      "path": "front/idle.json",
+      "sha256": "2f4351cc91aedddf4ff4468029d7b669467132da7bf851ca7ed6ec3c38b7e142"
+    },
+    {
+      "path": "front/idle.png",
+      "sha256": "c2baba0c8416459c26f55a6854daa46ac31e6d7ab985f6ffe44f7ee724996d0d"
+    },
+    {
+      "path": "front/move.json",
+      "sha256": "7bfbc3f189083562b448538b0d448eb73c4942180848aa111c2f21fe672f3c6a"
+    },
+    {
+      "path": "front/move.png",
+      "sha256": "b40993aa37db0ae4f57dd7a99c431936e3bce811b1748739e1877a22b67ea012"
+    },
+    {
+      "path": "front/success.json",
+      "sha256": "1f3700b032bd80f490e1d01445774e403d73e1b1750957e78ac97231da09ba2e"
+    },
+    {
+      "path": "front/success.png",
+      "sha256": "5e797a91a80bde9d777d9a1422692c63146a9eaebff29804bfccaf3f3ac2bb8d"
+    },
+    {
+      "path": "side_left/attack.json",
+      "sha256": "e663652178759590d3fd70042c936f04b3e7d2fe8df6c7d4d3daf4ee426552ec"
+    },
+    {
+      "path": "side_left/attack.png",
+      "sha256": "ce7006d7679e100695c3519247c1fd66281d92015087b9e52249cceb68ec68c4"
+    },
+    {
+      "path": "side_left/defend.json",
+      "sha256": "750b4e751f84b64c08e1b7d143879f9660ec4c1450da962bdce060a4f1299428"
+    },
+    {
+      "path": "side_left/defend.png",
+      "sha256": "407dcc641b3bae4079ffda50bf20135209ce8c56893742ff9571ad97a5c6bf1f"
+    },
+    {
+      "path": "side_left/idle.json",
+      "sha256": "54941a4c23512033d5e04d1c4dadb0c7b58dd91c20ecf511615f98f9139cf9bb"
+    },
+    {
+      "path": "side_left/idle.png",
+      "sha256": "4ec234162e7e2324908ab2f6cd8a376d8f69069ff3ece6995f17ae6b7eaf9f27"
+    },
+    {
+      "path": "side_left/move.json",
+      "sha256": "97b5d3943477a1d1ec10b44ba9215446d1a1c4924c185f5db72f4c8c118bc3b5"
+    },
+    {
+      "path": "side_left/move.png",
+      "sha256": "c33cd9eec3c381b531c61c41574797fbab455e8d1705efe3c0566cbf915f31a8"
+    },
+    {
+      "path": "side_left/run.json",
+      "sha256": "a8ce3805fd05ec7e3045e134bb6858553836707255e5b8ebbeaa64823658924a"
+    },
+    {
+      "path": "side_left/run.png",
+      "sha256": "937cf8d7e3ea5db099039ce6244a783cc97847306557ed7a356e54ec70d57e24"
+    },
+    {
+      "path": "side_right/attack.json",
+      "sha256": "2e316242c8bfe7fd18a59b2f075ddcea6c7a43feb136fa78550b6f9ecaf5bb64"
+    },
+    {
+      "path": "side_right/attack.png",
+      "sha256": "3864e01fe82f2b23b887b516e88b03f8a8be052e25957a1df63a966690cff2ad"
+    },
+    {
+      "path": "side_right/defend.json",
+      "sha256": "600d4658a91adac80fcda9ac7e5838afc58859b722392afe7ef43ad7ddb1fbca"
+    },
+    {
+      "path": "side_right/defend.png",
+      "sha256": "a328a9360c68eb10101e06b88f0767e82530ccfaf14145e3084f9e3e2f2729f7"
+    },
+    {
+      "path": "side_right/idle.json",
+      "sha256": "02d648fbc303278709d8b5da57aaa8499d6a45510571f52fe6322ff8b5ac32cb"
+    },
+    {
+      "path": "side_right/idle.png",
+      "sha256": "238be87b3f538d69398240b6287838f4e46cb5fb09779d4306de38e47d50c886"
+    },
+    {
+      "path": "side_right/move.json",
+      "sha256": "45502205dde4245defab527b6306419173441e1acffbfa8bc42960e495384091"
+    },
+    {
+      "path": "side_right/move.png",
+      "sha256": "3f1be69d2f1d0488e07efb3795f3078f5ddc33a1410e7159405fd8ad270e492f"
+    },
+    {
+      "path": "side_right/run.json",
+      "sha256": "f1bda8291f3a3125f9dcfed91c673dcbc99680cfa82870a5214f563feedec7bd"
+    },
+    {
+      "path": "side_right/run.png",
+      "sha256": "638287f9259af5f89cffffa20f76cef00f5c9ac6fc2f8dc35d68308f5ecc0f83"
+    }
+  ]
+}

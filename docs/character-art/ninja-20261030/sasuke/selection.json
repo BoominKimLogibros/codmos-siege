@@ -1,0 +1,13 @@
+{
+  "hero": "sasuke",
+  "baseSkin": "codmos_jet",
+  "alternatives": [
+    "codmos_jet",
+    "br_bira",
+    "br_flora",
+    "codmos_lucy",
+    "codmos_teo"
+  ],
+  "source": "Original 47 Codmos skins; combat-sample compatible Spine rig",
+  "layout": "3 columns front,side(right),back. head y220 body y560 arms y835 legs y1120; Gaara gourds y1400."
+}

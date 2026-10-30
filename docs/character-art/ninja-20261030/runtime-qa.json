@@ -1,0 +1,15 @@
+{
+  "originalRigChecks": 9,
+  "bonesAndOriginalAttachmentsUnchanged": true,
+  "boneAnimationKeyframesUnchanged": true,
+  "exportedPairs": 60,
+  "bakedFrameChecks": "all 3 check:character commands passed",
+  "runtime": "native Phaser/Spine preview; four-direction movement in actual game for all three heroes",
+  "runtimeErrors": [],
+  "tests": "npm test passed",
+  "build": "npm run build passed",
+  "notes": [
+    "Gaara adds a body-bound gourd slot and adjusts draw-order offsets for the added slot",
+    "Sakura selected original extra hair textures are transparent; skeleton meshes remain unchanged"
+  ]
+}
