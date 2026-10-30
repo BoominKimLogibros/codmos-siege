@@ -13,6 +13,8 @@ export const SKILL_ICON_SOURCES={
  'young-forty':{p:'protect-jade-1',q:'rock-sky-2',w:'heal-jade-2',e:'wind-grasp-acid-2',r:'enchant-red-3'},
  danso:{p:'link-eerie-1',q:'needles-royal-2',w:'horror-eerie-2',e:'runes-blue-2',r:'beam-magenta-3'}
 };
+// Vivid per-hero tint for skill VFX (cast rune, skill projectiles and hits, auras), matched to each hero's icon palette. Heroes without an entry use their HEROES color.
+export const SKILL_VFX_COLORS={naruto:'#59c8ff',int:'#5fe3ff',kim:'#ff9a3c',nova:'#8f7bff',lucy:'#ff5fb0',jet:'#5df0e0',bora:'#7dff4f',dokkaebi:'#ff6a3c',gumiho:'#ff4fd8','young-forty':'#6dff9a',danso:'#b06bff'};
 // Item icons: 496 Pixel Art Icons for Medieval/Fantasy RPG by Henrique Lazarini (7Soul1), CC0. Keyed by ITEMS[].icon.
 export const ITEM_ICON_SOURCES={
  sword:'W_Sword001',ruby:'I_Ruby',armor:'A_Armor04',amulet:'Ac_Necklace03',book:'W_Book01',dagger:'W_Dagger002',boots:'A_Shoes01',seed:'I_Clover',sapphire:'I_Sapphire',
@@ -20,7 +22,7 @@ export const ITEM_ICON_SOURCES={
  kingsbane:'W_Gold_Sword',crown:'C_Hat02',bulwark:'A_Armour03',scythe:'W_Axe012',heart:'I_Leaf','health-potion':'P_Red01','mana-potion':'P_Blue01'
 };
 // Combat effects: Brackeys VFX Bundle (Kenney, Picster, Thomas Iché, CodeManu), CC0. Particles are white alpha masks tinted at runtime.
-export const VFX_PARTICLES=['slash_02','circle_02','circle_03','magic_02','magic_03','light_01','twirl_01','star_06','star_09','spotlight_05','trace_06','spark_07','smoke_03','smoke_10','muzzle_04','scorch_02','flare_01'];
+export const VFX_PARTICLES=['slash_02','circle_02','circle_03','magic_02','magic_03','light_01','twirl_01','star_06','star_09','spotlight_05','trace_06','spark_07','smoke_03','smoke_10','muzzle_04','scorch_02','flare_01','light_02'];
 // Sprite sheets are repacked without empty cells: source grid, first/last used frame and output cell size.
 export const VFX_SHEETS={
  impact:{file:'impact_white_6x4',cols:6,rows:4,from:0,to:13,size:128},
