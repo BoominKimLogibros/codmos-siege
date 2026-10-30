@@ -59,3 +59,5 @@ export function targetMarker(){
  const s=sprite(texture,2.4,1.1);s.visible=false;s.renderOrder=-80;return s;
 }
 export function rangeRing(){const texture=cached('range',(c,w,h)=>{c.strokeStyle='#ffffff';c.lineWidth=5;c.setLineDash([12,8]);c.beginPath();c.arc(w/2,h/2,w*.47,0,Math.PI*2);c.stroke();},256);const s=sprite(texture,1);s.visible=false;s.renderOrder=-85;return s;}
+export function pingTexture(attack){const color=attack?'#ff4b4b':'#7ee85a';return cached('ping'+color,(c,w,h)=>{c.strokeStyle=color;c.lineWidth=9;c.beginPath();c.arc(w/2,h/2,w*.36,0,Math.PI*2);c.stroke();c.fillStyle=color;for(let i=0;i<4;i++){c.save();c.translate(w/2,h/2);c.rotate(i*Math.PI/2+Math.PI/4);c.beginPath();c.moveTo(w*.14,0);c.lineTo(w*.3,-w*.08);c.lineTo(w*.3,w*.08);c.closePath();c.fill();c.restore();}});}
+export function clickPingObject(){const s=sprite(pingTexture(false),1);s.visible=false;s.renderOrder=-75;return s;}
