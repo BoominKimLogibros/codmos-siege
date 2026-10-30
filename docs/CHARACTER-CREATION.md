@@ -203,6 +203,7 @@ public/survival/character-sprites/forest-guardian/
 | [passives.js](../src/survival/passives.js), [passive-art.js](../src/survival/passive-art.js) | 패시브 설명·아이콘·색·표식과 상태 계산. 새 표식 모양이 필요하면 렌더러도 추가 |
 | [engine.js](../src/survival/engine.js) | 실제 패시브 발동과 새 스킬 종류의 효과, 기본 공격의 예외, AI 사용 조건. 설명 문구만 추가하면 효과가 생기지 않음 |
 | [cast-effect-spec.js](../src/survival/cast-effect-spec.js), [skill-cast.js](../src/survival/skill-cast.js) | 캐릭터 색상·방향별 시전 이펙트, 공격/방어 준비 동작. 새 스킬 종류가 버프라면 지원 동작 분류 확인 |
+| [asset-manifest.js](../src/survival/asset-manifest.js) | 패시브와 Q/W/E/R 스킬 아이콘 이름. 등록하지 않으면 이모지 아이콘이 대신 표시됨. 아래 8절 참고 |
 | [테스트 폴더](../scripts) | 캐릭터 목록·에셋·스킬 분류 개수 등을 11종으로 가정하는 테스트를 검토하고 필요한 기대값·새 기능 검증 갱신 |
 
 현재 `hero.hp`는 `statsAt`에서 4배가 되어 초기 최대 체력이 됩니다. 이동속도와 사거리는 UI에서 맵 단위의 50배로 표시합니다. 원래 수치와 UI 수치를 혼동하지 말고 [능력치 문서](CHAMPION-STATS.md)를 확인하세요. 공격속도는 기본 `cooldown`과 추가 간격을 사용해 계산됩니다.
@@ -211,7 +212,90 @@ public/survival/character-sprites/forest-guardian/
 
 공격·버프는 준비 제스처를 보여준 뒤 실제 효과를 발동합니다. 기본 공격도 공격속도에 맞춰 제스처가 재생됩니다. 이동/대시 중 평타는 발생하지 않고, 공격·스킬 제스처 중 이동은 잠깐 멈춥니다. 일반 피격은 tint로 표시하며 몸의 `HP_Down` 동작으로 전환하지 않습니다. 회복·특수 HP 변화 표시는 별도 이펙트입니다. 새 캐릭터도 이 동작 규칙을 유지해 주세요.
 
-## 8. 파일 검사와 실제 플레이 검수
+## 8. 스킬 아이콘과 전투 이펙트 정하기
+
+스킬 칸, 툴팁, 일시정지 화면의 스킬 카드에는 그림 아이콘이 들어가고, 평타·스킬·피격·레벨 업 같은 전투 이펙트는 공용 텍스처로 그립니다. 새 캐릭터를 만들 때에는 **아이콘 5개(패시브, Q, W, E, R)를 고르고, 스킬이 어떤 이펙트로 보일지 확인**하면 됩니다. 이펙트는 스킬 종류와 팀 색으로 자동 결정되므로, 대부분은 새 그림을 만들 필요가 없습니다.
+
+### 스킬 아이콘 고르기
+
+스킬 아이콘은 J. W. Bjerk(eleazzaar)의 [Painterly Spell Icons](https://opengameart.org/content/painterly-spell-icons-part-1)(1~4부)에서 고릅니다. 아래 목록에서 스킬의 느낌과 캐릭터 색에 맞는 그림을 찾고, 이름을 적어 둡니다.
+
+![Painterly 아이콘 목록](media/painterly-icon-catalog.jpg)
+
+같은 그림은 빛의 세기에 따라 `-1`, `-2`, `-3` 세 장이 있습니다. 기존 캐릭터들은 다음 규칙을 따릅니다.
+
+| 칸 | 세기 | 이유 |
+| --- | --- | --- |
+| 패시브 | `-1` | 상시 효과라서 가장 차분한 그림을 씁니다. |
+| Q, W, E | `-2` | 기본 스킬의 표준 세기입니다. |
+| R | `-3` | 궁극기가 한눈에 구분되도록 가장 화려한 그림을 씁니다. |
+
+한 캐릭터 안에서는 색 계열(`sky`, `royal`, `acid` 등)을 한두 가지로 맞추고, 다른 캐릭터와 같은 그림·같은 색 조합은 피해 주세요. 지금 쓰는 조합은 [asset-manifest.js](../src/survival/asset-manifest.js)의 `SKILL_ICON_SOURCES`에서 확인할 수 있습니다.
+
+### 아이콘 등록과 가져오기
+
+1. [asset-manifest.js](../src/survival/asset-manifest.js)의 `SKILL_ICON_SOURCES`에 캐릭터 id로 한 줄을 추가합니다.
+
+   ```js
+   'forest-guardian':{p:'leaf-jade-1',q:'vines-jade-2',w:'heal-jade-2',e:'wind-grasp-acid-2',r:'wild-jade-3'},
+   ```
+
+2. 원본 팩 4개를 OpenGameArt에서 받아 한 폴더에 풀고, 가져오기 스크립트를 실행합니다. 개발 서버가 켜져 있지 않아도 동작합니다.
+
+   ```sh
+   node scripts/import-free-assets.mjs --painterly <압축을 푼 폴더> --only skills
+   ```
+
+3. 스크립트가 `public/survival/icons/skills/<캐릭터 id>-<p|q|w|e|r>.png`를 128px로 저장합니다. 이 PNG를 함께 커밋합니다.
+
+`SKILL_ICON_SOURCES`에 캐릭터가 없으면 [skill-icons.js](../src/survival/skill-icons.js)에 정의된 스킬 종류별 이모지가 표시됩니다. 그래서 기획 단계에서는 아이콘 없이 먼저 플레이해 보고, 아트가 정해진 뒤에 등록해도 됩니다. 목록에 맞는 그림이 없어서 직접 그린 아이콘을 쓰려면, 같은 경로와 크기(128×128, 정사각형)로 PNG를 넣고 출처를 아래 '에셋 출처' 절에 적어 주세요.
+
+### 전투 이펙트 확인하기
+
+전투 이펙트는 Brackeys VFX Bundle(CC0)의 흰색 텍스처를 팀 색이나 효과 색으로 칠해서 겹쳐 그립니다. 엔진이 만드는 효과 종류(`effect.kind`)마다 모양이 정해져 있어서, 새 스킬이 기존 스킬 종류(`kind`)를 쓰면 이펙트도 자동으로 붙습니다.
+
+![전투 이펙트 예시](media/vfx-showcase.jpg)
+
+| 효과 종류 | 언제 나오는가 | 모양 | 정의 위치 |
+| --- | --- | --- | --- |
+| `slash` | 근접 평타 | 공격 방향을 향한 초승달 베기. 치명타는 금색 섬광과 폭발이 더해집니다. | [combat-fx.js](../src/survival/combat-fx.js) |
+| `hit` | 평타·투사체 명중 | 공격한 팀 색의 타격 플립북. 건물 피격은 더 큰 폭발이 더해집니다. | [combat-fx.js](../src/survival/combat-fx.js) |
+| 투사체 | 원거리 평타, 포탑 | 팀 색으로 빛나는 머리와 꼬리 | [combat-fx.js](../src/survival/combat-fx.js) |
+| `burst` | 범위 피해 스킬 | 퍼지는 충격파 고리, 그을음, 흰 섬광 | [vfx.js](../src/survival/vfx.js) |
+| `zone` | 장판 스킬의 피해 주기 | 고리가 한 번 퍼집니다. 장판 자체는 천천히 도는 마법진으로 표시됩니다. | [vfx.js](../src/survival/vfx.js) |
+| `heal`, `mana` | 회복 스킬, 물약 | 초록(마나는 파랑) 빛, 소용돌이, 떠오르는 별 | [vfx.js](../src/survival/vfx.js) |
+| `buff` | 강화 스킬 | 도는 소용돌이와 고리 | [vfx.js](../src/survival/vfx.js) |
+| `silence` | 침묵 스킬 | 보라색 룬과 고리 | [vfx.js](../src/survival/vfx.js) |
+| `beam` | 광선 스킬 | 시작점과 끝점을 잇는 번개 줄기 | [vfx.js](../src/survival/vfx.js) |
+| `dash` | 대시, 이동기 | 발밑 흙먼지 | [vfx.js](../src/survival/vfx.js) |
+| `level`, `learn`, `purchase` | 레벨 업, 스킬 습득, 아이템 구매 | 금색 빛기둥, 별, 고리 | [vfx.js](../src/survival/vfx.js) |
+| `death`, `collapse` | 챔피언 사망, 포탑 붕괴 | 연기와 타격 플립북, 큰 폭발 | [vfx.js](../src/survival/vfx.js) |
+
+시전 직전에 캐릭터를 감싸는 시전 이펙트는 이와 별개입니다. 시전 이펙트의 색은 [cast-effect-spec.js](../src/survival/cast-effect-spec.js)에서 캐릭터 색으로 정합니다.
+
+새 스킬 종류를 만들어서 기존 모양으로는 표현이 부족하다면, [vfx.js](../src/survival/vfx.js)의 `RECIPES`에 효과 종류를 하나 추가합니다. 레시피는 아래 텍스처를 몇 장 겹치고, 효과 수명(0에서 1)에 맞춰 크기·투명도·회전을 바꾸는 함수입니다. 쓸 수 있는 텍스처는 다음과 같습니다.
+
+![이펙트 텍스처 목록](media/vfx-texture-catalog.jpg)
+
+번들에 있는 다른 텍스처가 필요하면 [asset-manifest.js](../src/survival/asset-manifest.js)의 `VFX_PARTICLES`에 이름을 추가하고 가져오기 스크립트를 다시 실행합니다. 번들은 [itch.io 배포 페이지](https://brackeysgames.itch.io/brackeys-vfx-bundle)에서 0원으로 받을 수 있습니다.
+
+```sh
+node scripts/import-free-assets.mjs --vfx <brackeys_vfx_bundle 폴더> --only vfx
+```
+
+텍스처는 흰색이므로 색은 코드에서 정합니다. 팀을 구분해야 하는 효과는 팀 색(`TEAM_COLORS`)을, 회복·강화처럼 의미가 정해진 효과는 고정 색을 씁니다. 화면 확인은 실제 플레이에서 스킬을 써 보는 것이 가장 정확하며, 콘솔에 텍스처 로드 오류가 없는지도 함께 확인해 주세요.
+
+### 에셋 출처
+
+| 용도 | 에셋 | 라이선스 | 출처 표기 |
+| --- | --- | --- | --- |
+| 스킬·패시브 아이콘 | Painterly Spell Icons 1~4부, J. W. Bjerk (eleazzaar) | CC-BY 3.0 (선택 가능한 라이선스 중 하나) | 필요합니다. [에셋 출처](ASSET-CREDITS.md)에 기록되어 있습니다. |
+| 아이템 아이콘 | 496 Pixel Art Icons for Medieval/Fantasy RPG, Henrique Lazarini (7Soul1) | CC0 | 필요 없지만 기록해 둡니다. |
+| 전투 이펙트 | Brackeys VFX Bundle (Kenney, Picster, Thomas Iché, CodeManu) | CC0 | 필요 없지만 기록해 둡니다. |
+
+다른 무료 에셋을 추가할 때에는 상업적 사용이 가능한지, 출처 표기 조건이 무엇인지 확인하고 [에셋 출처](ASSET-CREDITS.md)에 함께 적어 주세요.
+
+## 9. 파일 검사와 실제 플레이 검수
 
 ```sh
 npm ci
@@ -233,13 +317,14 @@ npm run dev
 - 정지/이동/평타/스킬 사이에 위치나 크기가 튀지 않는지
 - 공격·방어 준비 동작과 실제 효과 시점, 연속 평타와 빠른 공격속도
 - 일반 피격 tint, 시전 이펙트 색상, 회복/피해 오버레이, HP 막대 위치
+- 스킬 칸·툴팁·일시정지 화면의 아이콘, 스킬을 썼을 때의 전투 이펙트
 - 사망/부활/승리, 일시정지/재개, 다른 캐릭터와 상대 팀일 때의 동작
 - 콘솔 오류, 누락된 PNG·JSON 요청, 프레임이 비거나 화면 밖으로 잘리는 현상
 
-## 9. PR에 포함할 내용
+## 10. PR에 포함할 내용
 
 - **기획 PR**: 역할·외형·패시브·Q/W/E/R 기획, 필요한 원본과 미정 사항
-- **아트 PR**: 부위별 원본/atlas 변경 내역 또는 게임용 PNG·JSON, 제작·출처 기록, 정면/측면/후면 조립 결과, 짧은 동작 영상. 완료한 방향·동작 범위를 명시
+- **아트 PR**: 부위별 원본/atlas 변경 내역 또는 게임용 PNG·JSON, 스킬 아이콘 선택, 제작·출처 기록, 정면/측면/후면 조립 결과, 짧은 동작 영상. 완료한 방향·동작 범위를 명시
 - **구현 PR**: 위 에셋과 게임 연결 변경, 새 패시브·스킬 검증, 실제 플레이 화면과 테스트·빌드 결과
 
 새 에셋의 출처·제작 방식·사용 범위, 기준 스킨과 내보내기 설정을 캐릭터 폴더의 별도 README나 출처 JSON에 기록하세요. 기존 전체 manifest는 원본 패키지 기록이므로 새 파일 하나를 추가했다고 전체를 재생성하거나 덮어쓰지 말고, 이번 변경의 사용 목록을 별도로 남겨 주세요.
