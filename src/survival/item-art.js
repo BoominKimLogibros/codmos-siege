@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {ITEM_ICON_SOURCES,ITEM_ICON_PATH} from './asset-manifest.js';
 export const ITEM_COLORS={attack:'#e4ba80',magic:'#bda4ef',defense:'#90c7b2',move:'#8fcde5',sustain:'#b4d68b'};
 const art={
  'health-potion':'<path d="M25 7h14v12l11 18v17H14V37l11-18ZM22 7h20M16 39h32M32 43v10M27 48h10"/>',
@@ -27,7 +28,7 @@ const art={
  heart:'<path d="M32 54C10 40 6 28 10 18c4-9 16-11 22-2 6-9 18-7 22 2 4 10 0 22-22 36Z"/><path d="M32 24v20M24 34h16"/>'
 };
 export const TIER_COLORS={1:'#8c9aa3',2:'#5aa9e6',3:'#f2c45a'};
-export function itemIcon(item){return `<svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="${ITEM_COLORS[item.category]}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">${art[item.icon]||art.ruby}</svg>`;}
+export function itemIcon(item){if(ITEM_ICON_SOURCES[item.icon])return `<img class="pixel-art" src="${ITEM_ICON_PATH(item.icon)}" alt="" draggable="false">`;return `<svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="${ITEM_COLORS[item.category]}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">${art[item.icon]||art.ruby}</svg>`;}
 const shopTextures=new Map();
 export function shopTexture(team){
  if(shopTextures.has(team))return shopTextures.get(team);

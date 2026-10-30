@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {vfxTexture,vfxLayer,vfxFrame,impactLayer,bigHitLayer} from './vfx.js';
 // Readable combat feedback: glowing bolts, melee swing arcs, impact sparks, floating damage and the player's target marker.
 const textures=new Map();
 function cached(key,draw,width=128,height=width){
@@ -10,8 +11,13 @@ function sprite(texture,width,height=width){const material=new THREE.SpriteMater
 export const HEALTH_COLORS={self:'#7ee85a',ally:'#4aa8ff',enemy:'#ff4b4b'};
 export function healthColor(unit,player){return unit===player?HEALTH_COLORS.self:unit.team===player?.team?HEALTH_COLORS.ally:HEALTH_COLORS.enemy;}
 
+// Glowing head and streak tinted with the team color; falls back to the drawn bolt until the VFX textures load.
+function vfxBolt(color){const trace=vfxTexture('trace_06')?.image,glow=vfxTexture('spotlight_05')?.image;if(!trace||!glow)return null;return cached('vfxbolt'+color,(c,w,h)=>{
+  c.save();c.translate(w*.4,h/2);c.rotate(-Math.PI/2);c.drawImage(trace,-h*.9,-w*.55,h*1.8,w*.9);c.restore();c.drawImage(glow,w*.72-h*.7,-h*.2,h*1.4,h*1.4);
+  c.globalCompositeOperation='source-in';c.fillStyle=color;c.fillRect(0,0,w,h);c.globalCompositeOperation='lighter';c.globalAlpha=.85;c.drawImage(glow,w*.72-h*.32,h*.18,h*.64,h*.64);
+ },128,48);}
 export function boltObject(shot,color){
- const texture=cached('bolt'+color,(c,w,h)=>{
+ const texture=vfxBolt(color)||cached('bolt'+color,(c,w,h)=>{
   const glow=c.createRadialGradient(w*.72,h/2,0,w*.72,h/2,h/2);glow.addColorStop(0,'#ffffff');glow.addColorStop(.35,color);glow.addColorStop(1,color+'00');
   const trail=c.createLinearGradient(0,0,w*.75,0);trail.addColorStop(0,color+'00');trail.addColorStop(1,color+'cc');
   c.fillStyle=trail;c.beginPath();c.moveTo(0,h/2);c.lineTo(w*.72,h*.22);c.lineTo(w*.72,h*.78);c.closePath();c.fill();
@@ -22,6 +28,14 @@ export function boltObject(shot,color){
 export function updateBolt(object,shot){object.material.rotation=-Math.atan2(shot.vz,shot.vx);object.position.z=shot.z-(shot.tower?2.2:1.3);}
 
 export function slashObject(effect,color){
+ if(!vfxTexture('slash_02')||!vfxTexture('star_09')||!vfxTexture('bighit'))return legacySlash(effect,color);
+ // Crescent swing facing the attack direction; crits add a gold flash and burst at the tip.
+ const size=effect.radius*2,rotation=Math.atan2(-effect.dirZ,effect.dirX)+Math.PI/2,arc=vfxLayer('slash_02',color,{size}),core=vfxLayer('slash_02','#ffffff',{size:size*.8}),layers=[arc,core];
+ for(const l of layers){l.material.rotation=rotation;l.position.set(effect.dirX*effect.radius*.35,0,effect.dirZ*effect.radius*.35);}
+ if(effect.critical){const flash=vfxLayer('star_09','#ffd84a',{size:size*.9}),burst=bigHitLayer(size*1.1);for(const l of [flash,burst])l.position.set(effect.dirX*effect.radius*.8,0,effect.dirZ*effect.radius*.8);layers.push(flash,burst);}
+ const g=new THREE.Group();g.add(...layers);g.userData.layers=layers;g.userData.vfx=true;g.userData.dispose=()=>layers.forEach(l=>l.userData.dispose());return g;
+}
+function legacySlash(effect,color){
  const key='slash'+color+!!effect.critical,texture=cached(key,(c,w,h)=>{
   const g=c.createLinearGradient(0,h,w,0);g.addColorStop(0,color+'00');g.addColorStop(.55,color);g.addColorStop(1,'#ffffff');
   c.fillStyle=g;c.beginPath();c.arc(w*.28,h/2,w*.62,-1.05,1.05);c.arc(w*.12,h/2,w*.6,.95,-.95,true);c.closePath();c.fill();
@@ -29,16 +43,36 @@ export function slashObject(effect,color){
  });
  const s=sprite(texture,effect.radius*2);s.material.rotation=-Math.atan2(effect.dirZ,effect.dirX);return s;
 }
-export function updateSlash(object,effect){const f=1-effect.life/effect.duration,size=effect.radius*2*(.75+f*.5);object.scale.set(size,size,1);object.material.opacity=Math.min(1,(1-f)*1.6);object.position.z=effect.z-.9;}
+function updateLegacySlash(object,effect){const f=1-effect.life/effect.duration,size=effect.radius*2*(.75+f*.5);object.scale.set(size,size,1);object.material.opacity=Math.min(1,(1-f)*1.6);object.position.z=effect.z-.9;}
+
+export function updateSlash(object,effect){
+ if(!object.userData.vfx){updateLegacySlash(object,effect);return;}
+ const f=1-effect.life/effect.duration,[arc,core,flash,burst]=object.userData.layers,size=effect.radius*2*(.8+f*.45);object.position.z=effect.z-.9;
+ arc.scale.setScalar(size);arc.material.opacity=Math.min(1,(1-f)*1.8);core.scale.setScalar(size*.78);core.material.opacity=Math.max(0,1-f*2.2);
+ if(flash){flash.material.opacity=Math.max(0,1-f*1.5);flash.material.rotation=f*2;vfxFrame(burst,f);}
+}
 
 export function sparkObject(effect,color){
+ if(!vfxTexture('impact')||!vfxTexture('spotlight_05')||!vfxTexture('bighit'))return legacySpark(effect,color);
+ // Flipbook impact in the attacker's color over a short white flash; structures get the larger burst sheet.
+ const structure=effect.radius>1.2,layers=[impactLayer(color,structure?3.4:2),vfxLayer('spotlight_05','#ffffff',{size:structure?2.6:1.5})];if(structure)layers.push(bigHitLayer(3.2));
+ for(const l of layers)l.material.rotation=effect.id%7;
+ const g=new THREE.Group();g.add(...layers);g.userData.layers=layers;g.userData.vfx=true;g.userData.dispose=()=>layers.forEach(l=>l.userData.dispose());return g;
+}
+function legacySpark(effect,color){
  const texture=cached('spark'+color,(c,w,h)=>{
   c.translate(w/2,h/2);const g=c.createRadialGradient(0,0,0,0,0,w/2);g.addColorStop(0,'#ffffff');g.addColorStop(.3,color);g.addColorStop(1,color+'00');c.fillStyle=g;
   c.beginPath();for(let i=0;i<16;i++){const r=i%2?w*.16:w*.5,a=i/16*Math.PI*2;c.lineTo(Math.cos(a)*r,Math.sin(a)*r);}c.closePath();c.fill();
  });
  const s=sprite(texture,1);s.material.rotation=effect.id%7;return s;
 }
-export function updateSpark(object,effect,structure){const f=1-effect.life/effect.duration,size=(structure?2.6:1.5)*(.6+f*.7);object.scale.set(size,size,1);object.material.opacity=1-f;object.position.z=effect.z-(structure?2:1.1);}
+function updateLegacySpark(object,effect,structure){const f=1-effect.life/effect.duration,size=(structure?2.6:1.5)*(.6+f*.7);object.scale.set(size,size,1);object.material.opacity=1-f;object.position.z=effect.z-(structure?2:1.1);}
+
+export function updateSpark(object,effect,structure){
+ if(!object.userData.vfx){updateLegacySpark(object,effect,structure);return;}
+ const f=1-effect.life/effect.duration,[impact,flash,burst]=object.userData.layers;object.position.z=effect.z-(structure?2:1.1);
+ vfxFrame(impact,f);flash.material.opacity=Math.max(0,1-f*3);flash.scale.setScalar(flash.userData.base*(1+f));if(burst)vfxFrame(burst,f);
+}
 
 const DAMAGE_COLORS={physical:'#ffb35c',magic:'#c792ff',true:'#ffffff'};
 export function damageObject(effect){
